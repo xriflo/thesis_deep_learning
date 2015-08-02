@@ -1,6 +1,8 @@
 no_stacks = 3
 no_disks = 3
+first_stack = 1
 picker = 1
+
 
 Disk = {}
 Stack = {}
@@ -11,12 +13,24 @@ function Disk.new(stack, dim)
 	return self;
 end
 
-hobbir = Disk.new(1, 2)
-print(hobbir.stack)
-print(hobbir.dim)
+function Stack.new(stack)
+	local self = {}
+	self.no_disks = 0
+	self.stack = stack
+	self.disks = {}
+	return self
+end
+
+--[[
+disk = Disk.new(1, 2)
+stack = Stack.new(1)
+stack.disks = {disk}
+print(stack.disks[1].dim)
+]]--
+Stacks = {}
 
 function love.load()
-	local first_stack = 1
+	-- program variables
 	love.graphics.setBackgroundColor(255, 255, 255)
 	love.window.setMode(200, 200, {resizable=false})
 	scrW = love.graphics.getWidth()
@@ -24,24 +38,33 @@ function love.load()
 	diskH = 10
 	diskW = 2*scrW/(3*no_disks)
 	free_space = scrW/(3*(no_stacks+1))
-	Stack[first_stack] = {}
+	
+	-- creating a list of stacks
+	for i = 1, no_stacks do
+		Stacks[i] = {}
+	end
+	-- put the disks on the first stack
 	for i = 1, no_disks do
 		local disk = Disk.new(first_stack, diskW/(2^(i-1)))
-		Stack[first_stack][i] = disk
+		Stacks[first_stack].disks[i] = disk
 	end
+	Stacks[first_stack].no_disks = 3
 end
 
 function love.draw()
+	-- draw the stacks
 	for stack = 1, no_stacks do
 		love.graphics.setLineWidth(1)
 		love.graphics.setColor(204, 102, 0)
 		love.graphics.line(scrW*stack/(no_stacks+1), scrH/(no_stacks+1), scrW*stack/(no_stacks+1), scrH)
 	end
+
+	
+	
 	for disk = 1, no_disks do
-		--love.graphics.rectangle( mode, x, y, width, height )
 		love.graphics.setColor(255, 0, 0)
-		--love.graphics.rectangle("fill", 10, 10, 10, 10)
 	end
+	
 	for i = 1, no_stacks do
 		if Stack[i] ~= nil and table.getn(Stack[i]) ~= 0 then
 			for j = 1, table.getn(Stack[i]) do
@@ -49,6 +72,9 @@ function love.draw()
 			end
 		end
 	end
+	love.graphics.setColor(255, 0, 0)
+
+	love.graphics.line(100, 0, 100, 200)
 end
 
 function love.update(dt)
