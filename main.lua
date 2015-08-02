@@ -6,6 +6,8 @@ picker = 1
 
 Disk = {}
 Stack = {}
+Picker = {}
+
 function Disk.new(stack, dim)
 	local self = {}
 	self.stack = stack
@@ -21,15 +23,26 @@ function Stack.new(stack)
 	return self
 end
 
+function Picker.new()
+	local self = {}
+	self.pointing_stack = first_stack
+	self.having_disk = false
+	self.disk = nil
+	return self
+end
+
+
+
 --[[
 disk = Disk.new(1, 2)
 stack = Stack.new(1)
 stack.disks = {disk}
 print(stack.disks[1].dim)
 ]]--
-Stacks = {}
 
 function love.load()
+	Stacks = {}
+	picker = Picker.new()
 	-- program variables
 	love.graphics.setBackgroundColor(255, 255, 255)
 	love.window.setMode(200, 200, {resizable=false})
@@ -37,12 +50,17 @@ function love.load()
 	scrH = love.graphics.getHeight()
 	diskH = 10
 	diskW = 2*scrW/(3*no_disks)
-	free_space = scrW/(3*(no_stacks+1))
+	free_space = scrW/(1*(no_stacks+1))
 	
 	-- creating a list of stacks
 	for i = 1, no_stacks do
-		Stacks[i] = {}
+		Stacks[i] = Stack.new(i)
+		Stacks[i].no_disks = 0
+		for j = 1, no_disks do
+			Stacks[i].disks = {}
+		end
 	end
+
 	-- put the disks on the first stack
 	for i = 1, no_disks do
 		local disk = Disk.new(first_stack, diskW/(2^(i-1)))
@@ -52,32 +70,25 @@ function love.load()
 end
 
 function love.draw()
+
 	-- draw the stacks
+	love.graphics.setColor(204, 102, 0)
 	for stack = 1, no_stacks do
 		love.graphics.setLineWidth(1)
-		love.graphics.setColor(204, 102, 0)
 		love.graphics.line(scrW*stack/(no_stacks+1), scrH/(no_stacks+1), scrW*stack/(no_stacks+1), scrH)
 	end
-
 	
-	
-	for disk = 1, no_disks do
-		love.graphics.setColor(255, 0, 0)
-	end
-	
+	-- draw the disks
+	love.graphics.setColor(255, 0, 0)
 	for i = 1, no_stacks do
-		if Stack[i] ~= nil and table.getn(Stack[i]) ~= 0 then
-			for j = 1, table.getn(Stack[i]) do
-				love.graphics.rectangle("fill", i*free_space, scrH-j*diskH, Stack[i][j].dim, diskH)
-			end
+		for j = 1, Stacks[i].no_disks do			
+			love.graphics.rectangle("fill", i*free_space-Stacks[i].disks[j].dim/2, scrH-j*diskH, Stacks[i].disks[j].dim, 10)
 		end
 	end
-	love.graphics.setColor(255, 0, 0)
-
-	love.graphics.line(100, 0, 100, 200)
 end
 
 function love.update(dt)
+	-- pick-up disk
    	if love.keyboard.isDown("up") then
    		print("up")
    		love.timer.sleep(0.2)
@@ -86,22 +97,39 @@ function love.update(dt)
 		print("down")
 		love.timer.sleep(0.2)
 	end
+
+	-- move the picker to left or right
 	if love.keyboard.isDown("left") then
-		print("left")
+		moveLeft()
 		love.timer.sleep(0.2)
-		if picker == 1 then
-			picker = no_stacks
-		else
-			picker = picker - 1
-		end
+		
 	end
 	if love.keyboard.isDown("right") then
-		print("right")
+		moveRight()
 		love.timer.sleep(0.2)
-		if picker == no_stacks then
-			picker = 1
-		else
-			picker = picker + 1
-		end
+		
+	end
+	print(picker.pointing_stack)
+end
+
+function moveUp()
+
+end
+function moveDown()
+end
+
+function moveLeft()
+	if picker.pointing_stack == 1 then
+		picker.pointing_stack = no_stacks
+	else
+		picker.pointing_stack = picker.pointing_stack - 1
+	end
+end
+
+function moveRight()
+	if picker.pointing_stack == no_stacks then
+		picker.pointing_stack = 1
+	else
+		picker.pointing_stack = picker.pointing_stack + 1
 	end
 end
