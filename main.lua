@@ -5,40 +5,58 @@ picker = 1
 
 
 Disk = {}
+Disk.__index = Disk
 Stack = {}
+Stack.__index = Stack
 Picker = {}
+Picker.__index = Picker
 
 function Disk.new(stack, dim)
-	local self = {}
-	self.stack = stack
-	self.dim = dim
-	return self;
+	local disk = {}
+	setmetatable(disk,Disk)
+	disk.stack = stack
+	disk.dim = dim
+	return disk;
 end
 
 function Stack.new(stack)
 	local self = {}
+	setmetatable(self,Stack)
 	self.no_disks = 0
 	self.stack = stack
 	self.disks = {}
 	return self
 end
 
+function Stack:remove()
+	if self.no_disks>=1 and not(picker.having_disk) then
+		picker.disk = Disk.new(nil, self.disks[self.no_disks].dim)
+		picker.having_disk = true
+		self.disks[self.no_disks] = nil
+		self.no_disks = self.no_disks - 1
+	end
+end
+
+function Stack:add()
+	if having_disk then
+		self.no_disks = self.no_disks + 1
+		self.disks[self.no_disks] = Disk.new(self.stack, picker.disk.dim)
+		picker.having_disk = false
+		picker.disk = nil
+	end
+end
+
+
+
 function Picker.new()
 	local self = {}
+	setmetatable(self, Picker)
 	self.pointing_stack = first_stack
 	self.having_disk = false
 	self.disk = nil
 	return self
 end
 
-
-
---[[
-disk = Disk.new(1, 2)
-stack = Stack.new(1)
-stack.disks = {disk}
-print(stack.disks[1].dim)
-]]--
 
 function love.load()
 	Stacks = {}
@@ -85,16 +103,23 @@ function love.draw()
 			love.graphics.rectangle("fill", i*free_space-Stacks[i].disks[j].dim/2, scrH-j*diskH, Stacks[i].disks[j].dim, 10)
 		end
 	end
+
+	if picker.having_disk then
+		love.graphics.rectangle("fill", picker.pointing_stack*free_space-picker.disk.dim/2, 0, picker.disk.dim, 10)
+	end
+	--print(Stacks[picker.pointing_stack].no_disks..picker.having_disk)
 end
 
 function love.update(dt)
 	-- pick-up disk
    	if love.keyboard.isDown("up") then
-   		print("up")
+   		Stacks[picker.pointing_stack]:remove()
+   		--print("up")
    		love.timer.sleep(0.2)
 	end
 	if love.keyboard.isDown("down") then
-		print("down")
+		Stacks[picker.pointing_stack]:add()
+		--print("down")
 		love.timer.sleep(0.2)
 	end
 
@@ -109,7 +134,7 @@ function love.update(dt)
 		love.timer.sleep(0.2)
 		
 	end
-	print(picker.pointing_stack)
+	--print(picker.pointing_stack)
 end
 
 function moveUp()
