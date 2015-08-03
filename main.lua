@@ -38,7 +38,7 @@ function Stack:remove()
 end
 
 function Stack:add()
-	if having_disk then
+	if picker.having_disk and (self.no_disks==0 or (picker.disk.dim < self.disks[self.no_disks].dim)) then
 		self.no_disks = self.no_disks + 1
 		self.disks[self.no_disks] = Disk.new(self.stack, picker.disk.dim)
 		picker.having_disk = false
@@ -62,13 +62,21 @@ function love.load()
 	Stacks = {}
 	picker = Picker.new()
 	-- program variables
+	love.window.setTitle("Bathory Game")
 	love.graphics.setBackgroundColor(255, 255, 255)
-	love.window.setMode(200, 200, {resizable=false})
+	love.window.setMode(400, 400, {resizable=false})
+	
+
 	scrW = love.graphics.getWidth()
 	scrH = love.graphics.getHeight()
-	diskH = 10
+	diskH = scrH/20
 	diskW = 2*scrW/(3*no_disks)
+	pickerW = 10
+	pickerH = 10
 	free_space = scrW/(1*(no_stacks+1))
+
+	love.graphics.setColor(0, 0, 255)
+	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
 	
 	-- creating a list of stacks
 	for i = 1, no_stacks do
@@ -86,9 +94,9 @@ function love.load()
 	end
 	Stacks[first_stack].no_disks = 3
 end
-
+t = 0
 function love.draw()
-
+	t = t + 1
 	-- draw the stacks
 	love.graphics.setColor(204, 102, 0)
 	for stack = 1, no_stacks do
@@ -100,47 +108,51 @@ function love.draw()
 	love.graphics.setColor(255, 0, 0)
 	for i = 1, no_stacks do
 		for j = 1, Stacks[i].no_disks do			
-			love.graphics.rectangle("fill", i*free_space-Stacks[i].disks[j].dim/2, scrH-j*diskH, Stacks[i].disks[j].dim, 10)
+			love.graphics.rectangle("fill", i*free_space-Stacks[i].disks[j].dim/2, scrH-j*diskH, Stacks[i].disks[j].dim, diskH)
 		end
 	end
 
 	if picker.having_disk then
-		love.graphics.rectangle("fill", picker.pointing_stack*free_space-picker.disk.dim/2, 0, picker.disk.dim, 10)
+		love.graphics.rectangle("fill", picker.pointing_stack*free_space-picker.disk.dim/2, pickerH, picker.disk.dim, diskH)
+	end
+	love.graphics.setColor(0, 0, 255)
+	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
+
+	if isGameOver() then
+		love.load()
 	end
 	--print(Stacks[picker.pointing_stack].no_disks..picker.having_disk)
 end
 
 function love.update(dt)
-	-- pick-up disk
+	-- pick-up disk if possible
    	if love.keyboard.isDown("up") then
-   		Stacks[picker.pointing_stack]:remove()
-   		--print("up")
-   		love.timer.sleep(0.2)
+   		moveUp()
+   		love.timer.sleep(0.15)
 	end
+	-- put down disk if possible
 	if love.keyboard.isDown("down") then
-		Stacks[picker.pointing_stack]:add()
-		--print("down")
-		love.timer.sleep(0.2)
+		moveDown()
+		love.timer.sleep(0.15)
 	end
 
 	-- move the picker to left or right
 	if love.keyboard.isDown("left") then
 		moveLeft()
-		love.timer.sleep(0.2)
-		
+		love.timer.sleep(0.15)
 	end
 	if love.keyboard.isDown("right") then
 		moveRight()
-		love.timer.sleep(0.2)
+		love.timer.sleep(0.15)
 		
 	end
-	--print(picker.pointing_stack)
 end
 
 function moveUp()
-
+	Stacks[picker.pointing_stack]:remove()
 end
 function moveDown()
+	Stacks[picker.pointing_stack]:add()
 end
 
 function moveLeft()
@@ -156,5 +168,13 @@ function moveRight()
 		picker.pointing_stack = 1
 	else
 		picker.pointing_stack = picker.pointing_stack + 1
+	end
+end
+
+function isGameOver()
+	if Stacks[#Stacks].no_disks == no_disks then
+		return true
+	else
+		return false
 	end
 end
