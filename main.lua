@@ -11,11 +11,12 @@ Stack.__index = Stack
 Picker = {}
 Picker.__index = Picker
 
-function Disk.new(stack, dim)
+function Disk.new(stack, dim, no)
 	local disk = {}
 	setmetatable(disk,Disk)
 	disk.stack = stack
 	disk.dim = dim
+	disk.no = no
 	return disk;
 end
 
@@ -30,17 +31,19 @@ end
 
 function Stack:remove()
 	if self.no_disks>=1 and not(picker.having_disk) then
-		picker.disk = Disk.new(nil, self.disks[self.no_disks].dim)
+		picker.disk = Disk.new(nil, self.disks[self.no_disks].dim, self.disks[self.no_disks].no)
 		picker.having_disk = true
 		self.disks[self.no_disks] = nil
 		self.no_disks = self.no_disks - 1
+		print(picker.disk.no)
 	end
 end
 
 function Stack:add()
 	if picker.having_disk and (self.no_disks==0 or (picker.disk.dim < self.disks[self.no_disks].dim)) then
+		print(picker.disk.no)
 		self.no_disks = self.no_disks + 1
-		self.disks[self.no_disks] = Disk.new(self.stack, picker.disk.dim)
+		self.disks[self.no_disks] = Disk.new(self.stack, picker.disk.dim, picker.disk.no)
 		picker.having_disk = false
 		picker.disk = nil
 	end
@@ -89,7 +92,7 @@ function love.load()
 
 	-- put the disks on the first stack
 	for i = 1, no_disks do
-		local disk = Disk.new(first_stack, diskW/(2^(i-1)))
+		local disk = Disk.new(first_stack, diskW/(2^(i-1)), no_disks-i+1)
 		Stacks[first_stack].disks[i] = disk
 	end
 	Stacks[first_stack].no_disks = 3
@@ -121,7 +124,6 @@ function love.draw()
 	if isGameOver() then
 		love.load()
 	end
-	--print(Stacks[picker.pointing_stack].no_disks..picker.having_disk)
 end
 
 function love.update(dt)
@@ -144,7 +146,10 @@ function love.update(dt)
 	if love.keyboard.isDown("right") then
 		moveRight()
 		love.timer.sleep(0.15)
-		
+	end
+
+	if love.keyboard.isDown('up', 'down', 'left', 'right') then
+		stateToString()
 	end
 end
 
@@ -153,6 +158,7 @@ function moveUp()
 end
 function moveDown()
 	Stacks[picker.pointing_stack]:add()
+	
 end
 
 function moveLeft()
@@ -177,4 +183,49 @@ function isGameOver()
 	else
 		return false
 	end
+end
+
+State = {}
+State.__index = State
+
+
+function State.new()
+	local state = {}
+	setmetatable(state,State)
+	state["picker_position"] = picker.pointing_stack
+	state["size_disk"] = nil if picker.disk == nil then state["size_disk"] = picker.disk.no end
+	state["no_disks"] = no_disks
+	state["no_stacks"] = no_stacks
+	for i = 1, no_stacks do
+		state[i] = {}
+		for j = 1, Stacks[i].no_disks do
+			state[i][j] = Stacks[i].disks[j].no
+		end
+	end
+	return state;
+end
+
+
+function stateToString()
+	if(picker==nil) then return nil end
+	state = {}
+	state["picker_position"] = picker.pointing_stack
+	print("picker",picker)
+	print("picker.disk",picker.disk)
+	--state["size_disk"] = nil if picker.disk == nil then state["size_disk"] = picker.disk.no end
+	if picker.disk == nil then
+		state["size_disk"] = nil
+	else
+		state["size_disk"] = picker.disk.no
+	end
+
+	state["no_disks"] = no_disks
+	state["no_stacks"] = no_stacks
+	for i = 1, no_stacks do
+		state[i] = {}
+		for j = 1, Stacks[i].no_disks do
+			state[i][j] = Stacks[i].disks[j].no
+		end
+	end
+	return state
 end
