@@ -1,6 +1,7 @@
+math.randomseed(os.time())
 
 actions = {'UP', 'DOWN', 'LEFT', 'RIGHT'}
-epochs = 3
+iterations = 3
 episodes = 100
 Q = {}
 eps = 0.75

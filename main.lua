@@ -1,6 +1,8 @@
 require "hanoi"
 require "qlearning"
 
+
+
 function love.load()
 	load_game()
 
@@ -12,7 +14,7 @@ function love.load()
 	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
 end
 
-function dr()
+function love.draw()
 	-- draw the stacks
 	love.graphics.setColor(204, 102, 0)
 	for stack = 1, no_stacks do
@@ -33,19 +35,20 @@ function dr()
 	end
 	love.graphics.setColor(0, 0, 255)
 	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
+	love.timer.sleep(0.05)
 end
-
-function love.run()
+--[[
+function love.update(dt)
 	for i = 1, epochs do
 		ep = 1
 		while (ep <= episodes) do
-			love.load()
+			load_game()
 			ep = ep + 1
 			while(not isGameOver()) do
+				dr()
 				old_state = State.getState()
 				action, _ = choose_action(old_state)
 				call_move(action)
-				dr()
 				reward = getReward()
 				new_state = State.getState()
 				_, newq = choose_action(new_state)
@@ -56,4 +59,35 @@ function love.run()
 		print("aici"..dt)
 		eps = eps - 0.25
 	end
+end
+]]--
+ep = 0
+it = 0
+function love.update(dt)
+	if it == iterations then
+		print("finished all")
+	else
+		if ep==episodes then
+			ep = 0
+			print("iteration "..tostring(it).."f inished")
+			it = it + 1
+			eps = eps - 0.25
+		else
+			if isGameOver() then
+				print("episode "..tostring(ep).."f inished")
+				ep = ep + 1
+				load_game()
+			else
+				old_state = State.getState()
+				action, _ = choose_action(old_state)
+				call_move(action)
+				reward = getReward()
+				new_state = State.getState()
+				_, newq = choose_action(new_state)
+				Q[old_state][action] = Q[old_state][action] + alpha *
+					(reward + gamma*newq - Q[old_state][action])
+			end
+		end
+	end
+		
 end
