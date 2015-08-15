@@ -1,3 +1,4 @@
+require "torch"
 no_stacks = 3
 no_disks = 3
 first_stack = 1
@@ -58,27 +59,18 @@ function Picker.new()
 	return self
 end
 
-
-function love.load()
+--load in text context
+function load_game()
 	Stacks = {}
 	picker = Picker.new()
-	-- program variables
-	love.window.setTitle("Bathory Game")
-	love.graphics.setBackgroundColor(255, 255, 255)
-	love.window.setMode(400, 400, {resizable=false})
-	
-
-	scrW = love.graphics.getWidth()
-	scrH = love.graphics.getHeight()
+	scrW = 400
+	scrH = 400
 	diskH = scrH/20
 	diskW = 2*scrW/(3*no_disks)
 	pickerW = 10
 	pickerH = 10
 	free_space = scrW/(1*(no_stacks+1))
 
-	love.graphics.setColor(0, 0, 255)
-	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
-	
 	-- creating a list of stacks
 	for i = 1, no_stacks do
 		Stacks[i] = Stack.new(i)
@@ -95,9 +87,20 @@ function love.load()
 	end
 	Stacks[first_stack].no_disks = 3
 end
-t = 0
+--[[
+-- load in visual context
+function love.load()
+	load_game()
+
+	-- program variables
+	love.window.setTitle("Bathory Game")
+	love.graphics.setBackgroundColor(255, 255, 255)
+	love.window.setMode(scrW, scrH, {resizable=false})
+	love.graphics.setColor(0, 0, 255)
+	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
+end
+
 function love.draw()
-	t = t + 1
 	-- draw the stacks
 	love.graphics.setColor(204, 102, 0)
 	for stack = 1, no_stacks do
@@ -147,16 +150,16 @@ function love.update(dt)
 	end
 
 	if love.keyboard.isDown('up', 'down', 'left', 'right') then
-		print("t/f",State.new().__eq(State.new()))
 	end
 end
+]]--
 
 function moveUp()
 	Stacks[picker.pointing_stack]:remove()
 end
+
 function moveDown()
 	Stacks[picker.pointing_stack]:add()
-	
 end
 
 function moveLeft()
@@ -191,14 +194,15 @@ function State.new()
 	local state = {}
 	setmetatable(state,State)
 	state["picker_position"] = picker.pointing_stack
-
-	if picker.disk == nil then
-		state["size_disk"] = nil
-	else
-		state["size_disk"] = picker.disk.no
-	end
 	state["no_disks"] = no_disks
 	state["no_stacks"] = no_stacks
+
+	if picker.disk == nil then
+		state["picker_size_disk"] = nil
+	else
+		state["picker_size_disk"] = picker.disk.no
+	end
+	
 	for i = 1, no_stacks do
 		state[i] = {}
 		for j = 1, Stacks[i].no_disks do
@@ -208,9 +212,12 @@ function State.new()
 
 	state["__eq"] = 
 		function(other)
-	    	return ipairs(state)==ipairs(other)
+	    	return
+	    		torch.serialize(state)==torch.serialize(other)
 	  	end
 	return state;
 end
+
+
 
 
