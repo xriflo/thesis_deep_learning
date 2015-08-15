@@ -12,7 +12,7 @@ function love.load()
 	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
 end
 
-function love.draw()
+function dr()
 	-- draw the stacks
 	love.graphics.setColor(204, 102, 0)
 	for stack = 1, no_stacks do
@@ -35,7 +35,25 @@ function love.draw()
 	love.graphics.rectangle("fill", picker.pointing_stack*free_space-pickerW/2, 0, pickerW, pickerH)
 end
 
-function love.update(dt)
-	state = State.getState()
-	action, q = choose_action(state)
+function love.run()
+	for i = 1, epochs do
+		ep = 1
+		while (ep <= episodes) do
+			love.load()
+			ep = ep + 1
+			while(not isGameOver()) do
+				old_state = State.getState()
+				action, _ = choose_action(old_state)
+				call_move(action)
+				dr()
+				reward = getReward()
+				new_state = State.getState()
+				_, newq = choose_action(new_state)
+				Q[old_state][action] = Q[old_state][action] + alpha *
+					(reward + gamma*newq - Q[old_state][action])
+			end
+		end
+		print("aici"..dt)
+		eps = eps - 0.25
+	end
 end
