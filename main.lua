@@ -35,13 +35,11 @@ function Stack:remove()
 		picker.having_disk = true
 		self.disks[self.no_disks] = nil
 		self.no_disks = self.no_disks - 1
-		print(picker.disk.no)
 	end
 end
 
 function Stack:add()
 	if picker.having_disk and (self.no_disks==0 or (picker.disk.dim < self.disks[self.no_disks].dim)) then
-		print(picker.disk.no)
 		self.no_disks = self.no_disks + 1
 		self.disks[self.no_disks] = Disk.new(self.stack, picker.disk.dim, picker.disk.no)
 		picker.having_disk = false
@@ -149,7 +147,7 @@ function love.update(dt)
 	end
 
 	if love.keyboard.isDown('up', 'down', 'left', 'right') then
-		stateToString()
+		print("t/f",State.new().__eq(State.new()))
 	end
 end
 
@@ -193,32 +191,12 @@ function State.new()
 	local state = {}
 	setmetatable(state,State)
 	state["picker_position"] = picker.pointing_stack
-	state["size_disk"] = nil if picker.disk == nil then state["size_disk"] = picker.disk.no end
-	state["no_disks"] = no_disks
-	state["no_stacks"] = no_stacks
-	for i = 1, no_stacks do
-		state[i] = {}
-		for j = 1, Stacks[i].no_disks do
-			state[i][j] = Stacks[i].disks[j].no
-		end
-	end
-	return state;
-end
 
-
-function stateToString()
-	if(picker==nil) then return nil end
-	state = {}
-	state["picker_position"] = picker.pointing_stack
-	print("picker",picker)
-	print("picker.disk",picker.disk)
-	--state["size_disk"] = nil if picker.disk == nil then state["size_disk"] = picker.disk.no end
 	if picker.disk == nil then
 		state["size_disk"] = nil
 	else
 		state["size_disk"] = picker.disk.no
 	end
-
 	state["no_disks"] = no_disks
 	state["no_stacks"] = no_stacks
 	for i = 1, no_stacks do
@@ -227,5 +205,12 @@ function stateToString()
 			state[i][j] = Stacks[i].disks[j].no
 		end
 	end
-	return state
+
+	state["__eq"] = 
+		function(other)
+	    	return ipairs(state)==ipairs(other)
+	  	end
+	return state;
 end
+
+
