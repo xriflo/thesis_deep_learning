@@ -1,13 +1,23 @@
 math.randomseed(os.time())
 
 actions = {'UP', 'DOWN', 'LEFT', 'RIGHT'}
-iterations = 3
+iterations = 5
 episodes = 100
 Q = {}
-eps = 0.75
+eps = 1
+delta_eps = 0.25
 gamma = 0.95
 alpha = 0.1
 inf = 1e309
+
+
+function tlen(t)
+	count = 0
+	for _,_ in pairs(t) do
+		count = count + 1
+	end
+	return count
+end
 
 function call_move(action)
 	if(action=='UP') then
@@ -24,10 +34,10 @@ function call_move(action)
 end
 
 function check_Q(state)
-	if not Q[state] then
+	if Q[state] == nil then
 		Q[state] = {}
 		for _, action in pairs(actions) do
-			if not Q[state][action] then
+			if Q[state][action] == nil then
 				Q[state][action] = 0.0
 			end
 		end
