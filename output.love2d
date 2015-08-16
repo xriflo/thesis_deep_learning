@@ -1,671 +1,1272 @@
-[eps=1] it_0: episode 0 finished in 810.03393554688ms with #Q=145	
-[eps=1] it_0: episode 1 finished in 1902.8000488281ms with #Q=159	
-[eps=1] it_0: episode 2 finished in 1642.5498046875ms with #Q=160	
-[eps=1] it_0: episode 3 finished in 1380.7770996094ms with #Q=160	
-[eps=1] it_0: episode 4 finished in 566.94018554688ms with #Q=160	
-[eps=1] it_0: episode 5 finished in 270.54077148438ms with #Q=160	
-[eps=1] it_0: episode 6 finished in 1313.8459472656ms with #Q=160	
-[eps=1] it_0: episode 7 finished in 960.2041015625ms with #Q=160	
-[eps=1] it_0: episode 8 finished in 3851.3110351562ms with #Q=160	
-[eps=1] it_0: episode 9 finished in 1582.7470703125ms with #Q=160	
-[eps=1] it_0: episode 10 finished in 2033.1320800781ms with #Q=160	
-[eps=1] it_0: episode 11 finished in 1026.7770996094ms with #Q=160	
-[eps=1] it_0: episode 12 finished in 707.86791992188ms with #Q=160	
-[eps=1] it_0: episode 13 finished in 892.09521484375ms with #Q=160	
-[eps=1] it_0: episode 14 finished in 162.36108398438ms with #Q=160	
-[eps=1] it_0: episode 15 finished in 1576.1030273438ms with #Q=160	
-[eps=1] it_0: episode 16 finished in 718.03491210938ms with #Q=160	
-[eps=1] it_0: episode 17 finished in 1669.9299316406ms with #Q=160	
-[eps=1] it_0: episode 18 finished in 415.41430664062ms with #Q=160	
-[eps=1] it_0: episode 19 finished in 494.751953125ms with #Q=160	
-[eps=1] it_0: episode 20 finished in 208.52392578125ms with #Q=160	
-[eps=1] it_0: episode 21 finished in 106.51318359375ms with #Q=160	
-[eps=1] it_0: episode 22 finished in 540.02197265625ms with #Q=160	
-[eps=1] it_0: episode 23 finished in 822.26684570312ms with #Q=160	
-[eps=1] it_0: episode 24 finished in 83.98486328125ms with #Q=160	
-[eps=1] it_0: episode 25 finished in 115.7548828125ms with #Q=160	
-[eps=1] it_0: episode 26 finished in 826.00219726562ms with #Q=160	
-[eps=1] it_0: episode 27 finished in 650.53100585938ms with #Q=160	
-[eps=1] it_0: episode 28 finished in 1425.5871582031ms with #Q=160	
-[eps=1] it_0: episode 29 finished in 1046.5510253906ms with #Q=160	
-[eps=1] it_0: episode 30 finished in 2109.9089355469ms with #Q=160	
-[eps=1] it_0: episode 31 finished in 3173.5061035156ms with #Q=160	
-[eps=1] it_0: episode 32 finished in 337.86694335938ms with #Q=160	
-[eps=1] it_0: episode 33 finished in 235.75610351562ms with #Q=160	
-[eps=1] it_0: episode 34 finished in 3011.8979492188ms with #Q=160	
-[eps=1] it_0: episode 35 finished in 135.47924804688ms with #Q=160	
-[eps=1] it_0: episode 36 finished in 2028.9780273438ms with #Q=160	
-[eps=1] it_0: episode 37 finished in 685.52880859375ms with #Q=160	
-[eps=1] it_0: episode 38 finished in 269.88500976562ms with #Q=160	
-[eps=1] it_0: episode 39 finished in 179.39282226562ms with #Q=160	
-[eps=1] it_0: episode 40 finished in 804.31396484375ms with #Q=160	
-[eps=1] it_0: episode 41 finished in 322.76489257812ms with #Q=160	
-[eps=1] it_0: episode 42 finished in 385.82080078125ms with #Q=160	
-[eps=1] it_0: episode 43 finished in 574.173828125ms with #Q=160	
-[eps=1] it_0: episode 44 finished in 273.48388671875ms with #Q=160	
-[eps=1] it_0: episode 45 finished in 164.6181640625ms with #Q=160	
-[eps=1] it_0: episode 46 finished in 268.96801757812ms with #Q=160	
-[eps=1] it_0: episode 47 finished in 328.9140625ms with #Q=160	
-[eps=1] it_0: episode 48 finished in 513.26904296875ms with #Q=160	
-[eps=1] it_0: episode 49 finished in 2202.2729492188ms with #Q=160	
-[eps=1] it_0: episode 50 finished in 849.9501953125ms with #Q=160	
-[eps=1] it_0: episode 51 finished in 547.01513671875ms with #Q=160	
-[eps=1] it_0: episode 52 finished in 72.64501953125ms with #Q=160	
-[eps=1] it_0: episode 53 finished in 904.31811523438ms with #Q=160	
-[eps=1] it_0: episode 54 finished in 375.38720703125ms with #Q=160	
-[eps=1] it_0: episode 55 finished in 366.64282226562ms with #Q=160	
-[eps=1] it_0: episode 56 finished in 1907.2419433594ms with #Q=160	
-[eps=1] it_0: episode 57 finished in 1509.2390136719ms with #Q=160	
-[eps=1] it_0: episode 58 finished in 286.03271484375ms with #Q=160	
-[eps=1] it_0: episode 59 finished in 353.17993164062ms with #Q=160	
-[eps=1] it_0: episode 60 finished in 806.73486328125ms with #Q=160	
-[eps=1] it_0: episode 61 finished in 798.90307617188ms with #Q=160	
-[eps=1] it_0: episode 62 finished in 203.17407226562ms with #Q=160	
-[eps=1] it_0: episode 63 finished in 1334.1811523438ms with #Q=160	
-[eps=1] it_0: episode 64 finished in 2601.6872558594ms with #Q=160	
-[eps=1] it_0: episode 65 finished in 2001.7939453125ms with #Q=160	
-[eps=1] it_0: episode 66 finished in 1526.5300292969ms with #Q=160	
-[eps=1] it_0: episode 67 finished in 1386.2700195312ms with #Q=160	
-[eps=1] it_0: episode 68 finished in 866.88793945312ms with #Q=160	
-[eps=1] it_0: episode 69 finished in 417.21899414062ms with #Q=160	
-[eps=1] it_0: episode 70 finished in 875.5ms with #Q=160	
-[eps=1] it_0: episode 71 finished in 1819.046875ms with #Q=160	
-[eps=1] it_0: episode 72 finished in 2081.6469726562ms with #Q=160	
-[eps=1] it_0: episode 73 finished in 2460.0910644531ms with #Q=160	
-[eps=1] it_0: episode 74 finished in 538.57690429688ms with #Q=160	
-[eps=1] it_0: episode 75 finished in 466.671875ms with #Q=160	
-[eps=1] it_0: episode 76 finished in 221.12890625ms with #Q=160	
-[eps=1] it_0: episode 77 finished in 320.60302734375ms with #Q=160	
-[eps=1] it_0: episode 78 finished in 111.9208984375ms with #Q=160	
-[eps=1] it_0: episode 79 finished in 857.60009765625ms with #Q=160	
-[eps=1] it_0: episode 80 finished in 552.06005859375ms with #Q=160	
-[eps=1] it_0: episode 81 finished in 436.5908203125ms with #Q=160	
-[eps=1] it_0: episode 82 finished in 1062.6911621094ms with #Q=160	
-[eps=1] it_0: episode 83 finished in 1373.3957519531ms with #Q=160	
-[eps=1] it_0: episode 84 finished in 1832.6689453125ms with #Q=160	
-[eps=1] it_0: episode 85 finished in 222.87890625ms with #Q=160	
-[eps=1] it_0: episode 86 finished in 822.08715820312ms with #Q=160	
-[eps=1] it_0: episode 87 finished in 391.4140625ms with #Q=160	
-[eps=1] it_0: episode 88 finished in 1100.0529785156ms with #Q=160	
-[eps=1] it_0: episode 89 finished in 2280.1821289062ms with #Q=160	
-[eps=1] it_0: episode 90 finished in 222.30590820312ms with #Q=160	
-[eps=1] it_0: episode 91 finished in 1451.9802246094ms with #Q=160	
-[eps=1] it_0: episode 92 finished in 1210.9038085938ms with #Q=160	
-[eps=1] it_0: episode 93 finished in 1067.4387207031ms with #Q=160	
-[eps=1] it_0: episode 94 finished in 139.09814453125ms with #Q=160	
-[eps=1] it_0: episode 95 finished in 1314.66796875ms with #Q=160	
-[eps=1] it_0: episode 96 finished in 1037.1918945312ms with #Q=160	
-[eps=1] it_0: episode 97 finished in 218.333984375ms with #Q=160	
-[eps=1] it_0: episode 98 finished in 109.42822265625ms with #Q=160	
-[eps=1] it_0: episode 99 finished in 746.53686523438ms with #Q=160	
-iteration 0 finished	
-[eps=0.75] it_1: episode 0 finished in 497.74291992188ms with #Q=160	
-[eps=0.75] it_1: episode 1 finished in 227.59399414062ms with #Q=160	
-[eps=0.75] it_1: episode 2 finished in 23.9541015625ms with #Q=160	
-[eps=0.75] it_1: episode 3 finished in 98.52001953125ms with #Q=160	
-[eps=0.75] it_1: episode 4 finished in 439.6650390625ms with #Q=160	
-[eps=0.75] it_1: episode 5 finished in 28.212646484375ms with #Q=160	
-[eps=0.75] it_1: episode 6 finished in 83.207763671875ms with #Q=160	
-[eps=0.75] it_1: episode 7 finished in 34.90283203125ms with #Q=160	
-[eps=0.75] it_1: episode 8 finished in 84.337890625ms with #Q=160	
-[eps=0.75] it_1: episode 9 finished in 208.74096679688ms with #Q=160	
-[eps=0.75] it_1: episode 10 finished in 60.511962890625ms with #Q=160	
-[eps=0.75] it_1: episode 11 finished in 52.505859375ms with #Q=160	
-[eps=0.75] it_1: episode 12 finished in 103.93579101562ms with #Q=160	
-[eps=0.75] it_1: episode 13 finished in 75.31201171875ms with #Q=160	
-[eps=0.75] it_1: episode 14 finished in 52.89208984375ms with #Q=160	
-[eps=0.75] it_1: episode 15 finished in 45.092041015625ms with #Q=160	
-[eps=0.75] it_1: episode 16 finished in 50.070068359375ms with #Q=160	
-[eps=0.75] it_1: episode 17 finished in 61.510986328125ms with #Q=160	
-[eps=0.75] it_1: episode 18 finished in 65.902099609375ms with #Q=160	
-[eps=0.75] it_1: episode 19 finished in 95.656005859375ms with #Q=160	
-[eps=0.75] it_1: episode 20 finished in 55.65234375ms with #Q=160	
-[eps=0.75] it_1: episode 21 finished in 41.749755859375ms with #Q=160	
-[eps=0.75] it_1: episode 22 finished in 76.284912109375ms with #Q=160	
-[eps=0.75] it_1: episode 23 finished in 96.176025390625ms with #Q=160	
-[eps=0.75] it_1: episode 24 finished in 28.99609375ms with #Q=160	
-[eps=0.75] it_1: episode 25 finished in 44.032958984375ms with #Q=160	
-[eps=0.75] it_1: episode 26 finished in 35.364990234375ms with #Q=160	
-[eps=0.75] it_1: episode 27 finished in 36.943115234375ms with #Q=160	
-[eps=0.75] it_1: episode 28 finished in 79.128173828125ms with #Q=160	
-[eps=0.75] it_1: episode 29 finished in 29.637939453125ms with #Q=160	
-[eps=0.75] it_1: episode 30 finished in 49.9208984375ms with #Q=160	
-[eps=0.75] it_1: episode 31 finished in 31.9609375ms with #Q=160	
-[eps=0.75] it_1: episode 32 finished in 102.50219726562ms with #Q=160	
-[eps=0.75] it_1: episode 33 finished in 42.365234375ms with #Q=160	
-[eps=0.75] it_1: episode 34 finished in 56.986083984375ms with #Q=160	
-[eps=0.75] it_1: episode 35 finished in 28.509765625ms with #Q=160	
-[eps=0.75] it_1: episode 36 finished in 42.923828125ms with #Q=160	
-[eps=0.75] it_1: episode 37 finished in 59.238037109375ms with #Q=160	
-[eps=0.75] it_1: episode 38 finished in 82.167236328125ms with #Q=160	
-[eps=0.75] it_1: episode 39 finished in 42.674072265625ms with #Q=160	
-[eps=0.75] it_1: episode 40 finished in 87.1298828125ms with #Q=160	
-[eps=0.75] it_1: episode 41 finished in 29.5849609375ms with #Q=160	
-[eps=0.75] it_1: episode 42 finished in 30.08203125ms with #Q=160	
-[eps=0.75] it_1: episode 43 finished in 64.96875ms with #Q=160	
-[eps=0.75] it_1: episode 44 finished in 21.864013671875ms with #Q=160	
-[eps=0.75] it_1: episode 45 finished in 51.2041015625ms with #Q=160	
-[eps=0.75] it_1: episode 46 finished in 43.89208984375ms with #Q=160	
-[eps=0.75] it_1: episode 47 finished in 32.61181640625ms with #Q=160	
-[eps=0.75] it_1: episode 48 finished in 59.599853515625ms with #Q=160	
-[eps=0.75] it_1: episode 49 finished in 23.111083984375ms with #Q=160	
-[eps=0.75] it_1: episode 50 finished in 48.56201171875ms with #Q=160	
-[eps=0.75] it_1: episode 51 finished in 32.989990234375ms with #Q=160	
-[eps=0.75] it_1: episode 52 finished in 28.197998046875ms with #Q=160	
-[eps=0.75] it_1: episode 53 finished in 20.8271484375ms with #Q=160	
-[eps=0.75] it_1: episode 54 finished in 33.840087890625ms with #Q=160	
-[eps=0.75] it_1: episode 55 finished in 53.796630859375ms with #Q=160	
-[eps=0.75] it_1: episode 56 finished in 20.326171875ms with #Q=160	
-[eps=0.75] it_1: episode 57 finished in 68.27685546875ms with #Q=160	
-[eps=0.75] it_1: episode 58 finished in 24.526123046875ms with #Q=160	
-[eps=0.75] it_1: episode 59 finished in 58.406005859375ms with #Q=160	
-[eps=0.75] it_1: episode 60 finished in 133.7490234375ms with #Q=160	
-[eps=0.75] it_1: episode 61 finished in 85.570068359375ms with #Q=160	
-[eps=0.75] it_1: episode 62 finished in 14.10205078125ms with #Q=160	
-[eps=0.75] it_1: episode 63 finished in 41.60693359375ms with #Q=160	
-[eps=0.75] it_1: episode 64 finished in 27.47021484375ms with #Q=160	
-[eps=0.75] it_1: episode 65 finished in 76.313232421875ms with #Q=160	
-[eps=0.75] it_1: episode 66 finished in 53.94384765625ms with #Q=160	
-[eps=0.75] it_1: episode 67 finished in 39.11767578125ms with #Q=160	
-[eps=0.75] it_1: episode 68 finished in 50.88671875ms with #Q=160	
-[eps=0.75] it_1: episode 69 finished in 15.2900390625ms with #Q=160	
-[eps=0.75] it_1: episode 70 finished in 39.386962890625ms with #Q=160	
-[eps=0.75] it_1: episode 71 finished in 55.721923828125ms with #Q=160	
-[eps=0.75] it_1: episode 72 finished in 40.804931640625ms with #Q=160	
-[eps=0.75] it_1: episode 73 finished in 55.252197265625ms with #Q=160	
-[eps=0.75] it_1: episode 74 finished in 29.96484375ms with #Q=160	
-[eps=0.75] it_1: episode 75 finished in 23.918212890625ms with #Q=160	
-[eps=0.75] it_1: episode 76 finished in 30.151123046875ms with #Q=160	
-[eps=0.75] it_1: episode 77 finished in 40.592041015625ms with #Q=160	
-[eps=0.75] it_1: episode 78 finished in 69.967041015625ms with #Q=160	
-[eps=0.75] it_1: episode 79 finished in 46.1279296875ms with #Q=160	
-[eps=0.75] it_1: episode 80 finished in 43.5791015625ms with #Q=160	
-[eps=0.75] it_1: episode 81 finished in 39.108154296875ms with #Q=160	
-[eps=0.75] it_1: episode 82 finished in 43.35595703125ms with #Q=160	
-[eps=0.75] it_1: episode 83 finished in 48.826171875ms with #Q=160	
-[eps=0.75] it_1: episode 84 finished in 53.281982421875ms with #Q=160	
-[eps=0.75] it_1: episode 85 finished in 32.511962890625ms with #Q=160	
-[eps=0.75] it_1: episode 86 finished in 56.7939453125ms with #Q=160	
-[eps=0.75] it_1: episode 87 finished in 39.577880859375ms with #Q=160	
-[eps=0.75] it_1: episode 88 finished in 24.748046875ms with #Q=160	
-[eps=0.75] it_1: episode 89 finished in 25.802978515625ms with #Q=160	
-[eps=0.75] it_1: episode 90 finished in 47.601806640625ms with #Q=160	
-[eps=0.75] it_1: episode 91 finished in 43.4580078125ms with #Q=160	
-[eps=0.75] it_1: episode 92 finished in 27.60107421875ms with #Q=160	
-[eps=0.75] it_1: episode 93 finished in 40.006103515625ms with #Q=160	
-[eps=0.75] it_1: episode 94 finished in 52.781005859375ms with #Q=160	
-[eps=0.75] it_1: episode 95 finished in 69.18896484375ms with #Q=160	
-[eps=0.75] it_1: episode 96 finished in 31.7412109375ms with #Q=160	
-[eps=0.75] it_1: episode 97 finished in 59.2529296875ms with #Q=160	
-[eps=0.75] it_1: episode 98 finished in 39.967041015625ms with #Q=160	
-[eps=0.75] it_1: episode 99 finished in 16.93896484375ms with #Q=160	
-iteration 1 finished	
-[eps=0.5] it_2: episode 0 finished in 22.19091796875ms with #Q=160	
-[eps=0.5] it_2: episode 1 finished in 34.291015625ms with #Q=160	
-[eps=0.5] it_2: episode 2 finished in 21.55810546875ms with #Q=160	
-[eps=0.5] it_2: episode 3 finished in 26.09814453125ms with #Q=160	
-[eps=0.5] it_2: episode 4 finished in 14.44921875ms with #Q=160	
-[eps=0.5] it_2: episode 5 finished in 10.5400390625ms with #Q=160	
-[eps=0.5] it_2: episode 6 finished in 10.354248046875ms with #Q=160	
-[eps=0.5] it_2: episode 7 finished in 15.45263671875ms with #Q=160	
-[eps=0.5] it_2: episode 8 finished in 14.12890625ms with #Q=160	
-[eps=0.5] it_2: episode 9 finished in 12.03515625ms with #Q=160	
-[eps=0.5] it_2: episode 10 finished in 18.994140625ms with #Q=160	
-[eps=0.5] it_2: episode 11 finished in 12.0029296875ms with #Q=160	
-[eps=0.5] it_2: episode 12 finished in 16.084228515625ms with #Q=160	
-[eps=0.5] it_2: episode 13 finished in 8.015869140625ms with #Q=160	
-[eps=0.5] it_2: episode 14 finished in 13.33203125ms with #Q=160	
-[eps=0.5] it_2: episode 15 finished in 14.241943359375ms with #Q=160	
-[eps=0.5] it_2: episode 16 finished in 15.0791015625ms with #Q=160	
-[eps=0.5] it_2: episode 17 finished in 17.5419921875ms with #Q=160	
-[eps=0.5] it_2: episode 18 finished in 13.997802734375ms with #Q=160	
-[eps=0.5] it_2: episode 19 finished in 19.0361328125ms with #Q=160	
-[eps=0.5] it_2: episode 20 finished in 11.263916015625ms with #Q=160	
-[eps=0.5] it_2: episode 21 finished in 16.282958984375ms with #Q=160	
-[eps=0.5] it_2: episode 22 finished in 12.468994140625ms with #Q=160	
-[eps=0.5] it_2: episode 23 finished in 11.642822265625ms with #Q=160	
-[eps=0.5] it_2: episode 24 finished in 13.663818359375ms with #Q=160	
-[eps=0.5] it_2: episode 25 finished in 11.55908203125ms with #Q=160	
-[eps=0.5] it_2: episode 26 finished in 11.86083984375ms with #Q=160	
-[eps=0.5] it_2: episode 27 finished in 15.81396484375ms with #Q=160	
-[eps=0.5] it_2: episode 28 finished in 13.81298828125ms with #Q=160	
-[eps=0.5] it_2: episode 29 finished in 19ms with #Q=160	
-[eps=0.5] it_2: episode 30 finished in 16.7587890625ms with #Q=160	
-[eps=0.5] it_2: episode 31 finished in 11.5810546875ms with #Q=160	
-[eps=0.5] it_2: episode 32 finished in 21.48095703125ms with #Q=160	
-[eps=0.5] it_2: episode 33 finished in 18.089111328125ms with #Q=160	
-[eps=0.5] it_2: episode 34 finished in 16.46630859375ms with #Q=160	
-[eps=0.5] it_2: episode 35 finished in 8.990966796875ms with #Q=160	
-[eps=0.5] it_2: episode 36 finished in 9.19580078125ms with #Q=160	
-[eps=0.5] it_2: episode 37 finished in 14.030029296875ms with #Q=160	
-[eps=0.5] it_2: episode 38 finished in 17.13671875ms with #Q=160	
-[eps=0.5] it_2: episode 39 finished in 9.31298828125ms with #Q=160	
-[eps=0.5] it_2: episode 40 finished in 11.47802734375ms with #Q=160	
-[eps=0.5] it_2: episode 41 finished in 17.700927734375ms with #Q=160	
-[eps=0.5] it_2: episode 42 finished in 18.049072265625ms with #Q=160	
-[eps=0.5] it_2: episode 43 finished in 11.527099609375ms with #Q=160	
-[eps=0.5] it_2: episode 44 finished in 15.218994140625ms with #Q=160	
-[eps=0.5] it_2: episode 45 finished in 12.576904296875ms with #Q=160	
-[eps=0.5] it_2: episode 46 finished in 14.246826171875ms with #Q=160	
-[eps=0.5] it_2: episode 47 finished in 16.5390625ms with #Q=160	
-[eps=0.5] it_2: episode 48 finished in 13.56884765625ms with #Q=160	
-[eps=0.5] it_2: episode 49 finished in 23.2099609375ms with #Q=160	
-[eps=0.5] it_2: episode 50 finished in 21.3369140625ms with #Q=160	
-[eps=0.5] it_2: episode 51 finished in 11.192138671875ms with #Q=160	
-[eps=0.5] it_2: episode 52 finished in 10.899169921875ms with #Q=160	
-[eps=0.5] it_2: episode 53 finished in 12.087158203125ms with #Q=160	
-[eps=0.5] it_2: episode 54 finished in 19.31494140625ms with #Q=160	
-[eps=0.5] it_2: episode 55 finished in 32.513916015625ms with #Q=160	
-[eps=0.5] it_2: episode 56 finished in 18.37890625ms with #Q=160	
-[eps=0.5] it_2: episode 57 finished in 13.727783203125ms with #Q=160	
-[eps=0.5] it_2: episode 58 finished in 16.77197265625ms with #Q=160	
-[eps=0.5] it_2: episode 59 finished in 11.02392578125ms with #Q=160	
-[eps=0.5] it_2: episode 60 finished in 11.31103515625ms with #Q=160	
-[eps=0.5] it_2: episode 61 finished in 35.30615234375ms with #Q=160	
-[eps=0.5] it_2: episode 62 finished in 14.84814453125ms with #Q=160	
-[eps=0.5] it_2: episode 63 finished in 22.81103515625ms with #Q=160	
-[eps=0.5] it_2: episode 64 finished in 25.692138671875ms with #Q=160	
-[eps=0.5] it_2: episode 65 finished in 49.9619140625ms with #Q=160	
-[eps=0.5] it_2: episode 66 finished in 16.18798828125ms with #Q=160	
-[eps=0.5] it_2: episode 67 finished in 15.90478515625ms with #Q=160	
-[eps=0.5] it_2: episode 68 finished in 27.716064453125ms with #Q=160	
-[eps=0.5] it_2: episode 69 finished in 34.618896484375ms with #Q=160	
-[eps=0.5] it_2: episode 70 finished in 16.15380859375ms with #Q=160	
-[eps=0.5] it_2: episode 71 finished in 34.213134765625ms with #Q=160	
-[eps=0.5] it_2: episode 72 finished in 18.323974609375ms with #Q=160	
-[eps=0.5] it_2: episode 73 finished in 13.504150390625ms with #Q=160	
-[eps=0.5] it_2: episode 74 finished in 17.3349609375ms with #Q=160	
-[eps=0.5] it_2: episode 75 finished in 19.43798828125ms with #Q=160	
-[eps=0.5] it_2: episode 76 finished in 25.676025390625ms with #Q=160	
-[eps=0.5] it_2: episode 77 finished in 16.346923828125ms with #Q=160	
-[eps=0.5] it_2: episode 78 finished in 19.31884765625ms with #Q=160	
-[eps=0.5] it_2: episode 79 finished in 18.389892578125ms with #Q=160	
-[eps=0.5] it_2: episode 80 finished in 14.2919921875ms with #Q=160	
-[eps=0.5] it_2: episode 81 finished in 14.9140625ms with #Q=160	
-[eps=0.5] it_2: episode 82 finished in 12.203125ms with #Q=160	
-[eps=0.5] it_2: episode 83 finished in 9.361083984375ms with #Q=160	
-[eps=0.5] it_2: episode 84 finished in 17.47314453125ms with #Q=160	
-[eps=0.5] it_2: episode 85 finished in 10.4150390625ms with #Q=160	
-[eps=0.5] it_2: episode 86 finished in 11.689697265625ms with #Q=160	
-[eps=0.5] it_2: episode 87 finished in 14.14013671875ms with #Q=160	
-[eps=0.5] it_2: episode 88 finished in 14.451904296875ms with #Q=160	
-[eps=0.5] it_2: episode 89 finished in 18.1591796875ms with #Q=160	
-[eps=0.5] it_2: episode 90 finished in 8.09912109375ms with #Q=160	
-[eps=0.5] it_2: episode 91 finished in 7.315185546875ms with #Q=160	
-[eps=0.5] it_2: episode 92 finished in 8.379150390625ms with #Q=160	
-[eps=0.5] it_2: episode 93 finished in 12.968017578125ms with #Q=160	
-[eps=0.5] it_2: episode 94 finished in 11.135009765625ms with #Q=160	
-[eps=0.5] it_2: episode 95 finished in 6.887939453125ms with #Q=160	
-[eps=0.5] it_2: episode 96 finished in 5.983154296875ms with #Q=160	
-[eps=0.5] it_2: episode 97 finished in 13.22607421875ms with #Q=160	
-[eps=0.5] it_2: episode 98 finished in 13.511962890625ms with #Q=160	
-[eps=0.5] it_2: episode 99 finished in 11.64501953125ms with #Q=160	
-iteration 2 finished	
-[eps=0.25] it_3: episode 0 finished in 7.7900390625ms with #Q=160	
-[eps=0.25] it_3: episode 1 finished in 7.7099609375ms with #Q=160	
-[eps=0.25] it_3: episode 2 finished in 6.6669921875ms with #Q=160	
-[eps=0.25] it_3: episode 3 finished in 8.5810546875ms with #Q=160	
-[eps=0.25] it_3: episode 4 finished in 7.3291015625ms with #Q=160	
-[eps=0.25] it_3: episode 5 finished in 7.9140625ms with #Q=160	
-[eps=0.25] it_3: episode 6 finished in 8.482177734375ms with #Q=160	
-[eps=0.25] it_3: episode 7 finished in 7.216064453125ms with #Q=160	
-[eps=0.25] it_3: episode 8 finished in 9.28173828125ms with #Q=160	
-[eps=0.25] it_3: episode 9 finished in 9.01708984375ms with #Q=160	
-[eps=0.25] it_3: episode 10 finished in 5.6640625ms with #Q=160	
-[eps=0.25] it_3: episode 11 finished in 8.296875ms with #Q=160	
-[eps=0.25] it_3: episode 12 finished in 6.30712890625ms with #Q=160	
-[eps=0.25] it_3: episode 13 finished in 8.152099609375ms with #Q=160	
-[eps=0.25] it_3: episode 14 finished in 7.044921875ms with #Q=160	
-[eps=0.25] it_3: episode 15 finished in 8.6708984375ms with #Q=160	
-[eps=0.25] it_3: episode 16 finished in 7.594970703125ms with #Q=160	
-[eps=0.25] it_3: episode 17 finished in 6.576171875ms with #Q=160	
-[eps=0.25] it_3: episode 18 finished in 11.064208984375ms with #Q=160	
-[eps=0.25] it_3: episode 19 finished in 6.614013671875ms with #Q=160	
-[eps=0.25] it_3: episode 20 finished in 7.492919921875ms with #Q=160	
-[eps=0.25] it_3: episode 21 finished in 8.330810546875ms with #Q=160	
-[eps=0.25] it_3: episode 22 finished in 8.468017578125ms with #Q=160	
-[eps=0.25] it_3: episode 23 finished in 6.10693359375ms with #Q=160	
-[eps=0.25] it_3: episode 24 finished in 5.69287109375ms with #Q=160	
-[eps=0.25] it_3: episode 25 finished in 6.660888671875ms with #Q=160	
-[eps=0.25] it_3: episode 26 finished in 7.597900390625ms with #Q=160	
-[eps=0.25] it_3: episode 27 finished in 8.1611328125ms with #Q=160	
-[eps=0.25] it_3: episode 28 finished in 8.739990234375ms with #Q=160	
-[eps=0.25] it_3: episode 29 finished in 6.004150390625ms with #Q=160	
-[eps=0.25] it_3: episode 30 finished in 6.62890625ms with #Q=160	
-[eps=0.25] it_3: episode 31 finished in 7.40087890625ms with #Q=160	
-[eps=0.25] it_3: episode 32 finished in 7.842041015625ms with #Q=160	
-[eps=0.25] it_3: episode 33 finished in 5.429931640625ms with #Q=160	
-[eps=0.25] it_3: episode 34 finished in 9.5751953125ms with #Q=160	
-[eps=0.25] it_3: episode 35 finished in 6.1181640625ms with #Q=160	
-[eps=0.25] it_3: episode 36 finished in 8.047119140625ms with #Q=160	
-[eps=0.25] it_3: episode 37 finished in 5.635009765625ms with #Q=160	
-[eps=0.25] it_3: episode 38 finished in 5.14794921875ms with #Q=160	
-[eps=0.25] it_3: episode 39 finished in 8.074951171875ms with #Q=160	
-[eps=0.25] it_3: episode 40 finished in 5.748046875ms with #Q=160	
-[eps=0.25] it_3: episode 41 finished in 10.7509765625ms with #Q=160	
-[eps=0.25] it_3: episode 42 finished in 6.39697265625ms with #Q=160	
-[eps=0.25] it_3: episode 43 finished in 7.26611328125ms with #Q=160	
-[eps=0.25] it_3: episode 44 finished in 7.735107421875ms with #Q=160	
-[eps=0.25] it_3: episode 45 finished in 9.274169921875ms with #Q=160	
-[eps=0.25] it_3: episode 46 finished in 8.194091796875ms with #Q=160	
-[eps=0.25] it_3: episode 47 finished in 6.466796875ms with #Q=160	
-[eps=0.25] it_3: episode 48 finished in 8.68701171875ms with #Q=160	
-[eps=0.25] it_3: episode 49 finished in 6.114990234375ms with #Q=160	
-[eps=0.25] it_3: episode 50 finished in 8.51904296875ms with #Q=160	
-[eps=0.25] it_3: episode 51 finished in 7.8271484375ms with #Q=160	
-[eps=0.25] it_3: episode 52 finished in 7.4521484375ms with #Q=160	
-[eps=0.25] it_3: episode 53 finished in 9.010009765625ms with #Q=160	
-[eps=0.25] it_3: episode 54 finished in 10.10888671875ms with #Q=160	
-[eps=0.25] it_3: episode 55 finished in 5.166748046875ms with #Q=160	
-[eps=0.25] it_3: episode 56 finished in 8.753173828125ms with #Q=160	
-[eps=0.25] it_3: episode 57 finished in 6.204833984375ms with #Q=160	
-[eps=0.25] it_3: episode 58 finished in 10.720947265625ms with #Q=160	
-[eps=0.25] it_3: episode 59 finished in 6.580810546875ms with #Q=160	
-[eps=0.25] it_3: episode 60 finished in 9.80078125ms with #Q=160	
-[eps=0.25] it_3: episode 61 finished in 6.86279296875ms with #Q=160	
-[eps=0.25] it_3: episode 62 finished in 5.486083984375ms with #Q=160	
-[eps=0.25] it_3: episode 63 finished in 7.19384765625ms with #Q=160	
-[eps=0.25] it_3: episode 64 finished in 7.47802734375ms with #Q=160	
-[eps=0.25] it_3: episode 65 finished in 6.447998046875ms with #Q=160	
-[eps=0.25] it_3: episode 66 finished in 9.84619140625ms with #Q=160	
-[eps=0.25] it_3: episode 67 finished in 6.086181640625ms with #Q=160	
-[eps=0.25] it_3: episode 68 finished in 7.032958984375ms with #Q=160	
-[eps=0.25] it_3: episode 69 finished in 6.971923828125ms with #Q=160	
-[eps=0.25] it_3: episode 70 finished in 5.953125ms with #Q=160	
-[eps=0.25] it_3: episode 71 finished in 7.214111328125ms with #Q=160	
-[eps=0.25] it_3: episode 72 finished in 8.288818359375ms with #Q=160	
-[eps=0.25] it_3: episode 73 finished in 8.676025390625ms with #Q=160	
-[eps=0.25] it_3: episode 74 finished in 6.376953125ms with #Q=160	
-[eps=0.25] it_3: episode 75 finished in 7.968994140625ms with #Q=160	
-[eps=0.25] it_3: episode 76 finished in 10.476806640625ms with #Q=160	
-[eps=0.25] it_3: episode 77 finished in 8.060791015625ms with #Q=160	
-[eps=0.25] it_3: episode 78 finished in 5.854736328125ms with #Q=160	
-[eps=0.25] it_3: episode 79 finished in 7.375ms with #Q=160	
-[eps=0.25] it_3: episode 80 finished in 13.2822265625ms with #Q=160	
-[eps=0.25] it_3: episode 81 finished in 10.885009765625ms with #Q=160	
-[eps=0.25] it_3: episode 82 finished in 8.971923828125ms with #Q=160	
-[eps=0.25] it_3: episode 83 finished in 9.501953125ms with #Q=160	
-[eps=0.25] it_3: episode 84 finished in 8.7568359375ms with #Q=160	
-[eps=0.25] it_3: episode 85 finished in 7.161865234375ms with #Q=160	
-[eps=0.25] it_3: episode 86 finished in 5.42822265625ms with #Q=160	
-[eps=0.25] it_3: episode 87 finished in 7.699951171875ms with #Q=160	
-[eps=0.25] it_3: episode 88 finished in 9.123291015625ms with #Q=160	
-[eps=0.25] it_3: episode 89 finished in 8.879150390625ms with #Q=160	
-[eps=0.25] it_3: episode 90 finished in 10.114013671875ms with #Q=160	
-[eps=0.25] it_3: episode 91 finished in 8.813232421875ms with #Q=160	
-[eps=0.25] it_3: episode 92 finished in 7.795654296875ms with #Q=160	
-[eps=0.25] it_3: episode 93 finished in 6.89306640625ms with #Q=160	
-[eps=0.25] it_3: episode 94 finished in 7.014892578125ms with #Q=160	
-[eps=0.25] it_3: episode 95 finished in 9.572021484375ms with #Q=160	
-[eps=0.25] it_3: episode 96 finished in 6.197021484375ms with #Q=160	
-[eps=0.25] it_3: episode 97 finished in 10.468017578125ms with #Q=160	
-[eps=0.25] it_3: episode 98 finished in 6.39794921875ms with #Q=160	
-[eps=0.25] it_3: episode 99 finished in 6.9599609375ms with #Q=160	
-iteration 3 finished	
-[eps=0] it_4: episode 0 finished in 5.395751953125ms with #Q=160	
-[eps=0] it_4: episode 1 finished in 5.4140625ms with #Q=160	
-[eps=0] it_4: episode 2 finished in 6.189697265625ms with #Q=160	
-[eps=0] it_4: episode 3 finished in 5.60693359375ms with #Q=160	
-[eps=0] it_4: episode 4 finished in 6.760986328125ms with #Q=160	
-[eps=0] it_4: episode 5 finished in 6.1708984375ms with #Q=160	
-[eps=0] it_4: episode 6 finished in 4.722900390625ms with #Q=160	
-[eps=0] it_4: episode 7 finished in 4.5390625ms with #Q=160	
-[eps=0] it_4: episode 8 finished in 6.407958984375ms with #Q=160	
-[eps=0] it_4: episode 9 finished in 4.662109375ms with #Q=160	
-[eps=0] it_4: episode 10 finished in 5.873046875ms with #Q=160	
-[eps=0] it_4: episode 11 finished in 7.105224609375ms with #Q=160	
-[eps=0] it_4: episode 12 finished in 5.031982421875ms with #Q=160	
-[eps=0] it_4: episode 13 finished in 7.323974609375ms with #Q=160	
-[eps=0] it_4: episode 14 finished in 6.03515625ms with #Q=160	
-[eps=0] it_4: episode 15 finished in 4.450927734375ms with #Q=160	
-[eps=0] it_4: episode 16 finished in 5.14794921875ms with #Q=160	
-[eps=0] it_4: episode 17 finished in 7.10888671875ms with #Q=160	
-[eps=0] it_4: episode 18 finished in 5.14599609375ms with #Q=160	
-[eps=0] it_4: episode 19 finished in 7.269287109375ms with #Q=160	
-[eps=0] it_4: episode 20 finished in 6.531982421875ms with #Q=160	
-[eps=0] it_4: episode 21 finished in 4.947021484375ms with #Q=160	
-[eps=0] it_4: episode 22 finished in 8.39111328125ms with #Q=160	
-[eps=0] it_4: episode 23 finished in 4.423828125ms with #Q=160	
-[eps=0] it_4: episode 24 finished in 4.60986328125ms with #Q=160	
-[eps=0] it_4: episode 25 finished in 6.44384765625ms with #Q=160	
-[eps=0] it_4: episode 26 finished in 4.93505859375ms with #Q=160	
-[eps=0] it_4: episode 27 finished in 4.5458984375ms with #Q=160	
-[eps=0] it_4: episode 28 finished in 6.94482421875ms with #Q=160	
-[eps=0] it_4: episode 29 finished in 7.0078125ms with #Q=160	
-[eps=0] it_4: episode 30 finished in 6.2978515625ms with #Q=160	
-[eps=0] it_4: episode 31 finished in 7.0048828125ms with #Q=160	
-[eps=0] it_4: episode 32 finished in 4.669921875ms with #Q=160	
-[eps=0] it_4: episode 33 finished in 4.611083984375ms with #Q=160	
-[eps=0] it_4: episode 34 finished in 4.98193359375ms with #Q=160	
-[eps=0] it_4: episode 35 finished in 4.5830078125ms with #Q=160	
-[eps=0] it_4: episode 36 finished in 5.173095703125ms with #Q=160	
-[eps=0] it_4: episode 37 finished in 5.617919921875ms with #Q=160	
-[eps=0] it_4: episode 38 finished in 5.06982421875ms with #Q=160	
-[eps=0] it_4: episode 39 finished in 6.8349609375ms with #Q=160	
-[eps=0] it_4: episode 40 finished in 4.700927734375ms with #Q=160	
-[eps=0] it_4: episode 41 finished in 4.433837890625ms with #Q=160	
-[eps=0] it_4: episode 42 finished in 4.552978515625ms with #Q=160	
-[eps=0] it_4: episode 43 finished in 4.905029296875ms with #Q=160	
-[eps=0] it_4: episode 44 finished in 4.81494140625ms with #Q=160	
-[eps=0] it_4: episode 45 finished in 5.39404296875ms with #Q=160	
-[eps=0] it_4: episode 46 finished in 5.18798828125ms with #Q=160	
-[eps=0] it_4: episode 47 finished in 5.571044921875ms with #Q=160	
-[eps=0] it_4: episode 48 finished in 7.38916015625ms with #Q=160	
-[eps=0] it_4: episode 49 finished in 4.712646484375ms with #Q=160	
-[eps=0] it_4: episode 50 finished in 4.51904296875ms with #Q=160	
-[eps=0] it_4: episode 51 finished in 4.72607421875ms with #Q=160	
-[eps=0] it_4: episode 52 finished in 4.595947265625ms with #Q=160	
-[eps=0] it_4: episode 53 finished in 5.404052734375ms with #Q=160	
-[eps=0] it_4: episode 54 finished in 5.514892578125ms with #Q=160	
-[eps=0] it_4: episode 55 finished in 4.951904296875ms with #Q=160	
-[eps=0] it_4: episode 56 finished in 5.296875ms with #Q=160	
-[eps=0] it_4: episode 57 finished in 6.948974609375ms with #Q=160	
-[eps=0] it_4: episode 58 finished in 4.416015625ms with #Q=160	
-[eps=0] it_4: episode 59 finished in 4.783935546875ms with #Q=160	
-[eps=0] it_4: episode 60 finished in 4.761962890625ms with #Q=160	
-[eps=0] it_4: episode 61 finished in 4.766845703125ms with #Q=160	
-[eps=0] it_4: episode 62 finished in 5.143798828125ms with #Q=160	
-[eps=0] it_4: episode 63 finished in 6.716796875ms with #Q=160	
-[eps=0] it_4: episode 64 finished in 5.751708984375ms with #Q=160	
-[eps=0] it_4: episode 65 finished in 5.415283203125ms with #Q=160	
-[eps=0] it_4: episode 66 finished in 7.466064453125ms with #Q=160	
-[eps=0] it_4: episode 67 finished in 4.83203125ms with #Q=160	
-[eps=0] it_4: episode 68 finished in 4.8271484375ms with #Q=160	
-[eps=0] it_4: episode 69 finished in 4.7109375ms with #Q=160	
-[eps=0] it_4: episode 70 finished in 4.59130859375ms with #Q=160	
-[eps=0] it_4: episode 71 finished in 5.865966796875ms with #Q=160	
-[eps=0] it_4: episode 72 finished in 5.513916015625ms with #Q=160	
-[eps=0] it_4: episode 73 finished in 5.28515625ms with #Q=160	
-[eps=0] it_4: episode 74 finished in 5.250244140625ms with #Q=160	
-[eps=0] it_4: episode 75 finished in 6.726806640625ms with #Q=160	
-[eps=0] it_4: episode 76 finished in 4.454833984375ms with #Q=160	
-[eps=0] it_4: episode 77 finished in 4.791015625ms with #Q=160	
-[eps=0] it_4: episode 78 finished in 4.986083984375ms with #Q=160	
-[eps=0] it_4: episode 79 finished in 4.59130859375ms with #Q=160	
-[eps=0] it_4: episode 80 finished in 5.26904296875ms with #Q=160	
-[eps=0] it_4: episode 81 finished in 5.583984375ms with #Q=160	
-[eps=0] it_4: episode 82 finished in 5.0888671875ms with #Q=160	
-[eps=0] it_4: episode 83 finished in 6.846923828125ms with #Q=160	
-[eps=0] it_4: episode 84 finished in 4.732666015625ms with #Q=160	
-[eps=0] it_4: episode 85 finished in 4.43310546875ms with #Q=160	
-[eps=0] it_4: episode 86 finished in 5.0732421875ms with #Q=160	
-[eps=0] it_4: episode 87 finished in 4.971923828125ms with #Q=160	
-[eps=0] it_4: episode 88 finished in 4.73193359375ms with #Q=160	
-[eps=0] it_4: episode 89 finished in 5.383056640625ms with #Q=160	
-[eps=0] it_4: episode 90 finished in 5.366943359375ms with #Q=160	
-[eps=0] it_4: episode 91 finished in 5.22900390625ms with #Q=160	
-[eps=0] it_4: episode 92 finished in 6.713134765625ms with #Q=160	
-[eps=0] it_4: episode 93 finished in 4.65478515625ms with #Q=160	
-[eps=0] it_4: episode 94 finished in 4.565185546875ms with #Q=160	
-[eps=0] it_4: episode 95 finished in 4.71875ms with #Q=160	
-[eps=0] it_4: episode 96 finished in 4.6259765625ms with #Q=160	
-[eps=0] it_4: episode 97 finished in 5.574951171875ms with #Q=160	
-[eps=0] it_4: episode 98 finished in 6.785888671875ms with #Q=160	
-[eps=0] it_4: episode 99 finished in 5.4140625ms with #Q=160	
-iteration 4 finished	
-finished all
-
-
-
-=========== values in Q ===========
-
-5.9708322394178e-07 5.1026949155332e-08 1.4115464989674e-07 6.0729021943906e-07	
-3.4647916214786e-06 6.5141736372338e-06 7.7843762258986e-06 1.6573381224813e-05	
-4.8380541508052 4.1009635433132 34.611220520478 2.0901949469679	
-0.41025093024528 15.550342600649 0.27500550462778 0.14830734714196	
-2.0380257944192e-06 2.3446149213004e-06 2.8964673723154e-06 1.5581724180904e-05	
-0.0072531709231184 0.0053579669311336 0.49425585358111 0.0074159191704839	
-1.8492650132436e-05 1.9221928415875e-05 3.3740178686666e-05 9.1377954499978e-05	
-5.454623093602e-08 4.5616274177288e-08 5.8632075017603e-08 2.6441958237337e-07	
-1.4214484917898e-06 6.4848807571433e-06 1.4638059030841e-06 5.2716747554864e-06	
-8.1393441148996e-09 1.807777310051e-08 1.9566687334558e-08 9.2650764688198e-08	
-4.0212656242761e-05 4.4477860963321e-05 2.0229241876966e-05 0.00011993725313275	
-0.27645676655347 0.35764308856366 0.11416161329717 13.027381401211	
-1.0600668855592e-06 2.0675716782998e-06 2.1335514362218e-06 2.4377697849519e-06	
-1.6203016615127e-07 1.4049765091637e-07 2.2696681588189e-07 3.497510025151e-07	
-0.0052457208630497 1.0705599552589e-05 2.9328158616722e-06 5.1202236107704e-05	
-5.7255598609664e-05 0.00017780477098004 9.5445137360518e-05 0.00015120190971075	
-0.042966288512614 0.053602978228304 0.023202184405472 0.045557924900231	
-7.3881760321146e-09 1.2738082598086e-09 1.7155661813956e-08 3.274992046332e-08	
-0.023826239474333 0.0022752640302299 0.22292166416374 0.011844604650157	
-0.00080309985629709 0.0010842135723565 0.0004764303132251 0.00092240218682475	
-6.6889882404476 14.04278452606 35.827674333027 7.7638446188334	
-55.610416693121 56.701169029407 77.312854349156 55.794660432658	
-38.092900718014 6.8406201476288 8.0227706374365 2.8571429244832	
-4.9659389007841e-10 2.0477923601846e-09 5.1503512875127e-10 2.1136160522613e-09	
-0.00083273192730883 0.000384255552437 0.00050673997481597 0.0043521741887311	
-0.11932553465724 0.16191614251955 2.4132445745981 0.10427503521014	
-3.3445222614235e-10 3.5699819070142e-10 4.9583191339868e-10 1.8802909535596e-09	
-85.731235407751 67.905644793699 67.562926693251 72.64950101909	
-0.37109292798638 0.38682755239498 0.2390818547728 1.2460514339614	
-0.18908888430831 0.25413703365032 0.18413290510975 0.29592168655551	
-1.1388825015556 8.9969331386278 2.4189132364864 0.88978575570672	
-1.7046700879662e-10 1.4070103087523e-11 9.8663740949181e-10 7.8262666471219e-09	
-5.8172256686318e-06 2.8770428267013e-06 6.9387465947271e-06 1.6312493737244e-05	
-6.1782890627909e-08 4.1151399661714e-08 2.6625030657848e-08 8.4954641739164e-08	
-47.080989865345 73.358847928736 56.731586830227 40.104115594339	
-0.23096034581975 0.48297484628781 0.36291830655026 0.15343435632473	
-0.99996736969323 0.56067757475671 21.274634476518 0.36347088639086	
-75.715638783083 72.151180225523 78.389278957608 90.248825109727	
-0.014948267658578 0.014067546012481 0.016812861848405 0.018499879572096	
-0.0013369940559407 0.0011752744663084 0.00033564455111476 0.0029919243130157	
-9.8148055452384e-06 1.5556378828109e-05 4.6295556683836e-05 6.622200821913e-05	
-2.6563309630832e-05 8.8114113962168e-06 1.1129454627813e-05 1.7450538955741e-05	
-0.061854943088571 6.9589525779034 0.01460468312182 0.05387264169859	
-8.3917728604971e-05 4.4272641573526e-05 6.1588718370452e-05 0.00020143828813925	
-0.00020242937039875 0.00044917771663179 0.00022625551441537 0.00063622070717805	
-1.1997723528711e-09 2.0065875885058e-09 1.8281633450981e-09 8.4575550292521e-09	
-2.4988596260162e-10 1.9218314338818e-11 9.3815606336752e-10 8.0739046535605e-09	
-4.8361600885039e-07 5.5217700734528e-08 5.5272681374221e-07 3.1647210439817e-06	
-5.3656992808486 6.8818093154834 41.559368951904 2.3561613433188	
-2.2049466218697e-07 1.0981406726053e-08 7.0993811495614e-09 3.8407858233137e-06	
-3.1183466766791e-09 1.4222519144353e-09 1.8878394399087e-09 1.4659754733872e-08	
-0.024685677821284 0.02006980990002 0.034054628931281 0.017401231650188	
-1.3403312935398e-06 1.2517761136902e-06 4.6327520296701e-06 2.6924135935226e-07	
-0.028941627533829 0.006454480140945 0.0047845905519966 0.002242641234219	
-1.1478261953595e-08 1.6691745821675e-09 1.3236707072225e-08 4.117700660346e-08	
-2.5717609960084e-07 6.413974960078e-07 1.9457917094858e-07 8.7016012485126e-07	
-1.1830484958379e-07 1.2580654018731e-07 1.0004413693938e-07 3.5720385057481e-07	
-4.1270151963456e-06 7.5007668403478e-06 9.6178606572313e-06 1.6256022864537e-05	
-1.2595835302752e-08 4.4791467172371e-09 5.3359469670024e-09 1.1320607272219e-08	
-0.045990540892136 0.032356339400316 0.024773400463584 0.020951038068454	
-6.8334491409736e-09 1.5325611695495e-08 5.5967860823335e-09 2.7747958378867e-08	
-15.30586929585 11.308695618404 48.409288898476 7.2643434288776	
-1.9465520119713e-08 7.9495048589438e-08 3.3777499049635e-08 1.5271465622954e-07	
-1.2713643948212 1.7725934597717 27.734634836125 0.71662814647625	
-0.51577206980214 0.43527831497839 18.305728555839 0.8429595718519	
-0 0 0 0	
-2.2400217883299e-09 2.6322543249823e-09 2.5447488775604e-09 7.2014889603017e-09	
-8.3981726712177e-10 1.8171318026989e-09 2.280621740066e-09 8.9123648677473e-09	
-0.011995270883613 0.019759140344944 0.013771199581867 0.014257391823223	
-5.2084874417793e-07 1.44342598751e-07 2.0351767272588e-07 7.9041114673973e-07	
-0.00012860021939332 0.00026958695979956 0.00342101598834 0.00027573234949223	
-0.57273725938924 0.45628346742547 1.0171578550409 0.47806407081857	
-65.96771023176 63.88273412458 81.42752997396 61.776262144671	
-2.6456295212093e-09 7.9603836826791e-09 2.906855177563e-09 1.350714551053e-08	
-6.3318494377711e-07 1.8184075595146e-06 1.1057441379341e-06 4.383025407943e-06	
-4.8466456952212e-07 2.4245730091967e-07 7.4915959819834e-07 2.1347490356283e-06	
-5.5689665641002e-07 1.455413463731e-06 1.2110153926705e-06 2.1019676563106e-06	
-0.0081077581800153 0.010985971080279 0.016861221175187 0.010403734794262	
-3.8404598121139e-07 7.7691252850171e-07 1.1348428965173e-06 2.7685717805353e-06	
-2.1467965882307e-09 1.2549721613671e-09 1.4676866473212e-09 8.0859732912661e-09	
-0.09214584067968 0.092576693004466 0.13993514149335 0.1295193693864	
-10.74957768833 0.16888345964406 0.10181052822659 0.16095078323653	
-1.2659645919216e-07 6.5390944371059e-08 2.9748097471508e-08 1.3170267702249e-07	
-0.17950787983878 0.31285868183474 0.20435450222932 0.17241677953848	
-68.64934698942 34.04878941977 20.588506582391 35.416365205495	
-1.7940428973547 31.144290498115 2.0520302097942 1.3438857058373	
-0.014720702705723 0.016050072966164 0.02606968886806 0.020891371144848	
-1.332981564752 0.75971893037025 1.0802955369129 0.8907179510075	
-2.4791252536189 2.4081781351405 4.5604154610517 3.0208091934531	
-3.6497253467979 0.65518479996948 0.5472494824282 1.1997573069529	
-2.0789961286229 1.9313595872905 3.3714122353781 3.0356406672207	
-6.5603672433542e-06 4.6282943221105e-06 6.0892846685304e-06 2.9948290599835e-06	
-17.208216689575 10.925558791825 14.077184750861 22.684530631699	
-2.2092212031727e-07 1.5669753293392e-07 8.8115728967365e-08 5.8074381420884e-07	
-10.615627665696 11.585112948046 22.307407510359 11.281703109477	
-96.076085895574 99.99999639737 93.709025526842 86.418388162667	
-0.38181427936686 0.38376191899618 0.81598308732971 0.37266236189958	
-82.560284152345 75.095250937106 76.154757708553 94.999876503939	
-15.464875862449 28.453133480284 48.126730177325 21.337267410361	
-29.433211102499 43.815263058454 36.713632993849 69.538372386508	
-4.9755771771733e-09 7.0620816247639e-09 6.7179870188261e-09 2.5738987949907e-08	
-9.6716585055164e-09 1.0784209684352e-08 1.472920166912e-08 2.5654392524825e-08	
-51.811933111944 11.440442418894 18.119252268275 6.9545662145443	
-2.1544031601894e-08 2.0327000663123e-08 1.4756884133738e-08 3.3053847593249e-08	
-4.8929621087069e-10 1.5277765855732e-10 2.6059347174271e-10 1.3961596647399e-09	
-1.1228120105365e-09 3.380694990606e-09 2.0134634581672e-09 1.0521459288695e-08	
-2.7806405633777e-09 1.8206249454393e-09 2.6868180206929e-09 1.2780093912286e-08	
-5.7702441928004 3.6025923145382 4.8602858108014 15.390845836748	
-1.4604328450039e-09 1.0058264919767e-09 9.6363794853541e-10 5.5869043877469e-09	
-65.830034248583 35.540408060743 25.164002379063 44.821791472739	
-1.3400225773732 3.3124390578652 1.5434874379117 8.8913015534509	
-0.015002325226546 0.078702844474176 5.4503357549268 0.018793847168296	
-1.1352025793965e-10 2.691750533745e-11 8.4661114783841e-11 9.1184000454569e-10	
-5.7224441972038 7.7505338694086 6.5599488200383 3.93079839095	
-1.6641798122548e-06 4.9302504803578e-06 2.1810576389895e-06 5.4291985806018e-06	
-0.049489970927195 0.024633576247414 0.058772709053427 0.032312530413174	
-24.429839040659 1.0360850568593 1.1231732823241 0.92606248306342	
-0.00011538504085408 8.9932043312026e-07 6.0241635424701e-08 6.1098278327725e-06	
-0.0061172520429818 0.010011261969621 0.00532028147922 0.005645037893128	
-1.0441004556623e-05 5.669658485016e-06 6.2715676579233e-06 3.139429683984e-05	
-18.925482402262 58.691095383975 12.059121845439 24.537349409765	
-0.10057232345263 0.092468148044238 0.19605653533792 0.10057564558532	
-0.0067961418608797 0.0021707834938994 0.00018434983269334 0.025287084674191	
-6.7239870940164e-10 5.3847706955408e-10 1.9001276172263e-09 5.3654102961536e-09	
-1.3343172978378e-09 8.4650945714358e-10 3.1560803471586e-09 9.602584036399e-09	
-2.0766087981112e-07 1.2689576818391e-07 1.0912281782796e-07 5.4516418515963e-07	
-0.030235941206617 0.22209049153736 0.015025402855984 0.0010477869411466	
-3.6629218489737e-07 2.6612207078243e-07 7.8859359612407e-07 2.0858977547342e-06	
-0.011512469358699 0.00079045957163462 0.00029336015088656 0.077492532185864	
-0.0016662330718973 0.0037767991454976 0.0013601990862122 0.0037572361074586	
-3.910801175811 9.0678891289958 2.582012029083 25.02908041142	
-1.4025327509853e-08 1.2153600055276e-08 2.9384502402594e-08 7.1518977413028e-08	
-3.7401887160586e-09 3.1663468890146e-09 2.7017469114824e-09 1.2626167540593e-08	
-0.00048650928118396 0.00043241236378875 0.00058629411106465 0.00086947711246392	
-1.0993700899356e-05 2.0066935448581e-05 4.9417614022737e-07 6.8624219955886e-08	
-2.2716772279633e-09 8.1020436231429e-10 1.7068159685223e-09 9.8023313492609e-09	
-4.1925476606495 0.02041365429176 0.050208586471337 0.0030014454636124	
-0.00023748342479467 0.00058633263320248 0.00033174726241786 0.00060392937055414	
-2.0318660323942e-09 1.1409590082989e-09 5.039960328975e-09 9.200325719185e-09	
-5.2255122159773e-07 5.2157976229899e-07 9.2029436359957e-07 2.1317339898226e-06	
-0.094063899953671 0.095768323863209 0.12424451227157 0.14387671425144	
-5.4296089192151e-11 1.7230942818413e-10 7.9387173059984e-11 8.8658293212804e-10	
-9.6786502316583e-09 1.8801230494254e-08 9.7841860918236e-09 2.727200450427e-08	
-2.082818384355e-09 3.0488598768092e-09 1.6304846081789e-09 9.524622451979e-09	
-0.00041586340630026 0.00019056292205096 0.0002924019485484 0.0002767475311326	
-0.55557785211746 0.83850591021505 0.47468310694847 6.8578055540504	
-1.5223630386727e-08 2.5434835337854e-08 1.2368785774339e-08 6.9430382895478e-08	
-8.2134329224039 44.997195387411 11.601642300694 4.0067586565158	
-1.5471916188333e-10 4.1801164120943e-11 4.8456350781728e-10 1.7334220015658e-09	
-9.3095179180249e-07 1.2607741108648e-06 8.3461983939589e-07 3.1196969365122e-06	
-2.8479809955944e-05 1.9981873494426e-05 2.7319699358669e-05 0.00012939648197498	
-1.9393586999475e-07 2.1178827714127e-07 1.2320238203787e-07 4.2791769276174e-07	
-35.086581865108 24.529422376916 19.405289021614 62.218688619792	
-0.15445603073911 0.13232740159762 0.055579950966158 0.27999911412245	
-0.13306955942692 0.077772763954504 0.02170819916707 8.7252708923041	
-13.401101700666 21.231217984939 55.230071712103 12.514534969956	
-0.079591870737671 0.098594510523346 0.12780331443286 0.11253765928721	
-0.012856633304261 0.017977371431619 0.014427635924235 0.019555210581218	
-0.17395154334994 0.091428875029591 0.11055280679909 0.16803758169651	
-0.0019799015608581 0.0038325218676149 0.0021999383459689 0.0040053134789037	
+[0m[eps=1] it_0: episode 0 finished in 32.571044921875ms with #Q=44[0m	
+[0m[eps=1] it_0: episode 1 finished in 590.951171875ms with #Q=85[0m	
+[0m[eps=1] it_0: episode 2 finished in 797.44775390625ms with #Q=106[0m	
+[0m[eps=1] it_0: episode 3 finished in 2065.046875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 4 finished in 227.52612304688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 5 finished in 64.216796875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 6 finished in 2475.7438964844ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 7 finished in 319.47290039062ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 8 finished in 402.84204101562ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 9 finished in 789.23291015625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 10 finished in 1837.1779785156ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 11 finished in 560.0869140625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 12 finished in 2394.1450195312ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 13 finished in 159.10986328125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 14 finished in 691.58813476562ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 15 finished in 948.0810546875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 16 finished in 560.52392578125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 17 finished in 308.587890625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 18 finished in 1121.0549316406ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 19 finished in 1237.591796875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 20 finished in 330.798828125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 21 finished in 298.9140625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 22 finished in 2021.8081054688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 23 finished in 477.07421875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 24 finished in 128.00610351562ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 25 finished in 180.28515625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 26 finished in 221.8271484375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 27 finished in 444.83911132812ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 28 finished in 262.11401367188ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 29 finished in 1867.4152832031ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 30 finished in 212.90185546875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 31 finished in 1037.9641113281ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 32 finished in 1756.9440917969ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 33 finished in 2556.0349121094ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 34 finished in 72.933837890625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 35 finished in 119.5322265625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 36 finished in 471.90405273438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 37 finished in 2994.3840332031ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 38 finished in 136.52905273438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 39 finished in 236.73803710938ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 40 finished in 535.50830078125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 41 finished in 740.51708984375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 42 finished in 890.03100585938ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 43 finished in 278.94409179688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 44 finished in 863.53784179688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 45 finished in 720.31811523438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 46 finished in 1865.2380371094ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 47 finished in 280.36767578125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 48 finished in 89.875732421875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 49 finished in 248.16015625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 50 finished in 686.86328125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 51 finished in 1544.8889160156ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 52 finished in 1331.0717773438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 53 finished in 1678.00390625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 54 finished in 1082.5068359375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 55 finished in 1705.080078125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 56 finished in 268.05883789062ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 57 finished in 1651.8051757812ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 58 finished in 1312.8081054688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 59 finished in 285.67797851562ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 60 finished in 138.5400390625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 61 finished in 2093.4521484375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 62 finished in 1964.3117675781ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 63 finished in 79.474853515625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 64 finished in 126.49194335938ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 65 finished in 1608.0480957031ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 66 finished in 123.5029296875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 67 finished in 444.80517578125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 68 finished in 498.51879882812ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 69 finished in 2683.5520019531ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 70 finished in 129.0380859375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 71 finished in 539.56420898438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 72 finished in 589.85107421875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 73 finished in 296.57299804688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 74 finished in 1112.2219238281ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 75 finished in 1422.2346191406ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 76 finished in 1933.2338867188ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 77 finished in 666.7880859375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 78 finished in 192.7783203125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 79 finished in 305.07592773438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 80 finished in 138.21801757812ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 81 finished in 530.17993164062ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 82 finished in 724.98999023438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 83 finished in 573.25903320312ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 84 finished in 1969.3820800781ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 85 finished in 288.67504882812ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 86 finished in 1745.41015625ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 87 finished in 208.68896484375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 88 finished in 184.86596679688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 89 finished in 108.5888671875ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 90 finished in 359.68725585938ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 91 finished in 1940.1479492188ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 92 finished in 1839.9367675781ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 93 finished in 268.93774414062ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 94 finished in 448.77783203125ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 95 finished in 581.99609375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 96 finished in 821.45190429688ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 97 finished in 545.6708984375ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 98 finished in 901.07592773438ms with #Q=160[0m	
+[0m[eps=1] it_0: episode 99 finished in 330.46704101562ms with #Q=160[0m	
+[0miteration 0 finished[0m	
+[0m[eps=0.9] it_1: episode 0 finished in 234.66796875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 1 finished in 1546.5581054688ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 2 finished in 1523.7658691406ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 3 finished in 1004.4318847656ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 4 finished in 704.30517578125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 5 finished in 75.02392578125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 6 finished in 441.32080078125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 7 finished in 441.13305664062ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 8 finished in 731.43481445312ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 9 finished in 99.488037109375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 10 finished in 1033.9689941406ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 11 finished in 175.59619140625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 12 finished in 341.18017578125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 13 finished in 271.912109375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 14 finished in 1119.7329101562ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 15 finished in 263.39697265625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 16 finished in 251.36572265625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 17 finished in 84.255126953125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 18 finished in 381.57885742188ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 19 finished in 119.24682617188ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 20 finished in 145.43994140625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 21 finished in 284.03295898438ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 22 finished in 198.62915039062ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 23 finished in 84.791015625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 24 finished in 83.77099609375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 25 finished in 232.40307617188ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 26 finished in 179.955078125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 27 finished in 138.6611328125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 28 finished in 127.70703125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 29 finished in 283.94287109375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 30 finished in 101.42114257812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 31 finished in 122.02392578125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 32 finished in 138.79516601562ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 33 finished in 205.912109375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 34 finished in 1247.2978515625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 35 finished in 140.59301757812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 36 finished in 366.55908203125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 37 finished in 283.7529296875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 38 finished in 150.30200195312ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 39 finished in 259.38623046875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 40 finished in 118.73510742188ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 41 finished in 64.527099609375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 42 finished in 302.0380859375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 43 finished in 291.20703125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 44 finished in 299.38208007812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 45 finished in 225.83935546875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 46 finished in 338.552734375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 47 finished in 178.91723632812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 48 finished in 138.60424804688ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 49 finished in 52.677001953125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 50 finished in 250.833984375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 51 finished in 130.89208984375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 52 finished in 395.02392578125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 53 finished in 421.873046875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 54 finished in 287.60888671875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 55 finished in 307.0009765625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 56 finished in 90.226806640625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 57 finished in 75.805908203125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 58 finished in 141.205078125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 59 finished in 30.906005859375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 60 finished in 354.28491210938ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 61 finished in 74.01171875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 62 finished in 253.28393554688ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 63 finished in 342.76708984375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 64 finished in 322.59375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 65 finished in 97.43505859375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 66 finished in 73.31005859375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 67 finished in 32.702880859375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 68 finished in 428.53002929688ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 69 finished in 189.89892578125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 70 finished in 89.412841796875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 71 finished in 46.97705078125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 72 finished in 337.71997070312ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 73 finished in 174.09301757812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 74 finished in 88.067138671875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 75 finished in 127.24389648438ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 76 finished in 345.72216796875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 77 finished in 97.345703125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 78 finished in 286.09301757812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 79 finished in 100.23901367188ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 80 finished in 854.26489257812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 81 finished in 289.02880859375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 82 finished in 591.00415039062ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 83 finished in 253.46801757812ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 84 finished in 172.09887695312ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 85 finished in 88.449951171875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 86 finished in 138.76708984375ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 87 finished in 167.8369140625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 88 finished in 135.83203125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 89 finished in 239.06298828125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 90 finished in 168.31909179688ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 91 finished in 559.22290039062ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 92 finished in 120.51000976562ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 93 finished in 266.19897460938ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 94 finished in 123.5ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 95 finished in 283.41796875ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 96 finished in 66.8681640625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 97 finished in 43.144775390625ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 98 finished in 776.93798828125ms with #Q=160[0m	
+[0m[eps=0.9] it_1: episode 99 finished in 558.60180664062ms with #Q=160[0m	
+[0miteration 1 finished[0m	
+[0m[eps=0.8] it_2: episode 0 finished in 64.841064453125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 1 finished in 107.244140625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 2 finished in 125.341796875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 3 finished in 64.825927734375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 4 finished in 76.72900390625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 5 finished in 79.56298828125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 6 finished in 43.733154296875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 7 finished in 76.910888671875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 8 finished in 47.94921875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 9 finished in 86.469970703125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 10 finished in 65.261962890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 11 finished in 56.08203125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 12 finished in 80.48388671875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 13 finished in 85.514892578125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 14 finished in 33.261962890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 15 finished in 41.361083984375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 16 finished in 140.0791015625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 17 finished in 78.325927734375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 18 finished in 84.437255859375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 19 finished in 97.0341796875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 20 finished in 63.94189453125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 21 finished in 33.19580078125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 22 finished in 40.85888671875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 23 finished in 46.869873046875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 24 finished in 33.159912109375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 25 finished in 55.467041015625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 26 finished in 72.34912109375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 27 finished in 48.18505859375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 28 finished in 20.675048828125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 29 finished in 50.662109375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 30 finished in 73.830078125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 31 finished in 60.355712890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 32 finished in 97.2587890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 33 finished in 61.27587890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 34 finished in 45.10205078125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 35 finished in 77.863037109375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 36 finished in 96.8798828125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 37 finished in 62.712158203125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 38 finished in 144.8310546875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 39 finished in 48.571044921875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 40 finished in 34.153076171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 41 finished in 134.26220703125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 42 finished in 67.453857421875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 43 finished in 37.281982421875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 44 finished in 91.81884765625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 45 finished in 27.403076171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 46 finished in 162.69897460938ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 47 finished in 47.867919921875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 48 finished in 64.337890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 49 finished in 55.778076171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 50 finished in 44.7021484375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 51 finished in 59.134033203125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 52 finished in 47.906005859375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 53 finished in 66.271728515625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 54 finished in 36.436767578125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 55 finished in 57.262939453125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 56 finished in 46.074951171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 57 finished in 28.074951171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 58 finished in 79.322998046875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 59 finished in 45.06201171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 60 finished in 66.35107421875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 61 finished in 31.890869140625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 62 finished in 72.064208984375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 63 finished in 56.90087890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 64 finished in 117.82495117188ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 65 finished in 63.69287109375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 66 finished in 47.028076171875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 67 finished in 69.06005859375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 68 finished in 102.97412109375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 69 finished in 60.975830078125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 70 finished in 40.7978515625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 71 finished in 75.114990234375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 72 finished in 58.249755859375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 73 finished in 152.39916992188ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 74 finished in 100.52392578125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 75 finished in 94.76904296875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 76 finished in 29.224853515625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 77 finished in 57.389892578125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 78 finished in 77.465087890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 79 finished in 176.833984375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 80 finished in 64.5830078125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 81 finished in 72.09814453125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 82 finished in 83.2509765625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 83 finished in 85.77685546875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 84 finished in 40.1640625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 85 finished in 58.203125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 86 finished in 134.94580078125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 87 finished in 84.296875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 88 finished in 48.543212890625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 89 finished in 85.342041015625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 90 finished in 100.2041015625ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 91 finished in 95.72314453125ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 92 finished in 96.536865234375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 93 finished in 116.99291992188ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 94 finished in 51.565185546875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 95 finished in 104.77807617188ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 96 finished in 170.31982421875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 97 finished in 67.0029296875ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 98 finished in 91.01708984375ms with #Q=160[0m	
+[0m[eps=0.8] it_2: episode 99 finished in 158.18701171875ms with #Q=160[0m	
+[0miteration 2 finished[0m	
+[0m[eps=0.7] it_3: episode 0 finished in 75.07421875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 1 finished in 68.662109375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 2 finished in 60.49072265625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 3 finished in 82.575927734375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 4 finished in 52.30078125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 5 finished in 46.130859375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 6 finished in 25.468994140625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 7 finished in 44.343994140625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 8 finished in 74.576171875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 9 finished in 37.24609375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 10 finished in 33.197998046875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 11 finished in 54.242919921875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 12 finished in 21.10888671875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 13 finished in 51.834716796875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 14 finished in 21.350341796875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 15 finished in 46.083984375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 16 finished in 33.23388671875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 17 finished in 45.53515625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 18 finished in 20.166259765625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 19 finished in 35.216064453125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 20 finished in 34.608154296875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 21 finished in 42.939208984375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 22 finished in 20.119140625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 23 finished in 19.954833984375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 24 finished in 26.298095703125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 25 finished in 31.001220703125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 26 finished in 27.75ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 27 finished in 26.723876953125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 28 finished in 32.31591796875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 29 finished in 20.333984375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 30 finished in 42.197998046875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 31 finished in 35.755126953125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 32 finished in 18.530029296875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 33 finished in 50.224609375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 34 finished in 20.437744140625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 35 finished in 22.010986328125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 36 finished in 21.69189453125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 37 finished in 11.60009765625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 38 finished in 34.315185546875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 39 finished in 23.07373046875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 40 finished in 36.353271484375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 41 finished in 16.981201171875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 42 finished in 27.1640625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 43 finished in 30.002197265625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 44 finished in 21.138916015625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 45 finished in 32.246826171875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 46 finished in 68.31982421875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 47 finished in 12.3759765625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 48 finished in 25.824951171875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 49 finished in 31.818115234375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 50 finished in 28.30712890625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 51 finished in 33.89599609375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 52 finished in 40.712158203125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 53 finished in 28.916015625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 54 finished in 28.8427734375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 55 finished in 27.80908203125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 56 finished in 25.158935546875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 57 finished in 13.140869140625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 58 finished in 17.841064453125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 59 finished in 50.222900390625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 60 finished in 31.143310546875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 61 finished in 28.547119140625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 62 finished in 23.316162109375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 63 finished in 19.996337890625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 64 finished in 22.796875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 65 finished in 28.374755859375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 66 finished in 15.907958984375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 67 finished in 18.668212890625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 68 finished in 27.18896484375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 69 finished in 40.260986328125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 70 finished in 18.60302734375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 71 finished in 40.60009765625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 72 finished in 21.470947265625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 73 finished in 35.198974609375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 74 finished in 18.418701171875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 75 finished in 20.055908203125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 76 finished in 42.726806640625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 77 finished in 32.024169921875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 78 finished in 28.724853515625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 79 finished in 19.6611328125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 80 finished in 24.156005859375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 81 finished in 28.388916015625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 82 finished in 29.025146484375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 83 finished in 20.929931640625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 84 finished in 34.97314453125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 85 finished in 53.394287109375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 86 finished in 26.88671875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 87 finished in 28.64306640625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 88 finished in 93.789306640625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 89 finished in 24.092041015625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 90 finished in 30.18798828125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 91 finished in 29.24609375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 92 finished in 38.247314453125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 93 finished in 30.401123046875ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 94 finished in 14.675048828125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 95 finished in 25.927001953125ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 96 finished in 44.156005859375ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 97 finished in 32.47509765625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 98 finished in 34.170166015625ms with #Q=160[0m	
+[0m[eps=0.7] it_3: episode 99 finished in 26.251953125ms with #Q=160[0m	
+[0miteration 3 finished[0m	
+[0m[eps=0.6] it_4: episode 0 finished in 51.2939453125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 1 finished in 29.245849609375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 2 finished in 23.78076171875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 3 finished in 31.487060546875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 4 finished in 24.671875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 5 finished in 18.743896484375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 6 finished in 24.663818359375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 7 finished in 19.38818359375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 8 finished in 20.240966796875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 9 finished in 12.597900390625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 10 finished in 17.02294921875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 11 finished in 20.80517578125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 12 finished in 21.953857421875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 13 finished in 25.202880859375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 14 finished in 17.22412109375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 15 finished in 14.372802734375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 16 finished in 20.8369140625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 17 finished in 18.684326171875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 18 finished in 14.083984375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 19 finished in 15.794189453125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 20 finished in 21.954833984375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 21 finished in 17.3798828125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 22 finished in 28.830078125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 23 finished in 18.6640625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 24 finished in 25.903076171875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 25 finished in 36.88916015625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 26 finished in 25.994873046875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 27 finished in 33.508056640625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 28 finished in 19.00390625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 29 finished in 14.6259765625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 30 finished in 17.671142578125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 31 finished in 8.7470703125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 32 finished in 12.799072265625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 33 finished in 20.76318359375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 34 finished in 21.18408203125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 35 finished in 18.792724609375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 36 finished in 26.43115234375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 37 finished in 34.2919921875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 38 finished in 33.0810546875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 39 finished in 25.592041015625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 40 finished in 11.677001953125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 41 finished in 12.18896484375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 42 finished in 17.0546875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 43 finished in 28.595947265625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 44 finished in 27.048095703125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 45 finished in 15.635986328125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 46 finished in 13.460205078125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 47 finished in 26.281982421875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 48 finished in 24.007080078125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 49 finished in 24.1689453125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 50 finished in 34.8779296875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 51 finished in 13.865966796875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 52 finished in 12.22021484375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 53 finished in 25.31689453125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 54 finished in 18.598876953125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 55 finished in 29.64306640625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 56 finished in 12.67919921875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 57 finished in 25.2900390625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 58 finished in 25.287841796875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 59 finished in 25.555908203125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 60 finished in 38.328857421875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 61 finished in 30.7548828125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 62 finished in 32.149169921875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 63 finished in 42.89404296875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 64 finished in 17.890869140625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 65 finished in 20.6162109375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 66 finished in 16.4150390625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 67 finished in 20.326904296875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 68 finished in 18.80322265625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 69 finished in 30.851806640625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 70 finished in 17.8671875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 71 finished in 17.512939453125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 72 finished in 20.43701171875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 73 finished in 15.338134765625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 74 finished in 19.89404296875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 75 finished in 21.845947265625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 76 finished in 18.030029296875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 77 finished in 23.451171875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 78 finished in 22.30810546875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 79 finished in 19.85205078125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 80 finished in 26.884765625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 81 finished in 11.489013671875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 82 finished in 24.635009765625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 83 finished in 25.654052734375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 84 finished in 27.90576171875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 85 finished in 23.347900390625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 86 finished in 26.441162109375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 87 finished in 11.534912109375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 88 finished in 10.263916015625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 89 finished in 14.430908203125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 90 finished in 19.044189453125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 91 finished in 23.7919921875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 92 finished in 18.489013671875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 93 finished in 19.2529296875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 94 finished in 16.19384765625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 95 finished in 20.126708984375ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 96 finished in 19.5009765625ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 97 finished in 9.794921875ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 98 finished in 13.02392578125ms with #Q=160[0m	
+[0m[eps=0.6] it_4: episode 99 finished in 20.904052734375ms with #Q=160[0m	
+[0miteration 4 finished[0m	
+[0m[eps=0.5] it_5: episode 0 finished in 14.195068359375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 1 finished in 9.60400390625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 2 finished in 17.7451171875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 3 finished in 12.591064453125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 4 finished in 15.2470703125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 5 finished in 21.1748046875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 6 finished in 14.4580078125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 7 finished in 16.98486328125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 8 finished in 15.156982421875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 9 finished in 10.740966796875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 10 finished in 12.744140625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 11 finished in 11.525146484375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 12 finished in 16.281005859375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 13 finished in 10.8720703125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 14 finished in 6.722900390625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 15 finished in 12.47705078125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 16 finished in 16.2890625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 17 finished in 13.674072265625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 18 finished in 8.616943359375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 19 finished in 9.645751953125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 20 finished in 11.2177734375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 21 finished in 13.575927734375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 22 finished in 15.68603515625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 23 finished in 17.9619140625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 24 finished in 13.60595703125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 25 finished in 13.555908203125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 26 finished in 15.980224609375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 27 finished in 13.617919921875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 28 finished in 14.061767578125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 29 finished in 22.875732421875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 30 finished in 21.521728515625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 31 finished in 15.048095703125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 32 finished in 18.006591796875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 33 finished in 9.722900390625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 34 finished in 27.43701171875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 35 finished in 20.533935546875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 36 finished in 12.733154296875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 37 finished in 18.992919921875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 38 finished in 16.074951171875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 39 finished in 8.06396484375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 40 finished in 12.72607421875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 41 finished in 16.197021484375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 42 finished in 19.613037109375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 43 finished in 10.43896484375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 44 finished in 16.06884765625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 45 finished in 25.220947265625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 46 finished in 16.060302734375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 47 finished in 11.671142578125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 48 finished in 17.253173828125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 49 finished in 18.712158203125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 50 finished in 13.7587890625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 51 finished in 11.06591796875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 52 finished in 14.925048828125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 53 finished in 31.089111328125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 54 finished in 17.9921875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 55 finished in 10.386962890625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 56 finished in 22.512939453125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 57 finished in 20.152099609375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 58 finished in 19.553955078125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 59 finished in 10.669921875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 60 finished in 14.64892578125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 61 finished in 13.359130859375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 62 finished in 17.928955078125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 63 finished in 12.175048828125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 64 finished in 14.675048828125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 65 finished in 16.638916015625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 66 finished in 18.648193359375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 67 finished in 11.537109375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 68 finished in 16.914306640625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 69 finished in 19.6640625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 70 finished in 23.3759765625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 71 finished in 14.27099609375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 72 finished in 12.257080078125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 73 finished in 15.989013671875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 74 finished in 20.4580078125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 75 finished in 17.358154296875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 76 finished in 14.876220703125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 77 finished in 17.39111328125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 78 finished in 29.787841796875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 79 finished in 19.378173828125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 80 finished in 15.269775390625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 81 finished in 18.537841796875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 82 finished in 11.927001953125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 83 finished in 17.072998046875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 84 finished in 13.85400390625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 85 finished in 22.570068359375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 86 finished in 31.02294921875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 87 finished in 19.797119140625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 88 finished in 21.36572265625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 89 finished in 11.826171875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 90 finished in 15.659912109375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 91 finished in 29.27587890625ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 92 finished in 20.2138671875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 93 finished in 10.68310546875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 94 finished in 13.527099609375ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 95 finished in 16.481689453125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 96 finished in 12.617919921875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 97 finished in 11.2470703125ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 98 finished in 14.740966796875ms with #Q=160[0m	
+[0m[eps=0.5] it_5: episode 99 finished in 13.805908203125ms with #Q=160[0m	
+[0miteration 5 finished[0m	
+[0m[eps=0.4] it_6: episode 0 finished in 10.575927734375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 1 finished in 14.875732421875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 2 finished in 10.342041015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 3 finished in 11.21875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 4 finished in 8.337890625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 5 finished in 7.458984375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 6 finished in 10.29296875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 7 finished in 10.281005859375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 8 finished in 13.823974609375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 9 finished in 22.2490234375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 10 finished in 8.983154296875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 11 finished in 7.787841796875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 12 finished in 11.0400390625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 13 finished in 10.038818359375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 14 finished in 10.57421875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 15 finished in 8.6142578125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 16 finished in 7.920166015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 17 finished in 12.6279296875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 18 finished in 12.02001953125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 19 finished in 7.360107421875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 20 finished in 10.656982421875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 21 finished in 8.794189453125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 22 finished in 10.369140625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 23 finished in 10.700927734375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 24 finished in 10.15478515625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 25 finished in 9.176025390625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 26 finished in 13.93115234375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 27 finished in 6.4951171875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 28 finished in 14.657958984375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 29 finished in 15.14697265625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 30 finished in 15.229736328125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 31 finished in 9.10791015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 32 finished in 9.928955078125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 33 finished in 11.836181640625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 34 finished in 13.638916015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 35 finished in 8.177978515625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 36 finished in 12.88916015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 37 finished in 21.93212890625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 38 finished in 15.807861328125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 39 finished in 14.63916015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 40 finished in 10.888916015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 41 finished in 9.659912109375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 42 finished in 16.218017578125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 43 finished in 11.23193359375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 44 finished in 10.508056640625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 45 finished in 8.922119140625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 46 finished in 13.779052734375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 47 finished in 10.86279296875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 48 finished in 13.85498046875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 49 finished in 13.657958984375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 50 finished in 17.39013671875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 51 finished in 19.125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 52 finished in 11.921142578125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 53 finished in 14.766845703125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 54 finished in 9.441162109375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 55 finished in 17.26708984375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 56 finished in 15.43408203125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 57 finished in 15.938232421875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 58 finished in 12.39306640625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 59 finished in 10.326904296875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 60 finished in 13.332763671875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 61 finished in 13.092041015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 62 finished in 15.324951171875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 63 finished in 12.06494140625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 64 finished in 10.251953125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 65 finished in 11.31591796875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 66 finished in 15.844970703125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 67 finished in 6.9189453125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 68 finished in 11.494384765625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 69 finished in 8.632080078125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 70 finished in 10.919921875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 71 finished in 10.677001953125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 72 finished in 14.713134765625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 73 finished in 15.34716796875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 74 finished in 5.05615234375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 75 finished in 9.984130859375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 76 finished in 9.3310546875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 77 finished in 9.973876953125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 78 finished in 8.656982421875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 79 finished in 13.198974609375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 80 finished in 21.34814453125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 81 finished in 8.96484375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 82 finished in 12.455078125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 83 finished in 8.964111328125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 84 finished in 12.17919921875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 85 finished in 12.52880859375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 86 finished in 7.032958984375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 87 finished in 7.454833984375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 88 finished in 8.93994140625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 89 finished in 10.287109375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 90 finished in 11.6630859375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 91 finished in 10.10791015625ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 92 finished in 7.58203125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 93 finished in 12.38427734375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 94 finished in 9.320068359375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 95 finished in 7.889892578125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 96 finished in 7.635986328125ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 97 finished in 11.856201171875ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 98 finished in 13.0771484375ms with #Q=160[0m	
+[0m[eps=0.4] it_6: episode 99 finished in 9.59716796875ms with #Q=160[0m	
+[0miteration 6 finished[0m	
+[0m[eps=0.3] it_7: episode 0 finished in 9.36376953125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 1 finished in 7.275146484375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 2 finished in 9.15380859375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 3 finished in 6.522216796875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 4 finished in 6.203857421875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 5 finished in 12.194091796875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 6 finished in 5.511962890625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 7 finished in 9.865966796875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 8 finished in 5.3330078125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 9 finished in 6.994140625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 10 finished in 6.4228515625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 11 finished in 8.498046875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 12 finished in 6.4169921875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 13 finished in 9.783935546875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 14 finished in 6.80810546875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 15 finished in 7.07421875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 16 finished in 10.679931640625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 17 finished in 9.416015625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 18 finished in 6.9951171875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 19 finished in 9.179931640625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 20 finished in 7.80615234375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 21 finished in 6.514892578125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 22 finished in 7.065185546875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 23 finished in 8.7919921875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 24 finished in 9.791259765625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 25 finished in 7.719970703125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 26 finished in 8.092041015625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 27 finished in 4.796142578125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 28 finished in 6.305908203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 29 finished in 6.635986328125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 30 finished in 13.08203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 31 finished in 7.416015625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 32 finished in 10.930908203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 33 finished in 7.927978515625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 34 finished in 6.998046875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 35 finished in 5.31982421875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 36 finished in 6.467041015625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 37 finished in 12.727783203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 38 finished in 8.89892578125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 39 finished in 9.26708984375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 40 finished in 8.35693359375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 41 finished in 9.5869140625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 42 finished in 6.5849609375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 43 finished in 10.0908203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 44 finished in 5.278076171875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 45 finished in 8.187255859375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 46 finished in 9.723876953125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 47 finished in 7.177978515625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 48 finished in 8.895751953125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 49 finished in 6.710205078125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 50 finished in 7.926025390625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 51 finished in 10.301025390625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 52 finished in 5.68896484375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 53 finished in 6.81201171875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 54 finished in 6.02099609375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 55 finished in 5.67578125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 56 finished in 8.09326171875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 57 finished in 9.619873046875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 58 finished in 8.821044921875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 59 finished in 5.673828125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 60 finished in 7.154052734375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 61 finished in 7.864990234375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 62 finished in 10.85302734375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 63 finished in 5.89208984375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 64 finished in 7.692138671875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 65 finished in 8.108154296875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 66 finished in 6.739990234375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 67 finished in 7.72998046875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 68 finished in 10.91796875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 69 finished in 6.759033203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 70 finished in 10.592041015625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 71 finished in 8.40087890625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 72 finished in 7.6162109375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 73 finished in 8.009033203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 74 finished in 6.9521484375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 75 finished in 6.080322265625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 76 finished in 9.320068359375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 77 finished in 6.85400390625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 78 finished in 7.432861328125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 79 finished in 9.525146484375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 80 finished in 9.410888671875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 81 finished in 6.405029296875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 82 finished in 10.31396484375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 83 finished in 7.05908203125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 84 finished in 5.00390625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 85 finished in 7.18505859375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 86 finished in 7.985107421875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 87 finished in 8.3193359375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 88 finished in 9.739990234375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 89 finished in 6.054931640625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 90 finished in 6.511962890625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 91 finished in 8.658935546875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 92 finished in 21.06591796875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 93 finished in 12.684814453125ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 94 finished in 18.657958984375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 95 finished in 13.099853515625ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 96 finished in 16.56396484375ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 97 finished in 7.614013671875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 98 finished in 12.57373046875ms with #Q=160[0m	
+[0m[eps=0.3] it_7: episode 99 finished in 7.900146484375ms with #Q=160[0m	
+[0miteration 7 finished[0m	
+[0m[eps=0.2] it_8: episode 0 finished in 8.115966796875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 1 finished in 4.77294921875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 2 finished in 6.131103515625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 3 finished in 7.21484375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 4 finished in 9.05908203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 5 finished in 7.8310546875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 6 finished in 8.51220703125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 7 finished in 7.947265625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 8 finished in 6.343017578125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 9 finished in 7.539794921875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 10 finished in 7.36669921875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 11 finished in 11.52685546875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 12 finished in 6.695068359375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 13 finished in 6.873779296875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 14 finished in 7.4580078125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 15 finished in 5.412109375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 16 finished in 7.919921875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 17 finished in 9.6669921875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 18 finished in 5.557861328125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 19 finished in 7.5ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 20 finished in 7.947021484375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 21 finished in 11.24609375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 22 finished in 5.8251953125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 23 finished in 7.865966796875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 24 finished in 8.873779296875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 25 finished in 11.85888671875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 26 finished in 10.721923828125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 27 finished in 9.43701171875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 28 finished in 18.251953125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 29 finished in 5.889892578125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 30 finished in 7.606201171875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 31 finished in 11.957763671875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 32 finished in 5.5361328125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 33 finished in 10.2880859375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 34 finished in 13.326904296875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 35 finished in 6.818115234375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 36 finished in 7.602783203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 37 finished in 9.283935546875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 38 finished in 5.0009765625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 39 finished in 6.119140625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 40 finished in 6.995849609375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 41 finished in 6.009033203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 42 finished in 7.960205078125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 43 finished in 16.259765625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 44 finished in 7.99609375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 45 finished in 10.865234375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 46 finished in 6.10791015625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 47 finished in 7.94677734375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 48 finished in 7.701904296875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 49 finished in 7.2861328125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 50 finished in 5.7880859375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 51 finished in 11.765869140625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 52 finished in 6.7119140625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 53 finished in 9.93896484375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 54 finished in 11.970947265625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 55 finished in 9.7099609375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 56 finished in 11.02587890625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 57 finished in 10.427734375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 58 finished in 8.485595703125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 59 finished in 7.2998046875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 60 finished in 5.222900390625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 61 finished in 11.80908203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 62 finished in 10.68798828125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 63 finished in 7.0419921875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 64 finished in 9.7021484375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 65 finished in 13.814697265625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 66 finished in 5.792236328125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 67 finished in 6.039306640625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 68 finished in 6.212890625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 69 finished in 6.68408203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 70 finished in 7.749267578125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 71 finished in 8.48193359375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 72 finished in 15.75390625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 73 finished in 6.81103515625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 74 finished in 5.987060546875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 75 finished in 10.2578125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 76 finished in 7.48193359375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 77 finished in 9.18603515625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 78 finished in 7.083740234375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 79 finished in 10.23681640625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 80 finished in 6.425048828125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 81 finished in 5.926025390625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 82 finished in 6.97705078125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 83 finished in 6.54296875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 84 finished in 6.034912109375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 85 finished in 6.39111328125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 86 finished in 6.320068359375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 87 finished in 11.56396484375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 88 finished in 4.871826171875ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 89 finished in 5.170166015625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 90 finished in 6.968994140625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 91 finished in 11.470947265625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 92 finished in 7.516845703125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 93 finished in 9.225830078125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 94 finished in 8.631103515625ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 95 finished in 5.52783203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 96 finished in 5.781005859375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 97 finished in 5.65283203125ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 98 finished in 6.35302734375ms with #Q=160[0m	
+[0m[eps=0.2] it_8: episode 99 finished in 6.421142578125ms with #Q=160[0m	
+[0miteration 8 finished[0m	
+[0m[eps=0.1] it_9: episode 0 finished in 7.775146484375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 1 finished in 8.297119140625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 2 finished in 7.6298828125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 3 finished in 4.261962890625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 4 finished in 5.712158203125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 5 finished in 7.467041015625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 6 finished in 6.3359375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 7 finished in 6.34716796875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 8 finished in 6.7890625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 9 finished in 6.018798828125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 10 finished in 9.340087890625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 11 finished in 5.9169921875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 12 finished in 5.68408203125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 13 finished in 5.528076171875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 14 finished in 4.766845703125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 15 finished in 7.384033203125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 16 finished in 8.705810546875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 17 finished in 5.020751953125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 18 finished in 10.27880859375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 19 finished in 4.531982421875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 20 finished in 4.80322265625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 21 finished in 5.2431640625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 22 finished in 5.10205078125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 23 finished in 4.926025390625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 24 finished in 7.697021484375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 25 finished in 5.20703125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 26 finished in 5.799072265625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 27 finished in 8.935791015625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 28 finished in 5.47509765625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 29 finished in 4.364013671875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 30 finished in 4.87109375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 31 finished in 5.26123046875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 32 finished in 6.803955078125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 33 finished in 6.739013671875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 34 finished in 5.912841796875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 35 finished in 7.446044921875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 36 finished in 4.44384765625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 37 finished in 4.3349609375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 38 finished in 7.2109375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 39 finished in 4.88134765625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 40 finished in 5.362060546875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 41 finished in 6.794921875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 42 finished in 4.89794921875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 43 finished in 5.31201171875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 44 finished in 6.18408203125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 45 finished in 4.43408203125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 46 finished in 5.8232421875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 47 finished in 7.786865234375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 48 finished in 4.93798828125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 49 finished in 6.279052734375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 50 finished in 6.530029296875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 51 finished in 5.48583984375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 52 finished in 9.845947265625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 53 finished in 4.56494140625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 54 finished in 6.41796875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 55 finished in 4.725830078125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 56 finished in 4.341064453125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 57 finished in 6.768798828125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 58 finished in 5.522216796875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 59 finished in 4.93603515625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 60 finished in 8.869140625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 61 finished in 4.9560546875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 62 finished in 4.84912109375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 63 finished in 4.531982421875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 64 finished in 4.848876953125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 65 finished in 4.6640625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 66 finished in 7.68310546875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 67 finished in 8.81005859375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 68 finished in 5.982177734375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 69 finished in 7.10498046875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 70 finished in 4.205078125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 71 finished in 4.5ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 72 finished in 4.829833984375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 73 finished in 4.3408203125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 74 finished in 5.302978515625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 75 finished in 9.379150390625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 76 finished in 5.7861328125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 77 finished in 6.906982421875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 78 finished in 6.304931640625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 79 finished in 4.658935546875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 80 finished in 4.338134765625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 81 finished in 4.98583984375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 82 finished in 4.82421875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 83 finished in 6.09521484375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 84 finished in 8.046142578125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 85 finished in 5.60595703125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 86 finished in 9.27197265625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 87 finished in 5.619140625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 88 finished in 6.60986328125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 89 finished in 4.553955078125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 90 finished in 5.046875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 91 finished in 4.692138671875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 92 finished in 5.676025390625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 93 finished in 5.780029296875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 94 finished in 6.492919921875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 95 finished in 7.699951171875ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 96 finished in 4.993896484375ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 97 finished in 4.261962890625ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 98 finished in 4.468017578125ms with #Q=160[0m	
+[0m[eps=0.1] it_9: episode 99 finished in 4.47412109375ms with #Q=160[0m	
+[0miteration 9 finished[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 0 finished in 4.40380859375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 1 finished in 5.1171875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 2 finished in 4.793212890625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 3 finished in 5.223876953125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 4 finished in 8.078125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 5 finished in 6.365234375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 6 finished in 9.03515625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 7 finished in 8.9619140625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 8 finished in 8.9541015625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 9 finished in 7.01171875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 10 finished in 5.425048828125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 11 finished in 7.015869140625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 12 finished in 9.60205078125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 13 finished in 9.341796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 14 finished in 8.591796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 15 finished in 7.104248046875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 16 finished in 4.82421875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 17 finished in 4.9970703125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 18 finished in 5.12109375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 19 finished in 5.669921875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 20 finished in 11.074951171875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 21 finished in 6.206787109375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 22 finished in 6.305908203125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 23 finished in 6.437255859375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 24 finished in 7.86669921875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 25 finished in 4.7099609375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 26 finished in 4.94091796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 27 finished in 7.234130859375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 28 finished in 4.54638671875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 29 finished in 4.466064453125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 30 finished in 5.288818359375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 31 finished in 5.314697265625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 32 finished in 4.917724609375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 33 finished in 9.211181640625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 34 finished in 4.55615234375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 35 finished in 4.81591796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 36 finished in 5.02294921875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 37 finished in 6.330078125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 38 finished in 4.56396484375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 39 finished in 5.153076171875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 40 finished in 4.816162109375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 41 finished in 4.618896484375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 42 finished in 7.516845703125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 43 finished in 6.087158203125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 44 finished in 4.679931640625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 45 finished in 4.30322265625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 46 finished in 4.590087890625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 47 finished in 5.025146484375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 48 finished in 7.06201171875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 49 finished in 5.97216796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 50 finished in 5.500732421875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 51 finished in 4.765869140625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 52 finished in 6.645751953125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 53 finished in 4.40771484375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 54 finished in 4.216064453125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 55 finished in 4.331298828125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 56 finished in 4.48486328125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 57 finished in 4.305908203125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 58 finished in 6.93408203125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 59 finished in 5.2001953125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 60 finished in 4.929931640625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 61 finished in 6.046142578125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 62 finished in 4.800048828125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 63 finished in 4.468994140625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 64 finished in 6.818115234375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 65 finished in 4.626953125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 66 finished in 4.7138671875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 67 finished in 4.563232421875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 68 finished in 5.43603515625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 69 finished in 4.620849609375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 70 finished in 4.8310546875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 71 finished in 6.341796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 72 finished in 4.05712890625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 73 finished in 4.219970703125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 74 finished in 5.804931640625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 75 finished in 4.87890625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 76 finished in 5.229736328125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 77 finished in 5.756103515625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 78 finished in 4.931884765625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 79 finished in 4.8779296875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 80 finished in 8.534912109375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 81 finished in 5.333984375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 82 finished in 4.718017578125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 83 finished in 4.398193359375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 84 finished in 4.54296875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 85 finished in 4.323974609375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 86 finished in 5.048095703125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 87 finished in 7.134033203125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 88 finished in 5.359130859375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 89 finished in 6.75ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 90 finished in 6.805908203125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 91 finished in 4.715087890625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 92 finished in 4.24609375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 93 finished in 4.69580078125ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 94 finished in 4.345947265625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 95 finished in 4.614013671875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 96 finished in 7.341796875ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 97 finished in 5.67822265625ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 98 finished in 6.988037109375ms with #Q=160[0m	
+[0m[eps=1.3877787807814e-16] it_10: episode 99 finished in 6.067138671875ms with #Q=160[0m	
+[0miteration 10 finished[0m	
+[0mfinished all[0m	
+[0m5.3127088425684e-06 5.8851567673287e-06 5.0591607467277e-06 8.1272092177686e-06[0m	
+[0m5.6723935961219e-05 9.3233738281741e-05 4.2834531537319e-05 0.00010086898987278[0m	
+[0m27.348196786209 26.624422210984 43.310136758185 20.543703611512[0m	
+[0m14.527685411724 32.506177464021 10.520116372839 14.858071731819[0m	
+[0m0.059821589857749 0.016776170551036 0.28850290328365 0.025009415795083[0m	
+[0m3.5851685726428 3.4729233936725 4.45684670739 16.391510806563[0m	
+[0m0.00051140735335187 0.00046271068741425 0.00035728611692522 0.00065041881982735[0m	
+[0m2.6288480547156e-06 1.901852039756e-06 3.0591703747225e-06 3.6259103480635e-06[0m	
+[0m2.3726124491298e-05 5.296853803729e-05 2.1839235690885e-05 3.1408647998061e-05[0m	
+[0m4.8084249369697e-07 4.6611591570723e-07 3.3567941766387e-07 8.4634149955903e-07[0m	
+[0m0.0020115661506377 0.0029122935887004 0.0021901512244071 0.0046773401997903[0m	
+[0m0.0005378368778404 0.00081581980149753 0.00043624307771363 0.0009477739175472[0m	
+[0m0.00035381189327962 0.00020283712250321 0.00018851055266162 0.00038378479018374[0m	
+[0m3.123782897467e-05 2.7615257315325e-05 3.9738167630261e-05 4.7885668213042e-05[0m	
+[0m1.5560712913239 0.058500769825587 0.0044404022675739 0.0029994757218685[0m	
+[0m0.01158984029913 0.011906511204636 0.0079901500483098 0.0080162941874685[0m	
+[0m0.13402128671286 0.3033465006243 0.097557598095467 0.15608611052792[0m	
+[0m3.389451213e-07 2.1720248379077e-07 2.822719481856e-07 1.6652988428602e-07[0m	
+[0m35.057728212347 51.06028580642 34.842587294815 29.877229300147[0m	
+[0m8.1614519283806e-07 1.2035268223926e-06 1.0942125801095e-06 7.9461136681136e-07[0m	
+[0m32.653779682556 34.597318256429 41.934252782549 57.120738583796[0m	
+[0m72.587950400805 73.625371133206 81.45057303656 73.999644012844[0m	
+[0m45.782746002244 29.075193253897 30.045822573308 26.237256394602[0m	
+[0m2.5610646547813e-08 4.5097204525536e-08 1.5402336206991e-08 4.8438373371274e-08[0m	
+[0m0.35133018392655 0.614034733981 3.8700468831822 0.44170218623294[0m	
+[0m7.808965012398 7.1134957091735 9.23038759314 24.205719251071[0m	
+[0m1.511523442216e-08 1.9312641580542e-08 1.4831576222071e-08 3.2412233349702e-08[0m	
+[0m90.249999143335 82.01534463527 84.708844638337 79.171682706391[0m	
+[0m1.8682673635852 2.7866793698951 4.0487187581376 2.9519694348756[0m	
+[0m2.0930585534095 3.6400943900038 7.9444064053744 2.6238306266315[0m	
+[0m6.8764325169881 23.760891706 8.0526905029921 6.0598453623301[0m	
+[0m1.8163604570899e-08 2.0238898247053e-08 3.3014722219502e-08 2.8035650348353e-08[0m	
+[0m9.568506647792e-05 5.75487008034e-05 5.4482953986733e-05 6.956473064465e-05[0m	
+[0m2.3510900339102e-05 1.4192472246328e-05 1.4179580768376e-05 1.581612140908e-05[0m	
+[0m68.111802095264 77.377848650468 70.820404800585 65.57729855291[0m	
+[0m0.46658254879625 0.62735643974439 0.60852479414165 0.69740013218688[0m	
+[0m4.7192999133309 2.9457391877692 21.484998988922 4.9819779359941[0m	
+[0m6.0928225949994 6.747223742448 6.6224630071528 8.165585762134[0m	
+[0m8.3458408789434e-07 8.5055592286676e-07 8.0167117709638e-07 1.0832831519406e-06[0m	
+[0m0.023199719602419 0.01970547986731 0.051853004446055 0.034118256894398[0m	
+[0m0.0027028409820854 0.0027259977526043 0.0040298241655217 0.0019409536720827[0m	
+[0m9.8784325892146e-05 0.00021398021741992 0.00014152891462452 0.00028918107065383[0m	
+[0m8.3084611741623 24.97404503412 3.6601951495108 9.4964106139318[0m	
+[0m0.0011906096929368 0.0021443990947223 0.0010025375467332 0.0017351646293445[0m	
+[0m1.5966487372685e-07 3.4030793171847e-07 3.0336108821063e-07 6.9495902132316e-07[0m	
+[0m4.3254522500305e-08 9.1806601796524e-08 8.5877545573857e-08 1.5460663285888e-07[0m	
+[0m1.5539030491584e-08 1.9631959812337e-08 3.3941855938139e-08 2.4725884120059e-08[0m	
+[0m1.6177923753254e-05 1.6099409500555e-05 1.5680100016182e-05 2.2150568962495e-05[0m	
+[0m29.205854546832 36.553601348245 48.366636007118 25.835276526774[0m	
+[0m3.4774730062363e-06 4.596923556824e-06 3.661867775022e-06 4.498099080083e-06[0m	
+[0m6.7926824236228e-08 4.9242658764626e-08 5.0283526253371e-08 6.3245286704775e-08[0m	
+[0m0.10473594885278 0.070097488311068 0.11498074567327 0.10049979933983[0m	
+[0m0.00020058403018516 0.00060587748519548 0.0020817898265854 0.00030229801405009[0m	
+[0m1.3283781834821 2.3464292122877 0.85580444014951 6.492172579425[0m	
+[0m1.66114412463e-07 2.3627730956101e-07 3.6441156888138e-07 2.7150882198369e-07[0m	
+[0m6.9485057133683e-05 0.00014793152493441 7.4095509081216e-05 7.7257266424274e-05[0m	
+[0m3.5744814616466e-06 2.5630968041844e-06 2.9803370895489e-06 4.4934468318589e-06[0m	
+[0m4.3756463826104e-05 9.5861639697471e-05 3.6539819703613e-05 0.00010741368071365[0m	
+[0m1.7522353297699e-07 2.6867529712353e-07 1.3681121739138e-07 3.3836374065386e-07[0m	
+[0m56.782207429245 44.081746374323 42.412059480939 37.472301430866[0m	
+[0m11.753707022289 13.053233493338 28.21966204583 8.1170228753322[0m	
+[0m42.955024161884 40.620459953741 53.864046468561 35.24155935139[0m	
+[0m8.1695345245931e-07 1.1881061648876e-06 6.7396512379614e-07 1.1656596564348e-06[0m	
+[0m21.797204396988 20.175421998806 38.699596309182 16.31598820787[0m	
+[0m16.138450550721 12.517453544343 13.775707693959 34.49395391286[0m	
+[0m0 0 0 0[0m	
+[0m8.1399241551861e-07 2.4097846196043e-06 1.0793356569194e-06 8.0858440873288e-07[0m	
+[0m7.7055036009496e-08 9.0413589674422e-08 7.9773465113392e-08 1.8912635117585e-07[0m	
+[0m0.06298359039775 0.070222892810868 0.072307174579084 0.082036042863504[0m	
+[0m4.7329405134912e-06 5.1295893418153e-06 3.3034960256367e-06 4.0938299673265e-06[0m	
+[0m0.0089213675499876 0.01867749963522 0.041548234614732 0.0083973460984639[0m	
+[0m0.94443927264062 1.3238653190448 1.6007641133802 1.3718121859032[0m	
+[0m80.12292585285 78.113158785104 85.737491788622 74.368529206941[0m	
+[0m83.865061162899 80.832469073816 81.90044445875 93.135371596494[0m	
+[0m1.8449057895212e-05 1.7563131756614e-05 2.5985623422945e-05 2.1694777258207e-05[0m	
+[0m7.8345351097088e-06 1.1232868317009e-05 1.1168055562148e-05 1.0354743662437e-05[0m	
+[0m0.00025420018938108 0.00023031304370882 0.00047631392480402 0.00016338349150224[0m	
+[0m0.058907254090522 0.058926527498279 0.079195557390592 0.05818763306799[0m	
+[0m1.8813988099849e-05 1.8256234487568e-05 1.5127862299487e-05 2.4210021419559e-05[0m	
+[0m0.098018376734337 0.071205417465319 0.10137918240694 0.090290711191559[0m	
+[0m0.25555964965634 0.11979025260234 0.15674491073336 0.18261361507209[0m	
+[0m1.8264968817719 0.81471933426405 1.3442323631328 3.1235789040715[0m	
+[0m0.00094510242037963 0.00091940880425239 0.0008692085655267 0.00042950434062995[0m	
+[0m0.40540101582166 0.56521887019434 0.50842733170208 0.31274159110635[0m	
+[0m0.62656404169418 0.82946552439315 0.60886603309748 0.50936656202194[0m	
+[0m36.552223864374 13.752155087202 21.280385885068 11.670091017625[0m	
+[0m0.27577826313142 0.27290480610628 0.41935494943277 0.45196008942586[0m	
+[0m0.30791262884639 0.32429150713808 0.41911176113027 0.52405224537441[0m	
+[0m2.0290358236851e-08 1.5840554300506e-08 2.7429094311025e-08 2.6210488119072e-08[0m	
+[0m19.624118930577 4.681571055 4.6750638672763 6.2372159626039[0m	
+[0m2.064712272385e-08 1.9559123825194e-08 2.9799008056546e-08 2.6994393429543e-08[0m	
+[0m5.1077993126216e-08 7.2660259275121e-08 6.8943608786542e-08 6.9727290608519e-08[0m	
+[0m2.1234634298747e-05 2.2504823334602e-05 1.5518944916934e-05 2.5769031985496e-05[0m	
+[0m3.0362123324065e-06 2.863109655017e-06 2.1155173127288e-06 2.632377942018e-06[0m	
+[0m0.18532818276538 0.17091932237863 0.18221938423566 0.18053693898522[0m	
+[0m0.093308601383046 0.087401002997384 0.081790269842029 0.11102683206941[0m	
+[0m1.2649845992475 1.2164628802553 1.3052900572833 1.6768695225273[0m	
+[0m0.015348727022236 0.02198143106271 0.025250987087488 0.018882439757041[0m	
+[0m0.064235021506443 0.098041103134609 0.074739955964988 0.11020431409875[0m	
+[0m0.037829048850289 0.069919376372158 0.028283408012381 0.03418283063783[0m	
+[0m3.8716341940291e-06 3.9774809063408e-06 3.3489274426973e-06 2.3994597508818e-06[0m	
+[0m5.7679885086849e-06 5.66126548417e-06 6.8114531088213e-06 8.3021797536657e-06[0m	
+[0m0.015528291599045 0.013709893207932 0.019447634250545 0.015560189416471[0m	
+[0m4.9480070049557e-06 3.7192332415574e-06 4.0691005463833e-06 4.6497632085697e-06[0m	
+[0m1.4040241450111e-08 2.3103733378076e-08 1.3144797327136e-08 2.8422324301766e-08[0m	
+[0m9.2399682309936e-07 8.9807612231077e-07 9.3304875725248e-07 1.2240477011216e-06[0m	
+[0m3.0341449959812e-07 2.3430130298277e-07 2.1885937926892e-07 1.9711156906059e-07[0m	
+[0m0.003705490196111 0.0030354467836265 0.0037326175601403 0.0040782356913478[0m	
+[0m0.0095667176897165 0.0058797924306381 0.0063781615863056 0.0062063650659976[0m	
+[0m69.830642959748 55.159138712188 56.385105028699 58.004821437199[0m	
+[0m27.048630386802 17.287066981511 22.444504491878 31.891725860617[0m	
+[0m6.0785969464779 9.1404989399497 23.198182076623 4.2174653717904[0m	
+[0m1.786438799642e-08 1.943747775951e-08 1.5541774920225e-08 2.2280131520338e-08[0m	
+[0m8.4896636515875 16.079024065153 10.046161338504 9.9004668597414[0m	
+[0m7.0976571768045e-05 4.9026350325242e-05 5.1950173507211e-05 9.8802353800229e-05[0m	
+[0m0.00013531171004142 0.00014358666522118 7.7207569295049e-05 0.00017477393930552[0m	
+[0m0.0039796014934765 0.0030641469073673 0.003089475825772 0.0045886841640968[0m	
+[0m0.00015207789627239 0.0004528982270309 0.00065228283373086 0.0031201358923758[0m	
+[0m98.077862275759 99.999999999977 96.537740674995 92.534518332632[0m	
+[0m3.0533112113985e-05 4.9102880284033e-05 1.8981092379236e-05 3.9713818347608e-05[0m	
+[0m16.74107822727 22.864226680797 11.857496188176 37.914434624622[0m	
+[0m4.4820544840069e-07 5.6008664250778e-07 4.609269392012e-07 7.5806573361227e-07[0m	
+[0m0.86437570730697 0.090144931210024 0.056800570567547 4.6075424772897[0m	
+[0m1.1841730811719e-05 5.3521550238683e-05 5.8271547908508e-06 2.008064185949e-05[0m	
+[0m22.849882882518 40.949777730559 26.950196452751 19.054126257421[0m	
+[0m19.581099457724 16.337668340351 22.464468950349 44.822837152907[0m	
+[0m0.13659546784733 1.1845252191218 0.083157569022737 0.12296837497681[0m	
+[0m9.568305271185e-06 1.1711193270054e-05 8.9777829998739e-06 1.2410467040572e-05[0m	
+[0m75.10473437662 43.825529281489 40.506889249971 39.929867457626[0m	
+[0m2.5868683172453 2.495129099382 1.9141839298367 2.7653044898263[0m	
+[0m24.787436255833 26.568365469427 31.204333211976 50.118229833968[0m	
+[0m28.670041075263 12.531895430336 7.8928025266806 10.981621278219[0m	
+[0m2.1968855416863e-07 2.0848902864227e-07 1.7243502058787e-07 1.8179597467289e-07[0m	
+[0m2.3315322001815e-05 1.0966240586846e-05 7.716578480207e-06 9.2357080252958e-06[0m	
+[0m8.0439646480858 0.37385156448453 0.13908677817823 0.10513003835944[0m	
+[0m1.8497370812963e-07 1.6548155053567e-07 1.7811995333292e-07 1.7786454606539e-07[0m	
+[0m1.324859503053e-06 2.1730284314163e-06 1.7585122135648e-06 2.4913309318731e-06[0m	
+[0m21.492355985891 5.6109885829154 3.2566118240634 2.5217580305981[0m	
+[0m52.905653200845 63.002546104096 44.264657169998 53.79046255074[0m	
+[0m1.2613677781628e-05 1.2159864486353e-05 1.1776866968583e-05 1.636642110405e-05[0m	
+[0m0.41531843661179 0.48648009842721 0.4394230555595 0.43528965657418[0m	
+[0m1.3807434475568e-08 1.9375537541578e-08 1.6781455497032e-08 2.2488750078935e-08[0m	
+[0m5.0287645965304e-06 6.1073420221475e-06 5.4760225726254e-06 8.8463184273422e-06[0m	
+[0m5.266159304882e-06 5.1421677249451e-06 6.0800466698831e-06 2.8785403258463e-06[0m	
+[0m0.0082838426325564 0.0090269985562592 0.016764621168985 0.0077890051811925[0m	
+[0m19.724470963567 18.392721647575 26.537734875869 18.555991002083[0m	
+[0m5.0664225837123 6.6957650430073 7.4979971341342 4.707770058441[0m	
+[0m90.684147153662 90.284699743269 94.999999956223 87.031409522867[0m	
+[0m2.7056100041597e-08 2.6974558215414e-08 2.2579100848153e-08 3.6945287683838e-08[0m	
+[0m46.601217551074 59.800501080013 69.887043432064 50.937806334641[0m	
+[0m2.4500323343278e-07 3.0554190524506e-07 3.4378376537698e-07 3.2475282171882e-07[0m	
+[0m3.8465050179034e-05 1.8933645760483e-05 2.5219439661289e-05 6.1452492283916e-05[0m	
+[0m1.9035591846873 1.7031867455907 10.726073081152 3.7379102540027[0m	
+[0m58.633688441948 55.283276246893 49.443374851757 66.333171750441[0m	
+[0m10.699473621522 9.3019302701793 5.6486655960958 26.802780633264[0m	
+[0m48.197081303509 52.680435238556 59.823949943535 41.503794315019[0m	
+[0m64.064043451511 65.033231941042 62.211120525325 73.508249449795[0m	
+[0m2.2777383967546e-06 2.5233425479338e-06 1.7312895319271e-06 2.9645521250556e-06[0m	
+[0m1.230777900171 1.0406261614562 3.5004919854495 1.0526014923244[0m	
+[0m13.724446842264 14.102240841743 10.701270384011 30.569623943135[0m	

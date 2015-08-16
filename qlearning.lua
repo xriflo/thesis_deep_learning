@@ -1,11 +1,11 @@
 math.randomseed(os.time())
 
 actions = {'UP', 'DOWN', 'LEFT', 'RIGHT'}
-iterations = 5
+iterations = 11
 episodes = 100
 Q = {}
 eps = 1
-delta_eps = 0.25
+delta_eps = 0.10
 gamma = 0.95
 alpha = 0.1
 inf = 1e309
@@ -61,14 +61,3 @@ function choose_action(state)
 		return ret_action, Q[state][ret_action]
 	end
 end
-
---[[
-function main()
-	load_game()
-	print (scrW)
-end
-
-main()
-]]--
-
-

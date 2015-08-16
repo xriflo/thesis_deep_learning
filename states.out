@@ -1,0 +1,2400 @@
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{}
+	{2 1 }
+	[
+		UP=2.4500323343278e-07
+		DOWN=3.0554190524506e-07
+		LEFT=3.4378376537698e-07
+		RIGHT=3.2475282171882e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{3 1 }
+	{}
+	[
+		UP=0.00013531171004142
+		DOWN=0.00014358666522118
+		LEFT=7.7207569295049e-05
+		RIGHT=0.00017477393930552
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{2 }
+	{1 }
+	[
+		UP=0.13659546784733
+		DOWN=1.1845252191218
+		LEFT=0.083157569022737
+		RIGHT=0.12296837497681
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{1 }
+	{2 }
+	[
+		UP=5.0287645965304e-06
+		DOWN=6.1073420221475e-06
+		LEFT=5.4760225726254e-06
+		RIGHT=8.8463184273422e-06
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{1 }
+	{}
+	{3 }
+	[
+		UP=68.111802095264
+		DOWN=77.377848650468
+		LEFT=70.820404800585
+		RIGHT=65.57729855291
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{1 }
+	{3 2 }
+	[
+		UP=27.048630386802
+		DOWN=17.287066981511
+		LEFT=22.444504491878
+		RIGHT=31.891725860617
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 1 }
+	{2 }
+	[
+		UP=4.7329405134912e-06
+		DOWN=5.1295893418153e-06
+		LEFT=3.3034960256367e-06
+		RIGHT=4.0938299673265e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{2 }
+	{3 }
+	[
+		UP=52.905653200845
+		DOWN=63.002546104096
+		LEFT=44.264657169998
+		RIGHT=53.79046255074
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{2 1 }
+	{3 }
+	[
+		UP=42.955024161884
+		DOWN=40.620459953741
+		LEFT=53.864046468561
+		RIGHT=35.24155935139
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{2 1 }
+	{3 }
+	[
+		UP=56.782207429245
+		DOWN=44.081746374323
+		LEFT=42.412059480939
+		RIGHT=37.472301430866
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{}
+	{3 2 }
+	[
+		UP=72.587950400805
+		DOWN=73.625371133206
+		LEFT=81.45057303656
+		RIGHT=73.999644012844
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{2 }
+	{}
+	{3 }
+	[
+		UP=0.46658254879625
+		DOWN=0.62735643974439
+		LEFT=0.60852479414165
+		RIGHT=0.69740013218688
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{1 }
+	{3 }
+	{}
+	[
+		UP=1.511523442216e-08
+		DOWN=1.9312641580542e-08
+		LEFT=1.4831576222071e-08
+		RIGHT=3.2412233349702e-08
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{3 2 }
+	{}
+	[
+		UP=8.1614519283806e-07
+		DOWN=1.2035268223926e-06
+		LEFT=1.0942125801095e-06
+		RIGHT=7.9461136681136e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{1 }
+	{}
+	{2 }
+	[
+		UP=2.7056100041597e-08
+		DOWN=2.6974558215414e-08
+		LEFT=2.2579100848153e-08
+		RIGHT=3.6945287683838e-08
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{}
+	{2 1 }
+	[
+		UP=4.9480070049557e-06
+		DOWN=3.7192332415574e-06
+		LEFT=4.0691005463833e-06
+		RIGHT=4.6497632085697e-06
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 }
+	{}
+	{1 }
+	[
+		UP=14.527685411724
+		DOWN=32.506177464021
+		LEFT=10.520116372839
+		RIGHT=14.858071731819
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 2 }
+	{}
+	{}
+	[
+		UP=1.3283781834821
+		DOWN=2.3464292122877
+		LEFT=0.85580444014951
+		RIGHT=6.492172579425
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{3 1 }
+	{}
+	[
+		UP=1.8449057895212e-05
+		DOWN=1.7563131756614e-05
+		LEFT=2.5985623422945e-05
+		RIGHT=2.1694777258207e-05
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{}
+	{3 1 }
+	[
+		UP=0.06298359039775
+		DOWN=0.070222892810868
+		LEFT=0.072307174579084
+		RIGHT=0.082036042863504
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{3 }
+	{1 }
+	[
+		UP=1.2613677781628e-05
+		DOWN=1.2159864486353e-05
+		LEFT=1.1776866968583e-05
+		RIGHT=1.636642110405e-05
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{1 }
+	{}
+	{3 }
+	[
+		UP=46.601217551074
+		DOWN=59.800501080013
+		LEFT=69.887043432064
+		RIGHT=50.937806334641
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{}
+	{3 1 }
+	[
+		UP=0.098018376734337
+		DOWN=0.071205417465319
+		LEFT=0.10137918240694
+		RIGHT=0.090290711191559
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 1 }
+	{}
+	{2 }
+	[
+		UP=0.00025420018938108
+		DOWN=0.00023031304370882
+		LEFT=0.00047631392480402
+		RIGHT=0.00016338349150224
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{3 2 }
+	{}
+	[
+		UP=6.7926824236228e-08
+		DOWN=4.9242658764626e-08
+		LEFT=5.0283526253371e-08
+		RIGHT=6.3245286704775e-08
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 1 }
+	{3 }
+	{}
+	[
+		UP=0.0039796014934765
+		DOWN=0.0030641469073673
+		LEFT=0.003089475825772
+		RIGHT=0.0045886841640968
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{1 }
+	{3 }
+	[
+		UP=5.0664225837123
+		DOWN=6.6957650430073
+		LEFT=7.4979971341342
+		RIGHT=4.707770058441
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{2 1 }
+	{}
+	[
+		UP=27.348196786209
+		DOWN=26.624422210984
+		LEFT=43.310136758185
+		RIGHT=20.543703611512
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{2 }
+	{1 }
+	[
+		UP=16.138450550721
+		DOWN=12.517453544343
+		LEFT=13.775707693959
+		RIGHT=34.49395391286
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{2 1 }
+	{}
+	[
+		UP=35.057728212347
+		DOWN=51.06028580642
+		LEFT=34.842587294815
+		RIGHT=29.877229300147
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 }
+	{2 1 }
+	[
+		UP=2.1968855416863e-07
+		DOWN=2.0848902864227e-07
+		LEFT=1.7243502058787e-07
+		RIGHT=1.8179597467289e-07
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 2 }
+	{}
+	{}
+	[
+		UP=8.3084611741623
+		DOWN=24.97404503412
+		LEFT=3.6601951495108
+		RIGHT=9.4964106139318
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 }
+	{}
+	{1 }
+	[
+		UP=1.9035591846873
+		DOWN=1.7031867455907
+		LEFT=10.726073081152
+		RIGHT=3.7379102540027
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 2 1 }
+	{}
+	[
+		UP=2.064712272385e-08
+		DOWN=1.9559123825194e-08
+		LEFT=2.9799008056546e-08
+		RIGHT=2.6994393429543e-08
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 }
+	{1 }
+	{}
+	[
+		UP=3.4774730062363e-06
+		DOWN=4.596923556824e-06
+		LEFT=3.661867775022e-06
+		RIGHT=4.498099080083e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 }
+	{1 }
+	{}
+	[
+		UP=0.40540101582166
+		DOWN=0.56521887019434
+		LEFT=0.50842733170208
+		RIGHT=0.31274159110635
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 }
+	{}
+	{1 }
+	[
+		UP=3.5851685726428
+		DOWN=3.4729233936725
+		LEFT=4.45684670739
+		RIGHT=16.391510806563
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 1 }
+	{2 }
+	[
+		UP=3.0362123324065e-06
+		DOWN=2.863109655017e-06
+		LEFT=2.1155173127288e-06
+		RIGHT=2.632377942018e-06
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 }
+	{1 }
+	{}
+	[
+		UP=1.5560712913239
+		DOWN=0.058500769825587
+		LEFT=0.0044404022675739
+		RIGHT=0.0029994757218685
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{2 }
+	{1 }
+	[
+		UP=36.552223864374
+		DOWN=13.752155087202
+		LEFT=21.280385885068
+		RIGHT=11.670091017625
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{1 }
+	{3 }
+	{}
+	[
+		UP=2.5610646547813e-08
+		DOWN=4.5097204525536e-08
+		LEFT=1.5402336206991e-08
+		RIGHT=4.8438373371274e-08
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{3 }
+	{2 }
+	[
+		UP=4.3254522500305e-08
+		DOWN=9.1806601796524e-08
+		LEFT=8.5877545573857e-08
+		RIGHT=1.5460663285888e-07
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{2 }
+	{3 }
+	[
+		UP=58.633688441948
+		DOWN=55.283276246893
+		LEFT=49.443374851757
+		RIGHT=66.333171750441
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 }
+	{}
+	{1 }
+	[
+		UP=13.724446842264
+		DOWN=14.102240841743
+		LEFT=10.701270384011
+		RIGHT=30.569623943135
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{2 1 }
+	{}
+	[
+		UP=11.753707022289
+		DOWN=13.053233493338
+		LEFT=28.21966204583
+		RIGHT=8.1170228753322
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{3 }
+	{2 }
+	[
+		UP=4.4820544840069e-07
+		DOWN=5.6008664250778e-07
+		LEFT=4.609269392012e-07
+		RIGHT=7.5806573361227e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{2 1 }
+	{}
+	[
+		UP=16.74107822727
+		DOWN=22.864226680797
+		LEFT=11.857496188176
+		RIGHT=37.914434624622
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{}
+	{3 2 }
+	[
+		UP=98.077862275759
+		DOWN=99.999999999977
+		LEFT=96.537740674995
+		RIGHT=92.534518332632
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 1 }
+	{3 }
+	{}
+	[
+		UP=0.0095667176897165
+		DOWN=0.0058797924306381
+		LEFT=0.0063781615863056
+		RIGHT=0.0062063650659976
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{}
+	{3 2 }
+	[
+		UP=83.865061162899
+		DOWN=80.832469073816
+		LEFT=81.90044445875
+		RIGHT=93.135371596494
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{1 }
+	{3 2 }
+	[
+		UP=75.10473437662
+		DOWN=43.825529281489
+		LEFT=40.506889249971
+		RIGHT=39.929867457626
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{1 }
+	{}
+	{2 }
+	[
+		UP=1.786438799642e-08
+		DOWN=1.943747775951e-08
+		LEFT=1.5541774920225e-08
+		RIGHT=2.2280131520338e-08
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 1 }
+	{}
+	{3 }
+	[
+		UP=0.093308601383046
+		DOWN=0.087401002997384
+		LEFT=0.081790269842029
+		RIGHT=0.11102683206941
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{2 }
+	{}
+	{3 }
+	[
+		UP=0.30791262884639
+		DOWN=0.32429150713808
+		LEFT=0.41911176113027
+		RIGHT=0.52405224537441
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 1 }
+	{}
+	{2 }
+	[
+		UP=0.00035381189327962
+		DOWN=0.00020283712250321
+		LEFT=0.00018851055266162
+		RIGHT=0.00038378479018374
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 2 1 }
+	{}
+	[
+		UP=2.0290358236851e-08
+		DOWN=1.5840554300506e-08
+		LEFT=2.7429094311025e-08
+		RIGHT=2.6210488119072e-08
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 1 }
+	{}
+	{}
+	[
+		UP=0.01158984029913
+		DOWN=0.011906511204636
+		LEFT=0.0079901500483098
+		RIGHT=0.0080162941874685
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 }
+	{1 }
+	{}
+	[
+		UP=1.1841730811719e-05
+		DOWN=5.3521550238683e-05
+		LEFT=5.8271547908508e-06
+		RIGHT=2.008064185949e-05
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{1 }
+	{3 }
+	[
+		UP=0.94443927264062
+		DOWN=1.3238653190448
+		LEFT=1.6007641133802
+		RIGHT=1.3718121859032
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 }
+	{}
+	{1 }
+	[
+		UP=3.0533112113985e-05
+		DOWN=4.9102880284033e-05
+		LEFT=1.8981092379236e-05
+		RIGHT=3.9713818347608e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{}
+	{2 1 }
+	[
+		UP=1.5966487372685e-07
+		DOWN=3.4030793171847e-07
+		LEFT=3.0336108821063e-07
+		RIGHT=6.9495902132316e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{1 }
+	{2 }
+	{}
+	[
+		UP=1.8682673635852
+		DOWN=2.7866793698951
+		LEFT=4.0487187581376
+		RIGHT=2.9519694348756
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{}
+	{3 2 }
+	[
+		UP=80.12292585285
+		DOWN=78.113158785104
+		LEFT=85.737491788622
+		RIGHT=74.368529206941
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{2 }
+	{3 1 }
+	[
+		UP=1.230777900171
+		DOWN=1.0406261614562
+		LEFT=3.5004919854495
+		RIGHT=1.0526014923244
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{3 }
+	{1 }
+	[
+		UP=4.3756463826104e-05
+		DOWN=9.5861639697471e-05
+		LEFT=3.6539819703613e-05
+		RIGHT=0.00010741368071365
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 }
+	{}
+	{2 }
+	[
+		UP=3.123782897467e-05
+		DOWN=2.7615257315325e-05
+		LEFT=3.9738167630261e-05
+		RIGHT=4.7885668213042e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 1 }
+	{}
+	{}
+	[
+		UP=0.86437570730697
+		DOWN=0.090144931210024
+		LEFT=0.056800570567547
+		RIGHT=4.6075424772897
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{1 }
+	{3 }
+	[
+		UP=1.2649845992475
+		DOWN=1.2164628802553
+		LEFT=1.3052900572833
+		RIGHT=1.6768695225273
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 1 }
+	{}
+	{2 }
+	[
+		UP=0.00094510242037963
+		DOWN=0.00091940880425239
+		LEFT=0.0008692085655267
+		RIGHT=0.00042950434062995
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{}
+	{2 1 }
+	[
+		UP=5.266159304882e-06
+		DOWN=5.1421677249451e-06
+		LEFT=6.0800466698831e-06
+		RIGHT=2.8785403258463e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{}
+	{3 1 }
+	[
+		UP=0.10473594885278
+		DOWN=0.070097488311068
+		LEFT=0.11498074567327
+		RIGHT=0.10049979933983
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{}
+	{2 1 }
+	[
+		UP=8.1399241551861e-07
+		DOWN=2.4097846196043e-06
+		LEFT=1.0793356569194e-06
+		RIGHT=8.0858440873288e-07
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 1 }
+	{}
+	{3 }
+	[
+		UP=0.18532818276538
+		DOWN=0.17091932237863
+		LEFT=0.18221938423566
+		RIGHT=0.18053693898522
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 }
+	{}
+	{1 }
+	[
+		UP=28.670041075263
+		DOWN=12.531895430336
+		LEFT=7.8928025266806
+		RIGHT=10.981621278219
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 }
+	{1 }
+	{}
+	[
+		UP=0.00020058403018516
+		DOWN=0.00060587748519548
+		LEFT=0.0020817898265854
+		RIGHT=0.00030229801405009
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{}
+	{3 2 }
+	[
+		UP=90.249999143335
+		DOWN=82.01534463527
+		LEFT=84.708844638337
+		RIGHT=79.171682706391
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{1 }
+	{2 }
+	[
+		UP=2.3510900339102e-05
+		DOWN=1.4192472246328e-05
+		LEFT=1.4179580768376e-05
+		RIGHT=1.581612140908e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{3 }
+	{2 }
+	[
+		UP=7.7055036009496e-08
+		DOWN=9.0413589674422e-08
+		LEFT=7.9773465113392e-08
+		RIGHT=1.8912635117585e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 }
+	{1 }
+	{}
+	[
+		UP=3.8716341940291e-06
+		DOWN=3.9774809063408e-06
+		LEFT=3.3489274426973e-06
+		RIGHT=2.3994597508818e-06
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 1 }
+	{3 }
+	{}
+	[
+		UP=0.003705490196111
+		DOWN=0.0030354467836265
+		LEFT=0.0037326175601403
+		RIGHT=0.0040782356913478
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 2 }
+	{}
+	{}
+	[
+		UP=6.0785969464779
+		DOWN=9.1404989399497
+		LEFT=23.198182076623
+		RIGHT=4.2174653717904
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 1 }
+	{}
+	{}
+	[
+		UP=0.35133018392655
+		DOWN=0.614034733981
+		LEFT=3.8700468831822
+		RIGHT=0.44170218623294
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{}
+	{3 2 }
+	[
+		UP=90.684147153662
+		DOWN=90.284699743269
+		LEFT=94.999999956223
+		RIGHT=87.031409522867
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{2 }
+	{3 }
+	[
+		UP=48.197081303509
+		DOWN=52.680435238556
+		LEFT=59.823949943535
+		RIGHT=41.503794315019
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{3 }
+	{1 }
+	[
+		UP=5.6723935961219e-05
+		DOWN=9.3233738281741e-05
+		LEFT=4.2834531537319e-05
+		RIGHT=0.00010086898987278
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{3 1 }
+	{}
+	[
+		UP=9.568305271185e-06
+		DOWN=1.1711193270054e-05
+		LEFT=8.9777829998739e-06
+		RIGHT=1.2410467040572e-05
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{3 1 }
+	{}
+	[
+		UP=7.0976571768045e-05
+		DOWN=4.9026350325242e-05
+		LEFT=5.1950173507211e-05
+		RIGHT=9.8802353800229e-05
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{}
+	{3 1 }
+	[
+		UP=0.13402128671286
+		DOWN=0.3033465006243
+		LEFT=0.097557598095467
+		RIGHT=0.15608611052792
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 }
+	{}
+	{1 }
+	[
+		UP=10.699473621522
+		DOWN=9.3019302701793
+		LEFT=5.6486655960958
+		RIGHT=26.802780633264
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 }
+	{}
+	{2 }
+	[
+		UP=6.9485057133683e-05
+		DOWN=0.00014793152493441
+		LEFT=7.4095509081216e-05
+		RIGHT=7.7257266424274e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 1 }
+	{}
+	{3 }
+	[
+		UP=0.064235021506443
+		DOWN=0.098041103134609
+		LEFT=0.074739955964988
+		RIGHT=0.11020431409875
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{2 }
+	{3 }
+	[
+		UP=69.830642959748
+		DOWN=55.159138712188
+		LEFT=56.385105028699
+		RIGHT=58.004821437199
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{2 }
+	{1 }
+	[
+		UP=4.7192999133309
+		DOWN=2.9457391877692
+		LEFT=21.484998988922
+		RIGHT=4.9819779359941
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{2 1 }
+	{}
+	[
+		UP=45.782746002244
+		DOWN=29.075193253897
+		LEFT=30.045822573308
+		RIGHT=26.237256394602
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{}
+	{2 1 }
+	[
+		UP=2.3315322001815e-05
+		DOWN=1.0966240586846e-05
+		LEFT=7.716578480207e-06
+		RIGHT=9.2357080252958e-06
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{2 }
+	{3 }
+	[
+		UP=24.787436255833
+		DOWN=26.568365469427
+		LEFT=31.204333211976
+		RIGHT=50.118229833968
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 }
+	{2 1 }
+	[
+		UP=1.8497370812963e-07
+		DOWN=1.6548155053567e-07
+		LEFT=1.7811995333292e-07
+		RIGHT=1.7786454606539e-07
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 1 }
+	{}
+	{}
+	[
+		UP=0.037829048850289
+		DOWN=0.069919376372158
+		LEFT=0.028283408012381
+		RIGHT=0.03418283063783
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{2 1 }
+	{}
+	[
+		UP=29.205854546832
+		DOWN=36.553601348245
+		LEFT=48.366636007118
+		RIGHT=25.835276526774
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 1 }
+	{}
+	{}
+	[
+		UP=0.015348727022236
+		DOWN=0.02198143106271
+		LEFT=0.025250987087488
+		RIGHT=0.018882439757041
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{2 }
+	{3 }
+	{}
+	[
+		UP=0.0011906096929368
+		DOWN=0.0021443990947223
+		LEFT=0.0010025375467332
+		RIGHT=0.0017351646293445
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{2 }
+	{3 }
+	{}
+	[
+		UP=0.00051140735335187
+		DOWN=0.00046271068741425
+		LEFT=0.00035728611692522
+		RIGHT=0.00065041881982735
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 2 1 }
+	{}
+	[
+		UP=5.1077993126216e-08
+		DOWN=7.2660259275121e-08
+		LEFT=6.8943608786542e-08
+		RIGHT=6.9727290608519e-08
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{3 }
+	{1 }
+	[
+		UP=1.6177923753254e-05
+		DOWN=1.6099409500555e-05
+		LEFT=1.5680100016182e-05
+		RIGHT=2.2150568962495e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 }
+	{1 }
+	{}
+	[
+		UP=0.62656404169418
+		DOWN=0.82946552439315
+		LEFT=0.60886603309748
+		RIGHT=0.50936656202194
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{1 }
+	{}
+	{2 }
+	[
+		UP=1.3807434475568e-08
+		DOWN=1.9375537541578e-08
+		LEFT=1.6781455497032e-08
+		RIGHT=2.2488750078935e-08
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 }
+	{1 }
+	{}
+	[
+		UP=0.41531843661179
+		DOWN=0.48648009842721
+		LEFT=0.4394230555595
+		RIGHT=0.43528965657418
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 2 }
+	{1 }
+	[
+		UP=3.5744814616466e-06
+		DOWN=2.5630968041844e-06
+		LEFT=2.9803370895489e-06
+		RIGHT=4.4934468318589e-06
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{2 }
+	{1 }
+	[
+		UP=0.0089213675499876
+		DOWN=0.01867749963522
+		LEFT=0.041548234614732
+		RIGHT=0.0083973460984639
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{3 2 }
+	{}
+	[
+		UP=1.5539030491584e-08
+		DOWN=1.9631959812337e-08
+		LEFT=3.3941855938139e-08
+		RIGHT=2.4725884120059e-08
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 }
+	{2 }
+	{}
+	[
+		UP=21.797204396988
+		DOWN=20.175421998806
+		LEFT=38.699596309182
+		RIGHT=16.31598820787
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 }
+	{2 }
+	{}
+	[
+		UP=7.808965012398
+		DOWN=7.1134957091735
+		LEFT=9.23038759314
+		RIGHT=24.205719251071
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 }
+	{1 }
+	{2 }
+	[
+		UP=5.7679885086849e-06
+		DOWN=5.66126548417e-06
+		LEFT=6.8114531088213e-06
+		RIGHT=8.3021797536657e-06
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{3 }
+	{2 }
+	[
+		UP=8.1695345245931e-07
+		DOWN=1.1881061648876e-06
+		LEFT=6.7396512379614e-07
+		RIGHT=1.1656596564348e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 }
+	{1 }
+	{}
+	[
+		UP=0.00015207789627239
+		DOWN=0.0004528982270309
+		LEFT=0.00065228283373086
+		RIGHT=0.0031201358923758
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 }
+	{}
+	{2 }
+	[
+		UP=3.8465050179034e-05
+		DOWN=1.8933645760483e-05
+		LEFT=2.5219439661289e-05
+		RIGHT=6.1452492283916e-05
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{1 }
+	{3 }
+	[
+		UP=2.5868683172453
+		DOWN=2.495129099382
+		LEFT=1.9141839298367
+		RIGHT=2.7653044898263
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{1 }
+	{3 2 }
+	[
+		UP=19.724470963567
+		DOWN=18.392721647575
+		LEFT=26.537734875869
+		RIGHT=18.555991002083
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{3 2 }
+	{}
+	[
+		UP=1.66114412463e-07
+		DOWN=2.3627730956101e-07
+		LEFT=3.6441156888138e-07
+		RIGHT=2.7150882198369e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{3 2 }
+	{}
+	[
+		UP=1.8163604570899e-08
+		DOWN=2.0238898247053e-08
+		LEFT=3.3014722219502e-08
+		RIGHT=2.8035650348353e-08
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{1 }
+	{2 }
+	[
+		UP=9.2399682309936e-07
+		DOWN=8.9807612231077e-07
+		LEFT=9.3304875725248e-07
+		RIGHT=1.2240477011216e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 1 }
+	{2 }
+	{}
+	[
+		UP=8.0439646480858
+		DOWN=0.37385156448453
+		LEFT=0.13908677817823
+		RIGHT=0.10513003835944
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 1 }
+	{}
+	{}
+	[
+		UP=0.015528291599045
+		DOWN=0.013709893207932
+		LEFT=0.019447634250545
+		RIGHT=0.015560189416471
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{2 }
+	{1 }
+	[
+		UP=0.0082838426325564
+		DOWN=0.0090269985562592
+		LEFT=0.016764621168985
+		RIGHT=0.0077890051811925
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 1 }
+	{2 }
+	[
+		UP=2.2777383967546e-06
+		DOWN=2.5233425479338e-06
+		LEFT=1.7312895319271e-06
+		RIGHT=2.9645521250556e-06
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{3 }
+	{1 }
+	[
+		UP=9.8784325892146e-05
+		DOWN=0.00021398021741992
+		LEFT=0.00014152891462452
+		RIGHT=0.00028918107065383
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 2 }
+	{1 }
+	[
+		UP=2.6288480547156e-06
+		DOWN=1.901852039756e-06
+		LEFT=3.0591703747225e-06
+		RIGHT=3.6259103480635e-06
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 2 }
+	{1 }
+	[
+		UP=5.3127088425684e-06
+		DOWN=5.8851567673287e-06
+		LEFT=5.0591607467277e-06
+		RIGHT=8.1272092177686e-06
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 1 }
+	{}
+	{}
+	[
+		UP=0.0027028409820854
+		DOWN=0.0027259977526043
+		LEFT=0.0040298241655217
+		RIGHT=0.0019409536720827
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{1 }
+	{2 }
+	{}
+	[
+		UP=2.0930585534095
+		DOWN=3.6400943900038
+		LEFT=7.9444064053744
+		RIGHT=2.6238306266315
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{}
+	{3 1 }
+	[
+		UP=0.25555964965634
+		DOWN=0.11979025260234
+		LEFT=0.15674491073336
+		RIGHT=0.18261361507209
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{3 }
+	{2 }
+	{}
+	[
+		UP=22.849882882518
+		DOWN=40.949777730559
+		LEFT=26.950196452751
+		RIGHT=19.054126257421
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{3 1 }
+	{}
+	{}
+	[
+		UP=0.0020115661506377
+		DOWN=0.0029122935887004
+		LEFT=0.0021901512244071
+		RIGHT=0.0046773401997903
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{3 }
+	{1 }
+	[
+		UP=2.3726124491298e-05
+		DOWN=5.296853803729e-05
+		LEFT=2.1839235690885e-05
+		RIGHT=3.1408647998061e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{}
+	{3 1 }
+	[
+		UP=0.058907254090522
+		DOWN=0.058926527498279
+		LEFT=0.079195557390592
+		RIGHT=0.05818763306799
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 }
+	{}
+	{1 }
+	[
+		UP=2.1234634298747e-05
+		DOWN=2.2504823334602e-05
+		LEFT=1.5518944916934e-05
+		RIGHT=2.5769031985496e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{2 }
+	{3 }
+	{}
+	[
+		UP=0.0005378368778404
+		DOWN=0.00081581980149753
+		LEFT=0.00043624307771363
+		RIGHT=0.0009477739175472
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{2 1 }
+	{3 }
+	[
+		UP=19.581099457724
+		DOWN=16.337668340351
+		LEFT=22.464468950349
+		RIGHT=44.822837152907
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 1 }
+	{2 }
+	{}
+	[
+		UP=0.059821589857749
+		DOWN=0.016776170551036
+		LEFT=0.28850290328365
+		RIGHT=0.025009415795083
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{3 1 }
+	{}
+	[
+		UP=7.8345351097088e-06
+		DOWN=1.1232868317009e-05
+		LEFT=1.1168055562148e-05
+		RIGHT=1.0354743662437e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{1 }
+	{2 }
+	{}
+	[
+		UP=6.8764325169881
+		DOWN=23.760891706
+		LEFT=8.0526905029921
+		RIGHT=6.0598453623301
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{1 }
+	{3 }
+	[
+		UP=6.0928225949994
+		DOWN=6.747223742448
+		LEFT=6.6224630071528
+		RIGHT=8.165585762134
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{}
+	{3 2 1 }
+	[
+		UP=0
+		DOWN=0
+		LEFT=0
+		RIGHT=0
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{2 }
+	{}
+	{3 }
+	[
+		UP=0.27577826313142
+		DOWN=0.27290480610628
+		LEFT=0.41935494943277
+		RIGHT=0.45196008942586
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{2 }
+	{3 1 }
+	[
+		UP=19.624118930577
+		DOWN=4.681571055
+		LEFT=4.6750638672763
+		RIGHT=6.2372159626039
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{2 }
+	{}
+	{1 }
+	[
+		UP=1.8813988099849e-05
+		DOWN=1.8256234487568e-05
+		LEFT=1.5127862299487e-05
+		RIGHT=2.4210021419559e-05
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{2 }
+	{3 1 }
+	[
+		UP=1.8264968817719
+		DOWN=0.81471933426405
+		LEFT=1.3442323631328
+		RIGHT=3.1235789040715
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{1 }
+	{}
+	{3 }
+	[
+		UP=64.064043451511
+		DOWN=65.033231941042
+		LEFT=62.211120525325
+		RIGHT=73.508249449795
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{3 }
+	{2 }
+	[
+		UP=1.7522353297699e-07
+		DOWN=2.6867529712353e-07
+		LEFT=1.3681121739138e-07
+		RIGHT=3.3836374065386e-07
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{1 }
+	{2 }
+	[
+		UP=1.324859503053e-06
+		DOWN=2.1730284314163e-06
+		LEFT=1.7585122135648e-06
+		RIGHT=2.4913309318731e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{3 }
+	{2 }
+	[
+		UP=4.8084249369697e-07
+		DOWN=4.6611591570723e-07
+		LEFT=3.3567941766387e-07
+		RIGHT=8.4634149955903e-07
+	]
+}
+{
+	picker_position = 2
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 3
+	{}
+	{1 }
+	{2 }
+	[
+		UP=8.3458408789434e-07
+		DOWN=8.5055592286676e-07
+		LEFT=8.0167117709638e-07
+		RIGHT=1.0832831519406e-06
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 1
+	{}
+	{3 2 }
+	{}
+	[
+		UP=3.389451213e-07
+		DOWN=2.1720248379077e-07
+		LEFT=2.822719481856e-07
+		RIGHT=1.6652988428602e-07
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{2 }
+	{3 1 }
+	{}
+	[
+		UP=9.568506647792e-05
+		DOWN=5.75487008034e-05
+		LEFT=5.4482953986733e-05
+		RIGHT=6.956473064465e-05
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{1 }
+	{2 }
+	{3 }
+	[
+		UP=32.653779682556
+		DOWN=34.597318256429
+		LEFT=41.934252782549
+		RIGHT=57.120738583796
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 1 }
+	{2 }
+	{}
+	[
+		UP=0.023199719602419
+		DOWN=0.01970547986731
+		LEFT=0.051853004446055
+		RIGHT=0.034118256894398
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{3 2 1 }
+	{}
+	{}
+	[
+		UP=21.492355985891
+		DOWN=5.6109885829154
+		LEFT=3.2566118240634
+		RIGHT=2.5217580305981
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = nil
+	{}
+	{3 }
+	{2 1 }
+	[
+		UP=3.0341449959812e-07
+		DOWN=2.3430130298277e-07
+		LEFT=2.1885937926892e-07
+		RIGHT=1.9711156906059e-07
+	]
+}
+{
+	picker_position = 3
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{}
+	{1 }
+	{3 }
+	[
+		UP=8.4896636515875
+		DOWN=16.079024065153
+		LEFT=10.046161338504
+		RIGHT=9.9004668597414
+	]
+}
+{
+	picker_position = 1
+	no_disks = 3
+	no_stacks = 3
+	picker_size_disk = 2
+	{1 }
+	{3 }
+	{}
+	[
+		UP=1.4040241450111e-08
+		DOWN=2.3103733378076e-08
+		LEFT=1.3144797327136e-08
+		RIGHT=2.8422324301766e-08
+	]
+}
