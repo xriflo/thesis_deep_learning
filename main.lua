@@ -3,67 +3,70 @@ require "qlearning"
 require "hanoi"
 
 
-
-
-
-for k, v in pairs(Q) do
-	io.write("{")
-	io.write("\n\tpicker_position = "..tostring(k.picker_position))
-	io.write("\n\tno_disks = "..tostring(k.no_disks))
-	io.write("\n\tno_stacks = "..tostring(k.no_stacks))
-	io.write("\n\tpicker_size_disk = "..tostring(k.picker_size_disk))
-	io.write("\n")
-	for i = 1,3 do
-		io.write("\t")
-		io.write("{")
-		for j = 1, #k[i] do
-			io.write(tostring(k[i][j]).." ")
-		end
-		io.write("}")
-		io.write("\n")
-	end
-	io.write("\t[\n")
-	for _,a in pairs(actions) do
-		io.write("\t\t"..a.."="..v[a].."\n")
-	end
-	io.write("\t]\n")
-	io.write("}\n")
-end
-
---[[
-dmp = torch.deserialize(torch.load("dumped_data.out"))
-Q = {}
-for k, v in pairs(dmp) do
-	Q[torch.deserialize(k)] = v
-end
-states = retrieve_keys(Q)
-print(states)
-torch.save("qq.out", torch.serialize(Q))
-]]--
-
 function load_global_env()
 	Q = getQ()
-	printQ(Q)
+	states = retrieve_keys(Q)
+	no_states = #states
+	no_disks = states[1]["no_disks"]
+	no_stacks = states[1]["no_stacks"]
+	state_index = 1
 end
 
+function transfor_dim(dim)
+	dim = no_disks - dim + 1
+	dim = no_disks - dim
+	print(diskW/(2^(dim-1)))
+	return diskW/(2^(dim-1))
+end
 
+function draw_state(state)
+	-- draw the stacks
+	love.graphics.setColor(204, 102, 0)
+	for stack = 1, state.no_stacks do
+		love.graphics.setLineWidth(1)
+		love.graphics.line(scrW*stack/(no_stacks+1), scrH/(no_stacks+1), scrW*stack/(no_stacks+1), scrH)
+	end
+	
+	-- draw the disks
+	love.graphics.setColor(255, 0, 0)
+	for i = 1, no_stacks do
+		for j = 1, #state[i] do			
+			love.graphics.rectangle("fill", i*free_space-transfor_dim(state[i][j])/2, scrH-j*diskH, transfor_dim(state[i][j]), diskH)
+		end
+	end
+
+	-- draw the picker
+	if not (state.picker_size_disk == nil) then
+		love.graphics.rectangle("fill", state.picker_position*free_space-transfor_dim(state.picker_size_disk)/2, pickerH, transfor_dim(state.picker_size_disk), diskH)
+	end
+	love.graphics.setColor(0, 0, 255)
+	love.graphics.rectangle("fill", state.picker_position*free_space-pickerW/2, 0, pickerW, pickerH)
+end
 
 function love.load()
 	load_global_env()
+
 	-- program variables
 	scrW = 400
 	scrH = 400
+	diskH = scrH/20
+	diskW = 2*scrW/(3*no_disks)
+	pickerW = scrW/40
+	pickerH = scrH/40
+	free_space = scrW/(1*(no_stacks+1))
+
 	love.window.setTitle("Bathory Game")
-	love.graphics.setBackgroundColor(255, 0, 0)
+	love.graphics.setBackgroundColor(255, 255, 255)
 	love.window.setMode(scrW, scrH, {resizable=false})
-	
 end
 
 function love.draw()
-	love.graphics.setBackgroundColor(255, 0, 0)
-	love.graphics.rectangle("fill", 20, 50, 60, 120 )
+	if state_index > no_states then
+		love.event.quit()
+	end
+	draw_state(states[state_index])
+	state_index = state_index + 1
 	love.timer.sleep(2)
-	love.event.quit()
 end
 
 
