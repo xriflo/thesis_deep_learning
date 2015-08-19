@@ -12,11 +12,8 @@ function load_global_env()
 	state_index = 1
 end
 
-function transfor_dim(dim)
-	dim = no_disks - dim + 1
-	dim = no_disks - dim
-	print(diskW/(2^(dim-1)))
-	return diskW/(2^(dim-1))
+function dim(no)
+	return diskW/(2^(no-1))
 end
 
 function draw_state(state)
@@ -30,14 +27,14 @@ function draw_state(state)
 	-- draw the disks
 	love.graphics.setColor(255, 0, 0)
 	for i = 1, no_stacks do
-		for j = 1, #state[i] do			
-			love.graphics.rectangle("fill", i*free_space-transfor_dim(state[i][j])/2, scrH-j*diskH, transfor_dim(state[i][j]), diskH)
+		for j = 1,#state[i] do		
+			love.graphics.rectangle("fill", i*free_space-dim(state[i][j])/2, scrH-j*diskH, dim(state[i][j]), diskH)
 		end
 	end
 
 	-- draw the picker
 	if not (state.picker_size_disk == nil) then
-		love.graphics.rectangle("fill", state.picker_position*free_space-transfor_dim(state.picker_size_disk)/2, pickerH, transfor_dim(state.picker_size_disk), diskH)
+		love.graphics.rectangle("fill", state.picker_position*free_space-dim(state.picker_size_disk)/2, pickerH, dim(state.picker_size_disk), diskH)
 	end
 	love.graphics.setColor(0, 0, 255)
 	love.graphics.rectangle("fill", state.picker_position*free_space-pickerW/2, 0, pickerW, pickerH)

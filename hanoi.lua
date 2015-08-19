@@ -82,7 +82,7 @@ function load_game()
 
 	-- put the disks on the first stack
 	for i = 1, no_disks do
-		local disk = Disk.new(first_stack, diskW/(2^(i-1)), no_disks-i+1)
+		local disk = Disk.new(first_stack, diskW/(2^(i-1)), i)
 		Stacks[first_stack].disks[i] = disk
 	end
 	Stacks[first_stack].no_disks = 3
