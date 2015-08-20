@@ -10,6 +10,7 @@ function load_global_env()
 	no_disks = states[1]["no_disks"]
 	no_stacks = states[1]["no_stacks"]
 	state_index = 1
+	printQ(Q)
 end
 
 function dim(no)
@@ -46,10 +47,10 @@ function love.load()
 	-- program variables
 	scrW = 400
 	scrH = 400
-	diskH = scrH/20
+	diskH = scrH/10
 	diskW = 2*scrW/(3*no_disks)
-	pickerW = scrW/40
-	pickerH = scrH/40
+	pickerW = scrW/10
+	pickerH = scrH/10
 	free_space = scrW/(1*(no_stacks+1))
 
 	love.window.setTitle("Bathory Game")
@@ -60,15 +61,22 @@ end
 function love.draw()
 	if state_index > no_states then
 		love.event.quit()
+	else
+		draw_state(states[state_index])
+		local screenshot = love.graphics.newScreenshot()
+    	screenshot:encode(tostring(state_index) .. '.png','png')
+
+		state_index = state_index + 1
 	end
-	draw_state(states[state_index])
-	state_index = state_index + 1
-	love.timer.sleep(2)
+	
+
 end
 
 
 function  love.update(dt)
 end
+
+
 
 
 

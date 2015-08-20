@@ -51,15 +51,38 @@ function getQ()
 			--print("finished all")
 			
 			for state, values in pairs(Q) do
-				Qdeserialized[torch.deserialize(state)] = values
+				s = torch.deserialize(state)
+				stack_corresponding_to_picker = s[tonumber(s["picker_position"])]
+				--[[
+				if s["picker_size_disk"] then
+					values["UP"] = 0.0
+					if stack_corresponding_to_picker[#stack_corresponding_to_picker] then
+						if s["picker_size_disk"] > stack_corresponding_to_picker[#stack_corresponding_to_picker] then
+							values["DOWN"] = 0.0
+						end
+					end
+				end
+				if not s["picker_size_disk"] then
+					values["DOWN"] = 0.0
+				end
+				if stack_corresponding_to_picker[#stack_corresponding_to_picker] == nil then
+					values["UP"] = 0.0
+				end
+				if tonumber(s["picker_position"])==tonumber(s["no_stacks"]) then
+					values["UP"] = 0.0
+					values["DOWN"] = 0.0
+					values["LEFT"] = 0.0
+					values["RIGHT"] = 0.0
+				end
+				]]--
+				Qdeserialized[s] = values
 			end
 
-			return Qdeserialized
-			--[[
+			
 			for state, qvalues in pairs(Q) do
-					print(tostring(Q[state]['UP']).." "..tostring(Q[state]['DOWN']).." "..tostring(Q[state]['LEFT']).." "..tostring(Q[state]['RIGHT']))
+					--print(tostring(Q[state]['UP']).." "..tostring(Q[state]['DOWN']).." "..tostring(Q[state]['LEFT']).." "..tostring(Q[state]['RIGHT']))
 			end
-			]]--
+			return Qdeserialized
 		else
 			if ep==episodes then
 				ep = 0
