@@ -52,29 +52,7 @@ function getQ()
 			
 			for state, values in pairs(Q) do
 				s = torch.deserialize(state)
-				stack_corresponding_to_picker = s[tonumber(s["picker_position"])]
-				--[[
-				if s["picker_size_disk"] then
-					values["UP"] = 0.0
-					if stack_corresponding_to_picker[#stack_corresponding_to_picker] then
-						if s["picker_size_disk"] > stack_corresponding_to_picker[#stack_corresponding_to_picker] then
-							values["DOWN"] = 0.0
-						end
-					end
-				end
-				if not s["picker_size_disk"] then
-					values["DOWN"] = 0.0
-				end
-				if stack_corresponding_to_picker[#stack_corresponding_to_picker] == nil then
-					values["UP"] = 0.0
-				end
-				if tonumber(s["picker_position"])==tonumber(s["no_stacks"]) then
-					values["UP"] = 0.0
-					values["DOWN"] = 0.0
-					values["LEFT"] = 0.0
-					values["RIGHT"] = 0.0
-				end
-				]]--
+				--deleteInvalidActions(s, values)
 				Qdeserialized[s] = values
 			end
 
@@ -113,6 +91,31 @@ function getQ()
 				end
 			end
 		end
+	end
+end
+
+function deleteInvalidActions(s, values)
+	stack_corresponding_to_picker = s[tonumber(s["picker_position"])]
+
+	if s["picker_size_disk"] then
+		values["UP"] = 0.0
+		if stack_corresponding_to_picker[#stack_corresponding_to_picker] then
+			if s["picker_size_disk"] > stack_corresponding_to_picker[#stack_corresponding_to_picker] then
+				values["DOWN"] = 0.0
+			end
+		end
+	end
+	if not s["picker_size_disk"] then
+		values["DOWN"] = 0.0
+	end
+	if stack_corresponding_to_picker[#stack_corresponding_to_picker] == nil then
+		values["UP"] = 0.0
+	end
+	if tonumber(s["picker_position"])==tonumber(s["no_stacks"]) then
+		values["UP"] = 0.0
+		values["DOWN"] = 0.0
+		values["LEFT"] = 0.0
+		values["RIGHT"] = 0.0
 	end
 end
 

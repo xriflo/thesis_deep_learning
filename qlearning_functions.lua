@@ -1,10 +1,12 @@
 math.randomseed(os.time())
 
 actions = {'UP', 'DOWN', 'LEFT', 'RIGHT'}
+classes = {UP=1, DOWN=2, LEFT=3, RIGHT=4}
+
 --iterations = 11
 --episodes = 100
-iterations = 5
-episodes = 5
+iterations = 11
+episodes = 1000
 Q = {}
 eps = 1
 delta_eps = 0.10
