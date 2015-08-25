@@ -17,17 +17,14 @@ feval = function(x_new)
    if _nidx_ > trainData:size() then _nidx_ = 1 end
 
    local sample = data[_nidx_]
-   local target = trainData.labels[_nidx_]:float()
-   local inputs = trainData.data[_nidx_]
-   print(inputs:type())
-   print(target:type())
+   local target = trainData.labels[_nidx_]:double()
+   local inputs = trainData.data[_nidx_]:double()
    -- reset gradients (gradients are always accumulated, to accomodate 
    -- batch methods)
    dl_dx:zero()
-   print("aici0")
    -- evaluate the loss function and its derivative wrt x, for that sample
    local loss_x = criterion:forward(model:forward(inputs), target)
-   print("aici1")
+
    model:backward(inputs, criterion:backward(model.output, target))
 
 

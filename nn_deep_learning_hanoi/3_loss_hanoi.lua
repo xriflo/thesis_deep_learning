@@ -8,4 +8,8 @@ model:add(nn.Tanh())
    -- we still provide it here:
 
 criterion = nn.MSECriterion()
-criterion.sizeAverage = false
+
+current loss = 822.94552387021   
+current loss = 822.94551205865   
+current loss = 822.94550141357   
+current loss = 822.94549177234   
