@@ -19,10 +19,12 @@ feval = function(x_new)
    local sample = data[_nidx_]
    local target = trainData.labels[_nidx_]:double()
    local inputs = trainData.data[_nidx_]:double()
+    --print(c)
    -- reset gradients (gradients are always accumulated, to accomodate 
    -- batch methods)
    dl_dx:zero()
    -- evaluate the loss function and its derivative wrt x, for that sample
+   --print(model:forward(inputs))
    local loss_x = criterion:forward(model:forward(inputs), target)
 
    model:backward(inputs, criterion:backward(model.output, target))
@@ -33,13 +35,13 @@ feval = function(x_new)
 end
 
 sgd_params = {
-   learningRate = 1e-3,
+   learningRate = 0.1,
    learningRateDecay = 1e-4,
    weightDecay = 0,
    momentum = 0
 }
 
-for i = 1,1e4 do
+for i = 1,1000 do
 
    -- this variable is used to estimate the average loss
    current_loss = 0
@@ -67,7 +69,7 @@ for i = 1,1e4 do
 
    -- report average error on epoch
    current_loss = current_loss / trainData:size()
-   print('current loss = ' .. current_loss)
+   print(i..' - current loss = ' .. current_loss)
 
 end
 

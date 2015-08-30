@@ -146,7 +146,9 @@ feval = function(x_new)
    local sample = data[_nidx_]
    local target = sample[{ {1} }]      -- this funny looking syntax allows
    local inputs = sample[{ {2,3} }]    -- slicing of arrays.
-
+   print("--------------------")
+   print(inputs)
+   print(target)
    -- reset gradients (gradients are always accumulated, to accomodate 
    -- batch methods)
    dl_dx:zero()
@@ -171,7 +173,7 @@ sgd_params = {
    learningRate = 1e-3,
    learningRateDecay = 1e-4,
    weightDecay = 0,
-   momentum = 0
+   momentum = 0.5
 }
 
 -- We're now good to go... all we have left to do is run over the dataset

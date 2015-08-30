@@ -9,7 +9,4 @@ model:add(nn.Tanh())
 
 criterion = nn.MSECriterion()
 
-current loss = 822.94552387021   
-current loss = 822.94551205865   
-current loss = 822.94550141357   
-current loss = 822.94549177234   
+

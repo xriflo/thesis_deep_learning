@@ -15,16 +15,14 @@ end
 
 
 -- Load dataset obtained from QLearning
-loaded = torch.load("dataset32x32.t7")
+loaded = torch.load("dataset32x32_1.t7")
 no_states = loaded.y:size()[2]
 no_actions = loaded.y:size()[3]
 
--- Percent value of samples for training/test
-percent_samples_training = 0.8
-no_samples_training = math.floor(percent_samples_training * no_states)
-no_samples_testing = no_states - no_samples_training
+
 
 -- Shuffle data
+
 shuffleData = {}
 shuffleData.X = torch.ByteTensor(loaded.X:size())
 shuffleData.y = torch.DoubleTensor(loaded.y:size())
@@ -34,41 +32,53 @@ for i = 1, no_states do
 	shuffleData.X[i] = loaded.X[shuffleIndeces[i]]
 	shuffleData.y[1][i] = loaded.y[1][shuffleIndeces[i]]
 end
-
+shuffleData = loaded
 shuffleData.X = shuffleData.X:transpose(3,4):float()
 
+
+print(shuffleData.X:size())
 -- Split data for training and testing
 trainData = {
-   data = shuffleData.X[{ {1, no_samples_training} }],
-   labels = shuffleData.y[1][{ {1, no_samples_training} }],
-   size = function() return no_samples_training end
+   data = shuffleData.X[{ {1, no_states} }],
+   labels = shuffleData.y[1][{ {1, no_states} }],
+   size = function() return no_states end
 }
 
-testData = {
-   data = shuffleData.X[{ {no_samples_training+1, no_samples_training+no_samples_testing} }],
-   labels = shuffleData.y[1][{ {no_samples_training+1, no_samples_training+no_samples_testing} }],
-   size = function() return no_samples_testing end
-}
+
 
 print '==> preprocessing data: colorspace RGB -> YUV'
 for i = 1,trainData:size() do
    trainData.data[i] = image.rgb2yuv(trainData.data[i])
 end
-for i = 1,testData:size() do
-   testData.data[i] = image.rgb2yuv(testData.data[i])
+
+
+for i = 1, trainData:size() do
+   for j = 1, 4 do
+      if trainData.labels[i][j] == 0 then
+         print("aici")
+         trainData.labels[i][j] = 0.001
+      end
+   end
 end
 
-channels = {'y','u','v'}
+c = torch.log1p(trainData.labels)
+d = torch.log(trainData.labels)
+print("------original labels-----")
+--print(trainData.labels)
+print("------log labels----------")
+print(d)
+trainData.labels = d
+
 
 -- Normalize each channel, and store mean/std
 -- per channel. These values are important, as they are part of
 -- the trainable parameters. At test time, test data will be normalized
 -- using these values.
-print(trainData.data:type())
+channels = {'y','u','v'}
 print '==> preprocessing data: normalize each feature (channel) globally'
 mean = {}
 std = {}
-print(trainData.data:size())
+
 for i,channel in ipairs(channels) do
    -- normalize each channel globally:
    mean[i] = trainData.data[{ {},i,{},{} }]:mean()
@@ -78,12 +88,28 @@ for i,channel in ipairs(channels) do
 end
 
 -- Normalize test data, using the training means/stds
-for i,channel in ipairs(channels) do
-   -- normalize each channel globally:
-   testData.data[{ {},i,{},{} }]:add(-mean[i])
-   testData.data[{ {},i,{},{} }]:div(std[i])
-end
 
+print("------norm to 0, 1--------")
+meanLabels = trainData.labels:mean()
+stdLabels = trainData.labels:std()
+--trainData.labels:add(-meanLabels)
+--trainData.labels:div(stdLabels)
+--print(trainData.labels)
+
+
+A = trainData.labels:min()
+B = trainData.labels:max()
+a = 0
+b = 1
+trainData.labels:add(a-A)
+trainData.labels:mul(b-a)
+trainData.labels:div(B-A)
+--print("--------0 to 1 labels--------")
+print(trainData.labels)
+
+
+--print(testData.labels)
+trainData.labels = trainData.labels:double()
 -- Local normalization
 print '==> preprocessing data: normalize all three channels locally'
 
@@ -99,9 +125,6 @@ for c in ipairs(channels) do
    for i = 1,trainData:size() do
       trainData.data[{ i,{c},{},{} }] = normalization:forward(trainData.data[{ i,{c},{},{} }])
    end
-   for i = 1,testData:size() do
-      testData.data[{ i,{c},{},{} }] = normalization:forward(testData.data[{ i,{c},{},{} }])
-   end
 end
 
 ----------------------------------------------------------------------
@@ -114,14 +137,9 @@ for i,channel in ipairs(channels) do
    trainMean = trainData.data[{ {},i }]:mean()
    trainStd = trainData.data[{ {},i }]:std()
 
-   testMean = testData.data[{ {},i }]:mean()
-   testStd = testData.data[{ {},i }]:std()
-
    print('training data, '..channel..'-channel, mean: ' .. trainMean)
    print('training data, '..channel..'-channel, standard deviation: ' .. trainStd)
 
-   print('test data, '..channel..'-channel, mean: ' .. testMean)
-   print('test data, '..channel..'-channel, standard deviation: ' .. testStd)
 end
 
 ----------------------------------------------------------------------
