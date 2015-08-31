@@ -10,17 +10,19 @@
 \input{template/titlepage.ro}
 \input{template/titlepage.en}
 
-\begin{acknowledgements}
-\input{src/base/acknowledgements}
-\end{acknowledgements}
+%\begin{acknowledgements}
+%\input{src/base/acknowledgements}
+%\end{acknowledgements}
 
-\begin{abstract}
-\input{src/base/abstract}
-\end{abstract}
+\begin{minipage}{\textwidth}
+	\begin{abstract}
+	\input{src/base/abstract}
+	\end{abstract}
+\end{minipage}
 
 \input{template/contents.pages}
 
-\printabbrev
+%\printabbrev
 
 \end{frontmatter} % end roman numbering
 
@@ -29,11 +31,11 @@
 
 \input{src/main}
 
-\appendix
-\input{src/appendix/index}
 
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{src/main}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 
 \printindex
 
