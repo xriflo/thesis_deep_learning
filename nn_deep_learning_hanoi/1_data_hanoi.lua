@@ -36,7 +36,7 @@ shuffleData = loaded
 shuffleData.X = shuffleData.X:transpose(3,4):float()
 
 
-print(shuffleData.X:size())
+
 -- Split data for training and testing
 trainData = {
    data = shuffleData.X[{ {1, no_states} }],
@@ -55,7 +55,7 @@ end
 for i = 1, trainData:size() do
    for j = 1, 4 do
       if trainData.labels[i][j] == 0 then
-         print("aici")
+         --print("aici")
          trainData.labels[i][j] = 0.001
       end
    end
@@ -66,7 +66,7 @@ d = torch.log(trainData.labels)
 print("------original labels-----")
 --print(trainData.labels)
 print("------log labels----------")
-print(d)
+--print(d)
 trainData.labels = d
 
 

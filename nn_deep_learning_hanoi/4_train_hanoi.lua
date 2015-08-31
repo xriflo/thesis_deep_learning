@@ -35,13 +35,13 @@ feval = function(x_new)
 end
 
 sgd_params = {
-   learningRate = 0.1,
+   learningRate = 1e-1,
    learningRateDecay = 1e-4,
    weightDecay = 0,
    momentum = 0
 }
 
-for i = 1,1000 do
+for i = 1,5000 do
 
    -- this variable is used to estimate the average loss
    current_loss = 0
