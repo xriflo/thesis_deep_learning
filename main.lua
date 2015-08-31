@@ -94,11 +94,26 @@ function love.draw()
     		end
     	end
     	_, act_class = getMaxValue(states[state_index])
-
-    	dataset.y[1][state_index][1] = Q[states[state_index]]["UP"]
-    	dataset.y[1][state_index][2] = Q[states[state_index]]["DOWN"]
-    	dataset.y[1][state_index][3] = Q[states[state_index]]["LEFT"]
-    	dataset.y[1][state_index][4] = Q[states[state_index]]["RIGHT"]
+    	if not dataset.y[1][state_index][1] == 0.0 then
+    		dataset.y[1][state_index][1] = Q[states[state_index]]["UP"]
+    	else
+    		dataset.y[1][state_index][1] = 1e-15
+    	end
+    	if not dataset.y[1][state_index][2] == 0.0 then
+    		dataset.y[1][state_index][2] = Q[states[state_index]]["DOWN"]
+    	else
+    		dataset.y[1][state_index][2] = 1e-15
+    	end
+    	if not dataset.y[1][state_index][3] == 0.0 then
+    		dataset.y[1][state_index][3] = Q[states[state_index]]["LEFT"]
+    	else
+    		dataset.y[1][state_index][3] = 1e-15
+    	end
+    	if not dataset.y[1][state_index][4] == 0.0 then
+    		dataset.y[1][state_index][4] = Q[states[state_index]]["RIGHT"]
+    	else
+    		dataset.y[1][state_index][4] = 1e-15
+    	end
 		state_index = state_index + 1
 	end
 	

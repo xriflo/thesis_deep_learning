@@ -1,6 +1,6 @@
 
 noutputs = 4
-model:add(nn.Tanh())
+model:add(nn.Sigmoid())
 
    -- The mean-square error is not recommended for classification
    -- tasks, as it typically tries to do too much, by exactly modeling

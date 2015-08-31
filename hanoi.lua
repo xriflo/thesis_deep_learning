@@ -188,7 +188,7 @@ end
 
 function getReward()
 	if isGameOver() then
-		return 100.0
+		return 1.0
 	else
 		return 0.0
 	end

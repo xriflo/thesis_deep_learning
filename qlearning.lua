@@ -74,7 +74,7 @@ function getQ()
 				if isGameOver() then
 					end_time =  socket.gettime()*1000
 					delta_time = end_time - start_time
-					print("[eps="..eps.."] it_"..tostring(it)..": episode "..tostring(ep).." finished in "..tostring(delta_time).."ms with #Q="..tlen(Q))
+					--print("[eps="..eps.."] it_"..tostring(it)..": episode "..tostring(ep).." finished in "..tostring(delta_time).."ms with #Q="..tlen(Q))
 					ep = ep + 1
 					start_time = socket.gettime()*1000
 					load_game()

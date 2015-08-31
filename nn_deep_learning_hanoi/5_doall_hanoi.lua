@@ -1,3 +1,4 @@
+torch.setnumthreads(1)
 dofile '1_data_hanoi.lua'
 dofile '2_model_hanoi.lua'
 dofile '3_loss_hanoi.lua'

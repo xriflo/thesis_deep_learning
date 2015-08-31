@@ -55,7 +55,6 @@ end
 for i = 1, trainData:size() do
    for j = 1, 4 do
       if trainData.labels[i][j] == 0 then
-         --print("aici")
          trainData.labels[i][j] = 0.001
       end
    end
