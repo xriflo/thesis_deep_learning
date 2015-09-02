@@ -41,7 +41,7 @@ sgd_params = {
    momentum = 0.9
 }
 
-for i = 1,2000 do
+for i = 1,100 do
 
    -- this variable is used to estimate the average loss
    current_loss = 0

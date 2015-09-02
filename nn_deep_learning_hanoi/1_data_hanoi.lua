@@ -15,7 +15,7 @@ end
 
 
 -- Load dataset obtained from QLearning
-loaded = torch.load("dataset32x32_1.t7")
+loaded = torch.load("dataset32x32_alterated.t7")
 no_states = loaded.y:size()[2]
 no_actions = loaded.y:size()[3]
 
@@ -104,7 +104,7 @@ trainData.labels:add(a-A)
 trainData.labels:mul(b-a)
 trainData.labels:div(B-A)
 --print("--------0 to 1 labels--------")
-print(trainData.labels)
+--print(trainData.labels)
 
 
 --print(testData.labels)
