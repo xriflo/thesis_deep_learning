@@ -5,12 +5,13 @@
 \label{sec:motivation}
 Humans have always felt the need to explore and find a way to a better life. Starting with stone tools (2.6 million years ago) and continuing with personal computers are only some proof in human evolution. Lately, we have discovered Machine Learning which have the purpose to allow machines for learning to do different tasks.
 
-Deep learning is a subfield of machine learning area and it is inspired by how the human brain works. Through deep learning, we are trying to solve some of the most pressuring human problems as cancer classification (benign or malignant tumor)\cite{mitosis}, self-driving cars based on pedestrian detections\cite{pedestrian} or recognizing digits taken by Google Street View\cite{svhn}, all using unsupervised learning of features.
+Deep learning is a subfield of machine learning area and it is inspired by how the human brain works. Through deep learning, we are trying to solve some of the most pressuring human problems as cancer classification (benign or malignant tumor)\cite{mitosis}, self-driving cars based on pedestrian detections\cite{pedestrian} or recognizing digits form photos taken with Google Street View\cite{svhn}, all using unsupervised learning of features.
 
 This paper propese an in-dept look of solving reinforcement learning problems, using convolutional neural networks. More exactly, we want to design an agent which is capable of learning to play a game\cite{atari} seeing only the pixels from the frames and being rewarded after finishing the game.
 
-This ideea was brought to attention in 2013, when Alex Graves et al. from DeepMind\footnote{\url{http://deepmind.com/}} came with the ideea of creating a convolutional neural network capable of playing different Atari 2600 games, being as good as a game tester. The motivation behind this experiment is not only connected with the fact that we have a machine capable of playing games, but the more important problem is that they achieved the generalization of a machine that could learn several types of games, which in fact is the starting of a new revolution in machine learning. If we are capable of making one unique algorithm that can solve multiple tasks, we are capable of simulating the real human brain and capable of reducing complex problems to another ones, much more simple and thus, we can reduce programming burden and solving problems as cancer classification.
+This ideea was brought to attention in 2013, when Alex Graves et al. from DeepMind\footnote{\url{http://deepmind.com/}} came with the ideea of creating a convolutional neural network capable of playing different Atari 2600 games, being almost as good as a game tester. We will see later what almost means. The motivation behind this experiment is not only connected with the fact that we have a machine capable of playing games, but the more important problem is that they achieved the generalization of a machine that could learn several types of games, which in fact is the starting of a new revolution in machine learning. If we are capable of making one unique algorithm that can solve multiple tasks, we are capable of simulating the real human brain and capable of reducing complex problems to another ones, much more simple and thus, we can reduce programming burden and solving problems as cancer classification.
 
+Moreover, there are also another types of applications that can suggest the power of convolutional neural networks and one of them is the neural algorithm for creating paintings\cite{paintings} from ordinary pictues. The inputs is represented by two pictures, one which is the painting (\textbf{e.g} \textit{The Starry Night} of Vincent van Gogh) and the other one which is a normal photo, like a picture with a house. The output of the network is the house painted in van Gogh's technique.
 
 
 \section{Project description}
@@ -19,13 +20,25 @@ This paper presents two different algorithms in creating a good agent which can 
 
 First of them is the classical Q-Learning, which is searching the optimal policy for taking actions from each state of the game. We will discus about exploration vs exploitation problem, how to determine the learning rate suitable for our purposes, how many episodes we have to play until we determine a policy close to the optimal one.
 
-The second topic we approach in this paper is the possibility of predicting continous output from image. Practically, we take the dataset from Q-Learning which contains image as input and a table of four values corresponding to the four possible actions in Hanoi Tower games: up, down, left and right.
+The second topic we approach in this paper is the possibility of predicting continous output from image. Practically, we take the dataset from Q-Learning which contains images as input and a table of four values corresponding to the four possible actions in Hanoi Tower games: up, down, left and right.
+Here, we can determine whether we have a good or a bad convolutional neural network. In other words, we will test the capacity of learning samples, the capacity for generalization.
 
-The last part is the one we combine the first two modules.
+One must pay attention to the data pre-processing, being an important step in data selection. For example, when we learn to classify thing, we may not need the color information. Converting data from RGB to YUV gives us the possibility in separating luminance from chrominance.
+
+After that we need to look closer at the model. We need a model that can be proven to converge at the optimal solution and also a model that can learn very fast. Datasets are very big and can contain millions of pictures.
+
+There is also important when we have to stop training to avoid overfitting and our primary target is to minimize the test error. We have to take care how we split dataset in training, testing or validation, how we determine that we can stop training the network and how we can formalize the results.
+
+Another important step is called the loss function, the moment when we determine how far we are from our target. Here, we can find the border between underfitting and overfitting, called the optimum state. If we have high bias, it means that we have underfitting and our classifier is not able to predict well data and if we have high variance, it means that we have learning training samples very well, but can not predict new samples.
+
+The last part is the one where we combine the first two modules. We will try to get a closer look of what DeepMind have done with the Atari paper\cite{atari}. The most important part is the connection between the Q-LEarning algorithm and the convolutional neural network. We will see how weights are updated accorded to rewards recieved during the game.
+
+The main problem is to create an architecture capable of playing any game without adapting initial meta parameters. All the above-mentioned problems will be discussed in this paper and formalized using experimental results, plots or anything that can serve as a proof.
+\newpage
 
 \section{Technologies}
 \label{sec:technologies}
-All algorithms described in this paper have been implemented using Torch7\footnote{\url{http://torch.ch/}}, a deep learning framework written in Lua\footnote{\url{http://www.lua.org/about.html}}, a scripting language based on a C API. For creating the game, generating frames or modifying images LOVE platform\footnote{\url{https://love2d.org/wiki/Main_Page}} was the close alternative which is also written in Lua. For interactive computing(image/filter visualization) iTorch\footnote{\url{https://github.com/facebook/iTorch}} has been used.
+All algorithms described in this paper have been implemented using Torch7\footnote{\url{http://torch.ch/}}, a deep learning framework written in Lua\footnote{\url{http://www.lua.org/about.html}}, a scripting language based on a C API. For creating the game, generating frames or modifying images LOVE platform\footnote{\url{https://love2d.org/wiki/Main_Page}} which is also written in Lua has been used. For interactive computing(image/filter visualization) iTorch\footnote{\url{https://github.com/facebook/iTorch}} has been prefered.
 
 Why Lua and Torch? They provide a fast environment as opposed to another ones\cite{torch7}, multiple modules with functions already implemented such as transfer functions(tanh, sigmoid), loss functions(Mean Squared Error, Negative Log Likelihood) or convolutional layers(SpatialMaxPooling, SpatialSubSampling)
 

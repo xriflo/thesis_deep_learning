@@ -1,7 +1,8 @@
+
 \chapter{State of the art}
 \label{chapter:state}
 
-Being a large domain, deep learning imposes a research in multiple subdomains, neuroscience, reinforcement learning, neural networks and convolutional neural networks. That being said, this chapter is dedicated to gathering information on each of them.
+Being a large domain, deep learning imposes a research in multiple subdomains such as neuroscience, reinforcement learning, neural networks or convolutional neural networks. That being said, this chapter is dedicated to gathering information on each of them.
 
 \section{Reinforcement learning}
 \label{sec:reinforcement}
@@ -14,3 +15,59 @@ The history of reinforcement learning starts with the pavlovian experiment\cite{
 
 \subsubsection{Q-Learning}
 \label{qlearning}
+Q-Learning\cite{norvig} is the algorithm for learning in small steps details about the environment. We know the initial starting state of the game and also a set of possible actions we can take in order to change the current state. At the beginning, we are constrained to choose randomly an action, because we do not know which one could bring us winning the game and this is the exploration phase. We keep randomly picking actions until the game is finished.
+
+A game can have \textbf{n} number of states and \textbf{a} number of actions. We keep in memory a table \textbf{Q} of size \textbf{nxa} and we initialize all the corresponding elements with zero. During the game, rewards can be granted. Some of them can be good rewards and some of them can be bad rewards. When we recieve rewards, we update the previous state with the score obtained.
+
+Here we have to choose between exploration and exploitation. In the first states of the game, when we know nothing about environment, so we choose to explore new states in order to see if they bring us rewards. After some \textbf{e} episodes we learn which actions can bring us closer to the winning of the game. This is the moment when to start to exploit the things we have already learnt in the previous episodes. Assume we are in state \textbf{s} and have the next possible actions \{$a_{1},a_{2},a_{3},a_{4}$\}. Keep in mind that we recorded the Q-table. At this moment we choose the action which gives us the best utility from states s. If \textbf{Q(s,$a_{3}$)} is the maxim value of \textbf{Q} in state \textbf{s} we will pick action \textbf{$a_{3}$}.
+
+\subsubsection{Sarsa}
+\label{sarsa}
+Q-Learning and Sarsa look alike except for the fact that Sarsa is updating his policy based on the action it takes and which is not necessary the best action, but it is the action expected to pursue his policy.
+
+
+Both algorithms have variables that have to be adjusted during the computation.
+
+\begin{itemize}
+  \item \textbf{Learning rate} adjusts learning of new information flow. \textbf{0} is for not acquiring information and \textbf{1} is for considering only the new information.
+  \item \textbf{Discount factor} adjust the importance of current rewards(\textbf{1}) vs future rewards(\textbf{0})
+\end{itemize}
+
+\section{Convolutional Neural Networks}
+
+In this chapter we will discuss how networks works, the principles behind them and what optimization techniques we can use. It is worth mentioning that the information is splitted in data, model, loss functions, train and test.
+
+\subsection{Data}
+\label{data}
+The data resulted from pre-processing step is crucial for learning. To differentiate between noisy images and/or bad lighting is a big problem for a network because it may learn the inappropriate features.
+
+One of the first concerns is choosing the color space. We can have RGB(Red Green Blue) or we can have YUV(luminance blue–luminance red–luminance). In many cases RGB is the first choice instead of YUV\cite{pipeline}. If we are interested in color both of them are a good choice, but if we are intrested in edges the luminance channel it will be more suitable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Model}
+\label{model}
+
+\subsection{Loss functions}
+\label{loss}
+
+\subsection{Train}
+\label{train}
+
+\subsection{Test}
+\label{test}
