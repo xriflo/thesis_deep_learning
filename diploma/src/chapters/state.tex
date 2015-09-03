@@ -26,12 +26,24 @@ Here we have to choose between exploration and exploitation. In the first states
 Q-Learning and Sarsa look alike except for the fact that Sarsa is updating his policy based on the action it takes and which is not necessary the best action, but it is the action expected to pursue his policy.
 
 
-Both algorithms have variables that have to be adjusted during the computation.
+When dealing with large negative rewards Q-Learning is dealing better than Sarsa\cite{multi-agent} because Q-Learning does not avoid risk situations while Sarsa is avoiding them. Both algorithms have variables that have to be adjusted during the computation.
 
 \begin{itemize}
   \item \textbf{Learning rate} adjusts learning of new information flow. \textbf{0} is for not acquiring information and \textbf{1} is for considering only the new information.
   \item \textbf{Discount factor} adjust the importance of current rewards(\textbf{1}) vs future rewards(\textbf{0})
 \end{itemize}
+
+$\epsilon$-Greedy is the policy for choosing the next action. As we have already mentioned the problem between choosing explorations vs. exploitation, this strategy comes for helping in the first episodes where we don't have too much details about environment. It says that we can choose randomly an action from the set of actions with probability $\epsilon$ and choose the best action with probability $1-\epsilon$.
+
+Figure \ref{fig:svsq} shows behaviour of Q-Learning and Sarsa 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=282px,height=288px]{src/img/state/qsrewards}
+		\caption{Q-Learning vs Sarsa\cite{sutton}} \label{fig:svsq}
+    \end{center}
+\end{figure}
+
 
 \section{Convolutional Neural Networks}
 
@@ -43,31 +55,84 @@ The data resulted from pre-processing step is crucial for learning. To different
 
 One of the first concerns is choosing the color space. We can have RGB(Red Green Blue) or we can have YUV(luminance blue–luminance red–luminance). In many cases RGB is the first choice instead of YUV\cite{pipeline}. If we are interested in color both of them are a good choice, but if we are intrested in edges the luminance channel it will be more suitable.
 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=309px,height=192px]{src/img/state/lenayuv}
+		\caption{Lena: RGB and Y, U, V channels\cite{lena}} \label{fig:svsq}
+    \end{center}
+\end{figure}
+
+If values have different ranges of scales, then logarithmic normalization should be used. In distance-based classification, if we have a feature with values between [0, 1] and another feature with values between [0, 2000] we need to normalize the data between [0, 1] or [-1, 1] such that every variation of each feature counts the same as the other feature. We do not want to start with giving more importance to a feature than the others.
+
+Another aspect that should be considered is the importance of illumination conditions. If we are not interested than we remove the mean-value for each samples. If we have thousand of pictures with different illumination condition we remove the average illumination by extracting the mean-value such that all the pictures have the same contrast.
+
+Splitting data is another importan aspect in training networks. We have to have three sets: train sets, test sets and validation sets. Fifteen percent of initial data goes to training and the rest fifteen percent is splitted in twenty five percent for testing and twenty five percent for validation. This is used when the dataset is very large. Having a small dataset implies the statretgy to split data into 2/3 for training and 1/3 for testing\cite{splitting}.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Cross validation\cite{cross-validation} should also be also taken into consideration. Cross validation is the algorithm of splittng data into test dataset and train dataset forcing both sets cross-over in succesive epochs such that every part in the initial dataset validates the model of the neural network. Assume that we have splitted data into \{\textbf{A}, \textbf{B}, \textbf{C}\}, each one being 1/3 of initial dataset. In the first iteration we take the model to train on \textbf{A} and \textbf{B} and test it with \textbf{C}. The second iteration implies the training on \textbf{A} and \textbf{C} and testing on \textbf{B} and the last iteration implies training on \textbf{B} and \textbf{C} and testing on \textbf{A}. In this way we can assure that our model is working well for every case.
 
 
 
 \subsection{Model}
 \label{model}
 
+\subsubsection{Nonlinear activation functions\cite{david,hiddenfunctions,backprop}}
+\label{transfer}
+Activation functions are used to define a connection between input and output.
+
+\textbf{Hyperbolic tangent function(tanh)}
+\begin{itemize}
+	\item outputs values between 0 and 1
+	\item outputs are zero-centred
+	\item if extremely large negative numbers are given as input, the output will be close to -1 and the error will propagate correctly
+	\item generally used in hidden layers
+	\item tanh layers learn fasten than sigmoid layers because of the size of the gradient
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{src/img/state/tanh}
+		\caption{tanh function} \label{fig:tanh}
+    \end{center}
+\end{figure}
+
+
+\textbf{Sigmoid function(sigmoid)}
+\begin{itemize}
+  \item learning values far away from threshold is difficult
+  \item useful for backpropagation algorithms
+  \item easy for calculating derivatives and used in gradient descent methods
+  \item output values between 0 and 1
+  \item can be used in binary classification problems with setting some threshold
+  \item if extremely large negative numbers are given as input, the output will be close to zero and the error will not propagate correctly
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{src/img/state/sigmoid}
+		\caption{sigmoid function} \label{fig:sigmoid}
+    \end{center}
+\end{figure}
+\newpage
+\textbf{Rectified Linear Units(ReLU)}
+\begin{itemize}
+	\item better results in networks combined with stochastic gradient descent than tanh/sigmoid\cite{imagenet}
+	\item ReLU is determined to be better than tanh/sigmoid empirically
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{src/img/state/relu}
+		\caption{ReLU} \label{fig:relu}
+    \end{center}
+\end{figure}
+
+
+
+
 \subsection{Loss functions}
 \label{loss}
 
-\subsection{Train}
-\label{train}
+\subsection{Train and testing}
+\label{train-test}
 
-\subsection{Test}
-\label{test}
