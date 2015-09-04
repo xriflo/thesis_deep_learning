@@ -57,8 +57,8 @@ One of the first concerns is choosing the color space. We can have RGB(Red Green
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=309px,height=192px]{src/img/state/lenayuv}
-		\caption{Lena: RGB and Y, U, V channels\cite{lena}} \label{fig:svsq}
+		\includegraphics[width=410px,height=102px]{src/img/state/lenayuv}
+		\caption{Lena: RGB and Y, U, V channels} \label{fig:lenayuv}
     \end{center}
 \end{figure}
 
@@ -75,6 +75,8 @@ Cross validation\cite{cross-validation} should also be also taken into considera
 
 \subsection{Model}
 \label{model}
+
+%------------------------Nonlinear activation functions------------------------
 
 \subsubsection{Nonlinear activation functions\cite{david,hiddenfunctions,backprop}}
 \label{transfer}
@@ -127,12 +129,69 @@ Activation functions are used to define a connection between input and output.
     \end{center}
 \end{figure}
 
+%------------------------Convolutional layers------------------------
+\newpage
+\subsubsection{Convolutional layers}
+Pooling layers can be used in getting rid of unwanted information and also can be useful in dimensionality reduction.
+
+\textbf{Spatial Convolution}
+\begin{itemize}
+	\item{used to modify the frequency of neighbourhood pixels}
+	\item{accentuates edges in combination with Gabor filters}
+	\item{can be used to obtain gaussian blur effect}
+	\item{suppose we have an image of \textbf{width x height} size, if we apply a convolutional kernel of size \textbf{kw x kh} the size of the output will become \textbf{(width - kw + 1) x (height - kh + 1)}}
+\end{itemize}
+
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{src/img/state/lena-spatialconv22}
+		\caption{Spatial Convolution(2D) with 12 output channels, 5x5 kernel matrix and 2x2 stride} \label{fig:lena-spatialconv}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{src/img/state/gabor}
+		\caption{Gabor filters\cite{gabor}} \label{fig:gabor.png}
+    \end{center}
+\end{figure}
+
+\newpage
+\textbf{Average pooling}
+\begin{itemize}
+	\item{useful for dimensionality reduction}
+	\item{acts poorly in some situations as opposed to max-pooling}
+\end{itemize}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=140px,height=140px]{src/img/state/lena-avgpooling}
+		\caption{Average pooling with 10x10 kernel matrix and 2x2 stride} \label{fig:lena-avgpooling}
+    \end{center}
+\end{figure}
+
+
+
+\textbf{Max pooling}
+
+\begin{itemize}
+	\item{useful for dimensionality reduction}
+	\item{useful for activating features that have a low probability of being activated\cite{maxpooling}}
+	\item{if a feature appears in a cell it is less probably to appear in the neighbourhood cells}
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=140px,height=140px]{src/img/state/lena-maxpooling}
+		\caption{Max pooling with 5x5 kernel matrix and 2x2 stride} \label{fig:lena-avgpooling}
+    \end{center}
+\end{figure}
 
 
 
 \subsection{Loss functions}
 \label{loss}
 
-\subsection{Train and testing}
+\subsection{Training and testing}
 \label{train-test}
 
