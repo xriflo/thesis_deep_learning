@@ -219,18 +219,18 @@ J(weights) = \displaystyle\sum_{i=1}^{no_{samples}}max(0, 1 - labels^{(i)}\cdot 
 \end{equation}
 
 
-\subsection{Optimizations for learning\cite{ng}}
+\subsection{Optimizations for learning}
 Optimization algorithm are used in updating the weights in a neural network in concordance with a loss function.
 \label{optimization}
-Assuming that our cost function is defined as follows:
+Assuming that our cost function is defined as follows\cite{ng}:
 \begin{equation}
 	J(weights_n) = \frac{1}{2no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})^2
 \end{equation}
-we state that derivative of \textbf{J} w.r.t \textbf{weights} is:
+we state that derivative of \textbf{J} w.r.t \textbf{weights} is\cite{ng}:
 \begin{equation}
 	\frac{\partial J}{\partial weights} = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})
 \end{equation}
-Updating weights is done in accordance with the derivative of cost function.
+Updating weights\cite{ng} is done in accordance with the derivative of cost function.
 \begin{equation}
 	weights_n = weights_n - \alpha\cdot\frac{\partial J}{\partial weights}
 \end{equation}
@@ -248,7 +248,7 @@ where $\alpha$ represents learning rate.
 
 \begin{algorithm}
 	\floatname{algorithm}{Algorithm}
-	\caption{Gradient Descent} \label{gd-code}
+	\caption{Gradient Descent\cite{ng}} \label{gd-code}
 	\begin{algorithmic}[1]
 		\Repeat
        			\For{\texttt{j = 1, no_weights}}
@@ -275,7 +275,7 @@ where $\alpha$ represents learning rate.
 
 \begin{algorithm}
 	\floatname{algorithm}{Algorithm}
-	\caption{Stochastic Gradient Descent} \label{sgd-code}
+	\caption{Stochastic Gradient Descent\cite{ng}} \label{sgd-code}
 	\begin{algorithmic}[1]
 		\Repeat
 			\State shuffle dataset (randomly)
@@ -321,22 +321,22 @@ Both of them are illustrated in the figure \ref{fig:overfitting}.
 
 \newpage
 
-\section{An in-depth look to ``Human-level control through deep reinforcement learning'' paper\cite{nature}}
+\section{An in-depth look to ``Human-level control through deep reinforcement learning'' paper}
 This section is dedicated to analyzing the paper in which is proposed the method to solve playing games using deep learning and reinforcement learning. The proposed an agent, called Q-Network capable of playing 43 different games and adapting to each one without being modified.
 
 
 \begin{figure}[h]
 	\floatname{algorithm}{Algorithm}
 	\begin{center}
-		\includegraphics[width=380px,height=58px]{src/img/state/ataripic}
-		\caption{Snapshots with five Atari 2600 Games: Pong, Breakout, Space Invaders, Seaquest, Beam Rider} \label{fig:ataripic}
+		\includegraphics[width=334px,height=51px]{src/img/state/ataripic}
+		\caption{Snapshots with five Atari 2600 Games: Pong, Breakout, Space Invaders, Seaquest, Beam Rider\cite{nature}} \label{fig:ataripic}
     \end{center}
 \end{figure}
 
 
 
 
-\subsection{Architecture\cite{nature}}
+\subsection{Architecture}
 The article\cite{nature} proposes a new type of network, Q-network which combines convolutional layers, a representation of human receptive fields and pooling layers used for dimensionality reduction. The input layer is represented by \textbf{84x84x4} neurons for the image produced after preprocessing frames from the game and is followed by three convolutional layers(32 filters of 8x8 and stride 4 with ReLU, 64 filters of 4x4 and stride 2 with ReLU, 64 filters of 3x3 and stride 1 with ReLU), two fully connected layers: a hidden layer with 512 units and the output layer which has a number of neurons equal with the number of actions corresponding to each game. Each hidden layer is followed by a rectified linear unit (ReLU).
 
 
@@ -372,7 +372,8 @@ For minimizing loss function, Stochastic Gradient Descent is used in combination
 
 The $\epsilon$-greedy policy was set to 0.05 and the Q-values were scaled because of big range values from rewards.
 \newpage
-\subsection{Algorithm\cite{nature}}
+\subsection{Algorithm}
+The algorithm\cite{nature} used for training Q-Network is presented as it follows:
 \begin{algorithm}
 	\floatname{algorithm}{Algorithm}
 	\caption{Q-Network} \label{sgd-code}
@@ -417,9 +418,9 @@ The $\epsilon$-greedy policy was set to 0.05 and the Q-values were scaled becaus
 \newpage
 
 
-\subsection{Results\cite{nature}}
+\subsection{Results}
 
-
+This section is dedicated to results of using Q-Network\cite{nature} in playing games.
 Q-Network is capable of learning the optimal policy. For example, in Breakout is learning to make a tunnel between block for sending the ball in the back. Receivering only the pixel from the frames, rewards and using the same network structure it is capable of playing different games. The Q-Network can achieve 75\% of a score of a human test at 49 games.
 
 
