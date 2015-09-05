@@ -45,9 +45,15 @@ Figure \ref{fig:svsq} shows behaviour of Q-Learning and Sarsa
 \end{figure}
 
 
-\section{Convolutional Neural Networks}
+\section{Neural Networks and Convolutional Neural Networks}
 
 In this chapter we will discuss how networks works, the principles behind them and what optimization techniques we can use. It is worth mentioning that the information is splitted in data, model, loss functions, train and test.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=294px,height=186px]{src/img/state/nn2}
+		\caption{example of neural network} \label{fig:nn}
+    \end{center}
+\end{figure}
 
 \subsection{Data}
 \label{data}
@@ -66,10 +72,10 @@ If values have different ranges of scales, then logarithmic normalization should
 
 Another aspect that should be considered is the importance of illumination conditions. If we are not interested than we remove the mean-value for each samples. If we have thousand of pictures with different illumination condition we remove the average illumination by extracting the mean-value such that all the pictures have the same contrast.
 
-Splitting data is another importan aspect in training networks. We have to have three sets: train sets, test sets and validation sets. Fifteen percent of initial data goes to training and the rest fifteen percent is splitted in twenty five percent for testing and twenty five percent for validation. This is used when the dataset is very large. Having a small dataset implies the statretgy to split data into 2/3 for training and 1/3 for testing\cite{splitting}.
+Splitting data is another importan aspect in training networks. We have to have three sets: train sets, test sets and validation sets. 50\% of initial data goes to training and the rest fifteen percent is splitted in 25\% for testing and 25\% for validation. This is used when the dataset is very large. Having a small dataset implies the statretgy to split data into $\frac{2}{3}$ for training and $\frac{1}{3}$ for testing\cite{splitting}.
 
 
-Cross validation\cite{cross-validation} should also be also taken into consideration. Cross validation is the algorithm of splittng data into test dataset and train dataset forcing both sets cross-over in succesive epochs such that every part in the initial dataset validates the model of the neural network. Assume that we have splitted data into \{\textbf{A}, \textbf{B}, \textbf{C}\}, each one being 1/3 of initial dataset. In the first iteration we take the model to train on \textbf{A} and \textbf{B} and test it with \textbf{C}. The second iteration implies the training on \textbf{A} and \textbf{C} and testing on \textbf{B} and the last iteration implies training on \textbf{B} and \textbf{C} and testing on \textbf{A}. In this way we can assure that our model is working well for every case.
+Cross validation\cite{cross-validation} should also be also taken into consideration. Cross validation is the algorithm of splittng data into test dataset and train dataset forcing both sets cross-over in succesive epochs such that every part in the initial dataset validates the model of the neural network. Assume that we have splitted data into \{\textbf{A}, \textbf{B}, \textbf{C}\}, each one being $\frac{1}{3}$ of initial dataset. In the first iteration we take the model to train on \textbf{A} and \textbf{B} and test it with \textbf{C}. The second iteration implies the training on \textbf{A} and \textbf{C} and testing on \textbf{B} and the last iteration implies training on \textbf{B} and \textbf{C} and testing on \textbf{A}. In this way we can assure that our model is working well for every case.
 
 
 
@@ -115,7 +121,7 @@ Activation functions are used to define a connection between input and output.
 		\caption{sigmoid function} \label{fig:sigmoid}
     \end{center}
 \end{figure}
-\newpage
+
 \textbf{Rectified Linear Units(ReLU)}
 \begin{itemize}
 	\item better results in networks combined with stochastic gradient descent than tanh/sigmoid\cite{imagenet}
@@ -188,10 +194,154 @@ Pooling layers can be used in getting rid of unwanted information and also can b
 \end{figure}
 
 
-
+\newpage
 \subsection{Loss functions}
 \label{loss}
+
+Loss functions are used to aproximate how far we are from the solution, the diffrence between observed values and predicted values.
+
+\textbf{Mean squared error}
+\begin{itemize}
+	\item{useful for regression}
+	\item{not used in classification problems}
+\end{itemize}
+\begin{equation}
+J(weights) = \frac{1}{2\cdot no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}\cdot(nn_{weights}(samples^{(i)}) - labels^{(i)})^2
+\end{equation}
+
+\textbf{Hinge loss (margin criterion)}
+\begin{itemize}
+	\item{useful for binary classifications}
+	\item{forces labels to be -1 or 1}
+\end{itemize}
+\begin{equation}
+J(weights) = \displaystyle\sum_{i=1}^{no_{samples}}max(0, 1 - labels^{(i)}\cdot nn_{weights}(samples^{(i)}))
+\end{equation}
+
+
+\subsection{Optimizations for learning\cite{ng}}
+Optimization algorithm are used in updating the weights in a neural network in concordance with a loss function.
+\label{optimization}
+Assuming that our cost function is defined as follows:
+\begin{equation}
+	J(weights_n) = \frac{1}{2no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})^2
+\end{equation}
+we state that derivative of \textbf{J} w.r.t \textbf{weights} is:
+\begin{equation}
+	\frac{\partial J}{\partial weights} = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})
+\end{equation}
+Updating weights is done in accordance with the derivative of cost function.
+\begin{equation}
+	weights_n = weights_n - \alpha\cdot\frac{\partial J}{\partial weights}
+\end{equation}
+where $\alpha$ represents learning rate.
+
+\newpage
+\textbf{Gradient descent (GD)}
+
+\begin{itemize}
+	\item{if $\alpha$ is too small, GD converges slow}
+	\item{if $\alpha$ is too large, GD can converge to local minimum and not global minimum}
+	\item{recommended for huge number of samples}
+	\item{require more iterations than SGD}
+\end{itemize}
+
+\begin{algorithm}
+	\floatname{algorithm}{Algorithm}
+	\caption{Gradient Descent} \label{gd-code}
+	\begin{algorithmic}[1]
+		\Repeat
+       			\For{\texttt{j = 1, no_weights}}
+       				\begin{equation}
+					weights_j = weights_j - \alpha\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})\cdot {samples_j}^{(i)}
+					\end{equation}
+      			\EndFor
+		\Until{convergence is obtained}
+	\end{algorithmic}
+\end{algorithm}
+
+
+\vspace{8mm}
+
+
+\textbf{Stochastic gradient descent (SGD)}
+
+\begin{itemize}
+	\item{very fast is number of samples is small}
+	\item{iterations are removed by computing $(X^T\cdot X)^{-1}$}
+	\item{requires regularization}
+	\item{needs feature scaling}
+\end{itemize}
+
+\begin{algorithm}
+	\floatname{algorithm}{Algorithm}
+	\caption{Stochastic Gradient Descent} \label{sgd-code}
+	\begin{algorithmic}[1]
+		\Repeat
+			\State shuffle dataset (randomly)
+			\For{\texttt{i = 1, no_samples}}
+       			\For{\texttt{j = 1, no_weights}}
+       				\begin{equation}
+					weights_j = weights_j - \alpha\cdot(nn_{weights}(samples^{(i)}) - labels^{(i)})\cdot {samples_j}^{(i)}
+					\end{equation}
+      			\EndFor
+      		\EndFor
+		\Until{convergence is obtained}
+	\end{algorithmic}
+\end{algorithm}
+
+\newpage
 
 \subsection{Training and testing}
 \label{train-test}
 
+The question now arises: when do we have to stop with training if a (convolutiona) neural network ?
+We have to take care of how much we train a network. If we train too much, it will learn the samples and will predict exactly the same values, but there will be a large error for samples it has not seen. If we train too little, the network will not learn how to predict the samples it has seen and will also have a large test error.
+Mathematically, the moment when we should stop with training is the moment when the test error will increase its value. In \ref{fig:traintest} we can see the optimum moment when we should stop training.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=188px,height=129px]{src/img/state/traintest}
+		\caption{train-test error\cite{traintest}} \label{fig:traintest}
+    \end{center}
+\end{figure}
+
+Underfitting means also high bias and represents the incapacity of the algorithm to recognize the pattern feaures in samples.
+
+Overfitting means also high variance and represent the incapacity of the algorith to adapt to new samples.
+
+Both of them are illustrated in the figure \ref{fig:overfitting}.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=390px,height=147px]{src/img/state/overfitting}
+		\caption{underfitting, bias-variance trade-off and overfitting\cite{ng}} \label{fig:overfitting}
+    \end{center}
+\end{figure}
+
+\newpage
+
+\section{An in-depth look to ``Playing Atari with Deep Reinforcement Learning'' and paper\cite{atari}}
+This section is dedicated to analyzing the paper in which is proposed the method to solve playing games using deep learning and reinforcement learning.
+
+\subsection{Architecture\cite{nature}}
+The article ``Human-level control through deep reinforcement learning'' proposes a new type of network, Q-network which combines convolutional layers, a representation of human receptive fields and pooling layers used for dimensionality reduction. The input layer is represented by \textbf{84x84x4} neurons for the image produced after preprocessing frames from the game and is followed by three convolutional layers, two fully connected layer and the output layer which has a number of neurons equal with the number of actions corresponding to each game. Each hidden layer is followed by a rectified linear unit (ReLU).
+
+\begin{figure}[h]
+	\floatname{algorithm}{Algorithm}
+	\begin{center}
+		\includegraphics[width=380px,height=58px]{src/img/state/ataripic}
+		\caption{Snapshots with five Atari 2600 Games: Pong, Breakout, Space Invaders, Seaquest, Beam Rider} \label{fig:ataripic}
+    \end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[h]
+	\floatname{algorithm}{Algorithm}
+	\begin{center}
+		\includegraphics[width=380px,height=58px]{src/img/state/ataripic}
+		\caption{Snapshots with five Atari 2600 Games: Pong, Breakout, Space Invaders, Seaquest, Beam Rider} \label{fig:ataripic}
+    \end{center}
+\end{figure}

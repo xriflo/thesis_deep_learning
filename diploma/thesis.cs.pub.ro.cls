@@ -31,6 +31,13 @@
 
 \usepackage{parskip}
 
+%\usepackage[nottoc,numbib]{tocbibind}
+%\usepackage{chngcntr}
+%\counterwithout{footnote}{chapter}
+\usepackage{caption}
+\captionsetup[table]{name=Tabelul}
+
+
 % package for variable line spacing (1, 1.5, 2)
 % usage: write \onehalfspacing before the part which should be 
 % with 1.5 line spacing
@@ -236,6 +243,8 @@
     \end{center}
 \end{figure}
 }
+
+
 % suport for multiple columns
 \usepackage{multicol}
 
@@ -250,3 +259,32 @@
 
 % mathematical formulas
 \usepackage{amsmath}
+
+% mathbb
+\usepackage{amsfonts}
+
+% for abs
+\usepackage{commath}
+
+% for pseudocode
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+%\usepackage{algorithmic}
+
+% for indentation http://tex.stackexchange.com/questions/69728/indenting-lines-of-code-in-algorithm
+\newlength\myindent
+\setlength\myindent{2em}
+\newcommand\bindent{%
+  \begingroup
+  \setlength{\itemindent}{\myindent}
+  \addtolength{\algorithmicindent}{\myindent}
+}
+\newcommand\eindent{\endgroup}
+
+% not in toc, but don't loose content number
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+\newcommand{\INDSTATE}[1][1]{\State \hspace{#1\algorithmicindent}}
+
+\renewcommand{\figurename}{Figure}
