@@ -15,24 +15,8 @@ The exploration vs. exploitation problem is solved by using a variable $\epsilon
 
 After all the iterations are finished, the algorithm generates a dataset. For each value stored in Q-table, it generates the frame from each coded state.
 
-\begin{figure}[hp]
-\centering
-\minipage{0.32\textwidth}
-  \frame{\includegraphics[width=\linewidth]{src/img/results/50}}
-  \caption{\newline97,6530\newline100,0000\newline93,8538\newline92,5261}\label{fig:a}
-\endminipage\hfill
-\minipage{0.32\textwidth}
-  \frame{\includegraphics[width=\linewidth]{src/img/results/85}}
-  \caption{\newline97,6530\newline100,0000\newline93,8538\newline92,5261}\label{fig:sc}
-\endminipage\hfill
-\minipage{0.32\textwidth}%
-  \frame{\includegraphics[width=\linewidth]{src/img/results/155}}
-   \caption{\newline97,6530\newline100,0000\newline93,8538\newline92,5261}\label{fig:sc}
- 
-\endminipage
-\end{figure}
-
-
+On the next page, a pseudocode of Q-Learning is presented, which is adapted after the algorithm found in Norvig's book{\cite{norvig}}. The algorithm tries to estimate an optimal action-value function using the $\epsilon$-greedy policy, more exactly, it chooses a random action with probability $\epsilon$ and chooses the optimum action with probability 1-$\epsilon$
+\newpage
 \begin{algorithm}
 	\floatname{algorithm}{Algorithm}
 	\caption{Q-Network} \label{alg-code}
@@ -54,3 +38,35 @@ After all the iterations are finished, the algorithm generates a dataset. For ea
 		\EndWhile
 	\end{algorithmic}
 \end{algorithm}
+
+In the next figures the values resulted from Q are presented. As it can be seen the the optimal policy is it followed. The game allows the picker to move LEFT from first stack and to move RIGHT from last stack (\textbf{e.g.} If the picker points to the first stack and chooses to move LEFT, then the picker will point to the last stack). In fig. \ref{fig:fa} the picker points to the second stack so the optimal action will be to move RIGHT. As we can see the value for RIGHT-action is bigger than the other values. In fig. \ref{fig:fb} the agent has only one move to finish the game, in optimal conditions. Again, if we look at which value is greater than the others we can see that DOWN appears to be 100 which is exactly the value of the reward recieved when an episode is finished. Fig. \ref{fig:fc} represents the initial state of the game, thus as it is expected the game should begin with picking for the first time a disk and that is exactly what Q-Learning is doing.
+
+Another importact aspect which should be mentioned is that the values for actions corresponding to a state \textbf{s} are close. Why? This happens because the game has a static environment and there is no negative reward, thus whatever happens, the agent will always loose or it will be forced to play until the game is finished. The agent can never loose.
+
+\begin{figure}[hp]
+\centering
+\minipage{0.32\textwidth}
+  \frame{\includegraphics[width=\linewidth]{src/img/results/50}}
+  \caption{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}\label{fig:fa}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \frame{\includegraphics[width=\linewidth]{src/img/results/85}}
+  \caption{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}\label{fig:fb}
+\endminipage\hfill
+\minipage{0.32\textwidth}%
+  \frame{\includegraphics[width=\linewidth]{src/img/results/155}}
+   \caption{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}\label{fig:fc}
+ 
+\endminipage
+\end{figure}
+
+\newpage
+\section{Regression with deep-learning}
+
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=480px,height=103px]{src/img/system-design/myarch}
+		\caption{ConvNet Architecture} \label{fig:myarch}
+    \end{center}
+\end{figure}

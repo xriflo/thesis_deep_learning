@@ -297,9 +297,9 @@ where $\alpha$ represents learning rate.
 	\begin{algorithmic}[1]
 		\Repeat
        			\For{\texttt{j = 1, no_weights}}
-       				\begin{equation}
+       				\State{\begin{equation}
 					weights_j = weights_j - \alpha\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})\cdot {samples_j}^{(i)}
-					\end{equation}
+					\end{equation}}
       			\EndFor
 		\Until{convergence is obtained}
 	\end{algorithmic}
@@ -326,7 +326,7 @@ where $\alpha$ represents learning rate.
 			\State shuffle dataset (randomly)
 			\For{\texttt{i = 1, no_samples}}
        			\For{\texttt{j = 1, no_weights}}
-       				\begin{equation}
+       				\State\begin{equation}
 					weights_j = weights_j - \alpha\cdot(nn_{weights}(samples^{(i)}) - labels^{(i)})\cdot {samples_j}^{(i)}
 					\end{equation}
       			\EndFor
