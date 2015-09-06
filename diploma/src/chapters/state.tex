@@ -147,12 +147,12 @@ Pooling layers can be used in getting rid of unwanted information and also can b
 	\item{can be used to obtain gaussian blur effect}
 	\item{suppose we have an image of \textbf{width x height} size, if we apply a convolutional kernel of size \textbf{kw x kh} the size of the output will become \textbf{(width - kw + 1) x (height - kh + 1)}}
 \end{itemize}
-
+~\\
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=240px,height=180px]{src/img/state/lena-spatialconv22}
-		\caption{Spatial Convolution(2D) with 12 output channels, 5x5 kernel matrix and 2x2 stride} \label{fig:lena-spatialconv}
+		\caption{Lena: Spatial Convolution(2D) with 12 output channels, 5x5 kernel matrix and 2x2 stride} \label{fig:lena-spatialconv}
     \end{center}
 \end{figure}
 
@@ -169,27 +169,72 @@ Pooling layers can be used in getting rid of unwanted information and also can b
 	\item{useful for dimensionality reduction}
 	\item{acts poorly in some situations as opposed to max-pooling}
 \end{itemize}
+~\\
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=140px,height=140px]{src/img/state/lena-avgpooling}
-		\caption{Average pooling with 10x10 kernel matrix and 2x2 stride} \label{fig:lena-avgpooling}
+		\caption{Lena: Average pooling with 10x10 kernel matrix and 2x2 stride} \label{fig:lena-avgpooling}
     \end{center}
 \end{figure}
 
-
+~\\
 
 \textbf{Max pooling}
-
 \begin{itemize}
 	\item{useful for dimensionality reduction}
 	\item{useful for activating features that have a low probability of being activated\cite{maxpooling}}
 	\item{if a feature appears in a cell it is less probably to appear in the neighbourhood cells}
 \end{itemize}
-
+~\\
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=140px,height=140px]{src/img/state/lena-maxpooling}
-		\caption{Max pooling with 5x5 kernel matrix and 2x2 stride} \label{fig:lena-avgpooling}
+		\caption{Lena: Max pooling with 5x5 kernel matrix and 2x2 stride} \label{fig:lena-avgpooling}
+    \end{center}
+\end{figure}
+\newpage
+\textbf{LP pooling}
+
+\begin{itemize}
+	\item{the norm P=1 represents gaussian averaging and P=$\infty$ represents max pooling}
+	\item{computes the information from neighbourhood if P>1}
+\end{itemize}
+~\\
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=140px,height=140px]{src/img/state/lena-lp}
+		\caption{Lena: LP pooling with pnorm = 10, 15x15 kernel matrix and 2.5x2.5 stride} \label{fig:lena-lppooling}
+    \end{center}
+\end{figure}
+
+
+~\\
+
+
+
+
+\textbf{Spatial Substractive Normalization}
+
+\begin{itemize}
+	\item{the norm P=1 represents gaussian averaging and P=$\infty$ represents max pooling}
+	\item{computes the information from neighbourhood if P>1}
+\end{itemize}
+~\\
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=140px,height=140px]{src/img/state/lena-spatialsubstractivenormalization}
+		\caption{Lena: Spatial Substractive Normalization pooling with kernel size 11x1} \label{fig:lena-lppooling}
+    \end{center}
+\end{figure}
+\newpage
+
+\subsubsection{Feature visualization}
+The technique called Deconvolutional Networks takes a neural network already trained and maps the features to pixels such that information from features learned can be human ``readable''.
+~\\
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=309px,height=173px]{src/img/state/features}
+		\caption{Feature visualization\cite{fergus}} \label{fig:features}
     \end{center}
 \end{figure}
 
