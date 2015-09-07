@@ -6,7 +6,7 @@ This chapter presents the entire work of the author. The work is splitted in thr
 
 
 \section{Q-Learning}
-
+\label{sec:ql}
 In this section we try to find the optimal policy for playing Tower of Hanoi game. The algorithm start with a pool of actions initialized with {UP, DOWN, LEFT, RIGHT} and a table Q which the values for all (state,action) pairs will be stored. 
 
 The discount factor $\gamma$ is set to 0.95, this future rewards are taking into cosideration when updating the action-value function. The learning rate $\alpha$ is chosen to be 0.1, thus the algorithm can converge to an optimal policy. 
@@ -62,7 +62,49 @@ Another importact aspect which should be mentioned is that the values for action
 
 \newpage
 \section{Regression with deep-learning}
+This chapter comes with an attempt to discuss various models of architecture that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can generalize and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empyrical one, several experiments have been made.
 
+\subsection{First attempt}
+The model proposed by Yann Lecun et al.\cite{energy-based} was slightly modified in order to map our problem. For the purpose of keeping things clear and well-separated every discussion about a network should be splitted in the next subjects: preprocessing data, chosen model for the network, loss function, training and testing.
+
+For the first attempt, a model used in face detection and pose estimation has been chosen because good results in learning features relevant for object recognition were promised. Also, this model is capable to be applied over large images.
+
+\subsubsection{Data}
+
+In the section \ref{sec:ql}, we generated a dataset of 160 images with 4 labels for each one (Tower of Hanoi has 160 states and offers 4 possible actions). In this section we try to build a convolutional neural network capable of predicting those values from images. This is made for the sake of bringing a strong argumentation that our network model is capable of learning features from the dataset and it is not conducting to a ``dead'' network which is ``overlearning'' and can not be used on new samples.
+
+First step was to resolve the problem of the small number of samples (160) from dataset. This has been solved by generating 64 another datasets (to achive approximately 10,000 samples) from the original one with noise added or color changed. In this way we can ensure that the network is capable of learning features dependent of size in this case.
+
+The next figure(\ref{fig:155}) represent a state of the game and the next ones(\ref{fig:states}) represent alterated images with noise added and color changed.
+
+\begin{figure}[h]
+	\begin{center}
+		\frame{\includegraphics[width=130px,height=130px]{src/img/system-design/155}}
+		\caption{Initial state of the game ``Tower of Hanoi''} \label{fig:155}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\frame{\includegraphics[width=253px,height=126px]{src/img/system-design/states}}
+		\caption{Alterated dataset} \label{fig:states}
+    \end{center}
+\end{figure}
+\newpage
+
+For the preprocessing data various problems have been attemped. First of all, there is a large discussion on the RGB vs. YUV topic. This paper implements the YUV transformation based on the assumption that luminance should be separated from chrominance. If features dependent of color should be learned, then the neurons connected with the chrominance pixels will be activated, otherwise the neurons connected with luminance pixels will be activated. Both type of channels are kept in the attempt to make an algorithm that could generalize very well. Also, the YUV color is more closer to the human vision than RGB. 
+
+The decision to not work with 1-channels colors space like grayscale are well-founded. There are games that size should not be a feature which should be learned and in this cases we are interested in learning features dependent of color.
+
+The next step was to normalize the images for aligning the range of pixel intensity values to a normal distribution. With other words, the histogram of the images are stretched and the contrast is improved in order to get sharp edges.
+
+The normalization of the images implies computing the mean and the standard deviation. These values are computed for the training dataset for each channel. Then, we add the mean and divide it with standard deviation. This operation is applied on each channel on both datasets (train and test).
+
+Another way to improve the contrast is ussing a gaussian matrix which follows a gaussian distribution, as it is clear from its name. The gaussian distribution state that average things should occur frequently and extreme things should occur rare. The gaussian matrix will slide all over the image and will modify the pixel values such that the pixels from the middle of the neighbourhood will be more important than the pixel values from the edge of the gaussian matrix. If the edge pixel values have a zero importance than the result image will be exactly as the initial image.
+
+On the another hand, labels were also needed to be processed. Because of the formula for estimating the action-value function (Q) different ranges of values were generated. For example, if we have to do regression on values as 0,..., 100 there would not be a problem because the delta range is $10^2$, but the values generated were following a delta range of $10^5$. This can cause instability to the network. These being said, the paper proposes to bring the values to the same range using logarithm function and of course, to normalize them to follow the normal distribution.
+
+Data was also shuffled to avoid having consecutive states from the game
 
 \begin{figure}[h]
 	\begin{center}
