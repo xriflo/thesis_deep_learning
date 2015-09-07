@@ -31,7 +31,7 @@ There is also important when we have to stop training to avoid overfitting and o
 
 Another important step is called the loss function, the moment when we determine how far we are from our target. Here, we can find the border between underfitting and overfitting, called the optimum state. If we have high bias, it means that we have underfitting and our classifier is not able to predict well data and if we have high variance, it means that we have learning training samples very well, but can not predict new samples.
 
-The last part is the one where we combine the first two modules. We will try to get a closer look of what DeepMind have done with the Atari paper\cite{atari}. The most important part is the connection between the Q-LEarning algorithm and the convolutional neural network. We will see how weights are updated accorded to rewards recieved during the game.
+The last part is the one where we combine the first two modules. We will try to get a closer look of what DeepMind have done with the Atari paper\cite{atari}. The most important part is the connection between the Q-Learning algorithm and the convolutional neural network. We will see how weights are updated accorded to rewards recieved during the game.
 
 The main problem is to create an architecture capable of playing any game without adapting initial meta parameters. All the above-mentioned problems will be discussed in this paper and formalized using experimental results, plots or anything that can serve as a proof.
 \newpage
@@ -45,15 +45,15 @@ Why Lua and Torch? They provide a fast environment as opposed to another ones\ci
 \section{Structure of this paper}
 \label{sec:paper_structure}
 
-\labelindexref{Chapter}{chapter:state} 
+\labelindexref{Chapter}{chapter:state} \textbf{State of the art} presents the entire architecture of a network based on a complex research in the machine learning, pattern recognition and reinforcement learning fields. Also, an in-depth look to the ``Human-level control through deep reinforcement learning'' paper is provided. This paper has been chosen for the fact that it is the primary resource which proves the combination of deep learning and reinforcement learning is possible. 
 
-\labelindexref{Chapter}{chapter:system-design}    
+\labelindexref{Chapter}{chapter:system-design} \textbf{System design and implementation} describes several architectures used for pursuing the purpose of combining deep learning and reinforcement learning. Every step in choosing the architecture is well-argumentated, either with mathematical reasoning or with empirical reasoning.
 
-\labelindexref{Chapter}{chapter:results} 
+\labelindexref{Chapter}{chapter:results} \textbf{Results} shows the configuration of hyperparameters chosen for tunning every module of learning.
 
-\labelindexref{Chapter}{chapter:conclusions}
+\labelindexref{Chapter}{chapter:conclusions} \textbf{Conclusions} is dedicated to personal opinions of the paper's author on this topic and also presents the systematic investigation in gathering information.
 
-\labelindexref{Chapter}{chapter:future-work}
+\labelindexref{Chapter}{chapter:future-work} \textbf{Future work} describes future tunnings of the architectures and also further investigation of one of the follows fields: machine learning, pattern recognition or reinforcement learning.
 
 \section{Copyright infringement}
 \label{sec:copyright}

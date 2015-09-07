@@ -105,10 +105,49 @@ Another way to improve the contrast is ussing a gaussian matrix which follows a 
 On the another hand, labels were also needed to be processed. Because of the formula for estimating the action-value function (Q) different ranges of values were generated. For example, if we have to do regression on values as 0,..., 100 there would not be a problem because the delta range is $10^2$, but the values generated were following a delta range of $10^5$. This can cause instability to the network. These being said, the paper proposes to bring the values to the same range using logarithm function and of course, to normalize them to follow the normal distribution.
 
 Data was also shuffled to avoid having consecutive states from the game
+\newpage
+\subsubsection{Model}
+
+The model used for training the convolutional neural network is the model presented in the next paper: ``Synergistic Face Detection and Pose Estimation with Energy-Based Models''\cite{energy-based} with some modification such that the model becomes suitable for our network.
+
+The model follows another model called LeNet-5 proposed by Yann LeCun et al. which was used in document recognition\cite{basedlearning} for training a network that could recognize noisy handwritten characters. The results obtained by the network state that the error rate is small, under 1$\%$ which is extremely satisfying. Trained on noisy handwritten characters draws attention to one important aspect, if the model is able to generalize even in heavy conditions, why should not be used in combination with Q-learning for playing games.
+
+In the next figure(\ref{fig:myarch}) we can see how the network proposed by this article looks. 
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=480px,height=103px]{src/img/system-design/myarch}
+		\includegraphics[width=410px,height=87px]{src/img/system-design/myarch}
 		\caption{ConvNet Architecture} \label{fig:myarch}
     \end{center}
 \end{figure}
+
+The network is composed of three layers. Each layer applies kernel convolutions and samples on the data. After each layer we use hyperbolic tangent as layer activation function. As discussed in the paper ``Efficient Backprop'' by Yann LeCun et al., the motivation for using hyperbolic tanh is simmilar to the one to normalize data. The mean of the output data tends to be close to zero, thus the it is more likely less probable to cause instabilities to the network derrivatives when used in combination with backpropagation.
+
+After the finally layer, the sigmoid activation function was used because are labels are normalized by scaling between 0 and 1.
+
+The input layer consists of no_features x no_pixels_width x no_pixels_height neurons and the output layer has 4 neurons because only 4 actions are needed to play Tower of Hanoi.
+
+The last layers are fully connected and for hidden layers Spatial Convolution and Sub Sampling was used. In the appendix \ref{appendix:model} the implementation in Torch7 can be found.
+
+\subsubsection{Loss function}
+For computing the error, Mean Squared Error was used. Being a task of regression, and not a task of classification the MSE is most appropriate to be used.
+\begin{equation}
+loss(target,output) = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}\cdot((output^{(i)}) - target^{(i)})^2
+\end{equation}
+\newpage
+\subsubsection{Training and testing}
+In the last sections we discussed the composition of the model. We stated that the last layer is formed by 100 neurons. Sometimes, neural networks are not as easy as we imagine to implement. Even if we have a big dataset, or even if we alterated data in a way that we think that could work for the sake of the generalizations, bad things happens. As we can see from the figures, the network is doing very good at learning samples from the training dataset. It is worth mentioning that one epoch is equivalent with learn one time the train dataset and get the error for forwarding over the network the dataset. Also, to make a parallel let's remeber that the output values are normalized to 0-1 range. Now, we can return to the graph and see that the training error behaves as we expect to happen and yes, it is decreasing. However, the test error is not behaving mathematically as showed in figure \ref{fig:traintest}. This brings into question the validity of the model. One must observe the slope of the train-line between first epoch and the second epoch is steeper, which means that after only one epoch the network overlearned the train-dataset and that is one reason to not predict well on the test-dataset. Anyway, we can state that the model with 50 neurons is an improvement as opposed to the one with 100 neurons. From this we conclude that if the model is too complex, the network could run into overfitting phenomenon.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-100}
+		\caption{Last hidden fully connected layer has 100 neurons} \label{fig:50tt}
+    \end{center}
+\end{figure}
+~\\
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-50}
+		\caption{Last hidden fully connected layer has 50 neurons} \label{fig:100tt}
+    \end{center}
+\end{figure}
+\newpage

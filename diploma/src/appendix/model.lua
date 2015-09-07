@@ -14,4 +14,4 @@ model:add(nn.Linear(120, 100))
 model:add(nn.Tanh())
 model:add(nn.Linear(100, 4))
 
-model:add(nn.Tanh())
+model:add(nn.Sigmoid())
