@@ -1,9 +1,10 @@
-torch.setnumthreads(4)
 dofile '1_data_hanoi.lua'
 dofile '2_model_hanoi.lua'
 dofile '3_loss_hanoi.lua'
 dofile '4_train_hanoi.lua'
 dofile '5_test_hanoi.lua'
+torch.setnumthreads(4)
+
 
 for i = 1, 1000 do
 	io.write("------------epoch "..i.."------------\n")
@@ -12,6 +13,8 @@ for i = 1, 1000 do
 	test()
 	io.write("\n")
 end
+
+
 for i = 1, trainData.data:size()[1]/10 do
 	print("(-----------------------------------------)")
 	output = model:forward(trainData.data[i]:double())

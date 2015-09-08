@@ -2,6 +2,8 @@ require 'torch'
 require 'image'
 require 'nn'
 
+
+-- log(0) = -inf, 0 is from initializing qlearning table and apparently some state is never reached
 function preprocess_labels(dataset)
    for i = 1, dataset:size() do
       for j = 1, 4 do
@@ -14,14 +16,16 @@ end
 
 
 
--- Load dataset obtained from QLearning
+-- load dataset obtained from QLearning
 loaded = torch.load("dataset32x32_alterated.t7")
 no_states = loaded.y:size()[2]
 no_actions = loaded.y:size()[3]
+
+-- 80% samples for training and 20% samples for testing
 samples_train = math.floor(0.8*no_states)
 samples_test = no_states - samples_train
 
--- Shuffle data
+-- allocate memory for shuffled dataset
 shuffleData = {}
 shuffleData.X = torch.ByteTensor(loaded.X:size())
 shuffleData.y = torch.DoubleTensor(loaded.y:size())
@@ -32,11 +36,11 @@ for i = 1, no_states do
 	shuffleData.y[1][i] = loaded.y[1][shuffleIndeces[i]]
 end
 
+-- rotate data 90 degrees
 shuffleData.X = shuffleData.X:transpose(3,4):float()
 
 
-
--- Split data for training and testing
+-- split data for training and testing
 trainData = {
    data = shuffleData.X[{ {1, samples_train} }],
    labels = shuffleData.y[1][{ {1, samples_train} }],
@@ -50,12 +54,12 @@ testData = {
 
 
 
-print '==> preprocessing data: colorspace RGB -> YUV'
+-- transform from rgb to yuv
 for i = 1,trainData:size() do
    trainData.data[i] = image.rgb2yuv(trainData.data[i])
 end
 
--- process labels
+-- process labels: eliminate 0 values
 preprocess_labels(trainData)
 preprocess_labels(testData)
 
@@ -63,12 +67,8 @@ trainData.labels = torch.log(trainData.labels)
 testData.labels = torch.log(testData.labels)
 
 
--- Normalize each channel, and store mean/std
--- per channel. These values are important, as they are part of
--- the trainable parameters. At test time, test data will be normalized
--- using these values.
 channels = {'y','u','v'}
-print '==> preprocessing data: normalize each feature (channel) globally'
+-- channel normalization
 mean = {}
 std = {}
 
@@ -79,16 +79,14 @@ for i,channel in ipairs(channels) do
    trainData.data[{ {},i,{},{} }]:add(-mean[i])
    trainData.data[{ {},i,{},{} }]:div(std[i])
 end
-
+-- use the same mean,std computed for training
 for i,channel in ipairs(channels) do
    -- normalize each channel globally:
    testData.data[{ {},i,{},{} }]:add(-mean[i])
    testData.data[{ {},i,{},{} }]:div(std[i])
 end
 
--- Normalize test data, using the training means/stds
-
-print '==> normalize labels in 0..1'
+-- normalize label in 0..1
 
 A = math.min(trainData.labels:min(), testData.labels:min())
 B = math.max(trainData.labels:max(), testData.labels:max())
@@ -102,17 +100,30 @@ testData.labels:mul(b-a)
 testData.labels:div(B-A)
 
 
---trainData.labels = trainData.labels:double()
---testData.labels = testData.labels:double()
--- Local normalization
-print '==> preprocessing data: normalize all three channels locally'
 
--- Define the normalization neighborhood:
-neighborhood = image.gaussian1D(13)
+neighbourhood = image.gaussian1D(13)
+-- give importance to the closest pixels
+--[[
+neighbourhood = [
+   0.1819
+   0.3062
+   0.4689
+   0.6531
+   0.8275
+   0.9538
+   1.0000
+   0.9538
+   0.8275
+   0.6531
+   0.4689
+   0.3062
+   0.1819
+   ]
+]]--
 
 -- Define our local normalization operator (It is an actual nn module, 
 -- which could be inserted into a trainable model):
-normalization = nn.SpatialContrastiveNormalization(1, neighborhood, 1):float()
+normalization = nn.SpatialContrastiveNormalization(1, neighbourhood, 1):float()
 
 -- Normalize all channels locally:
 for c in ipairs(channels) do
@@ -120,22 +131,5 @@ for c in ipairs(channels) do
       trainData.data[{ i,{c},{},{} }] = normalization:forward(trainData.data[{ i,{c},{},{} }])
    end
 end
-
-----------------------------------------------------------------------
-print '==> verify statistics'
-
--- It's always good practice to verify that data is properly
--- normalized.
-
-for i,channel in ipairs(channels) do
-   trainMean = trainData.data[{ {},i }]:mean()
-   trainStd = trainData.data[{ {},i }]:std()
-
-   print('training data, '..channel..'-channel, mean: ' .. trainMean)
-   print('training data, '..channel..'-channel, standard deviation: ' .. trainStd)
-
-end
-
-----------------------------------------------------------------------
 
 
