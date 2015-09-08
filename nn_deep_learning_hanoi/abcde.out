@@ -1,0 +1,277 @@
+[0m==> preprocessing data: colorspace RGB -> YUV[0m	
+[0m==> preprocessing data: normalize each feature (channel) globally[0m	
+[0m==> normalize labels in 0..1[0m	
+[0m==> preprocessing data: normalize all three channels locally[0m	
+[0m==> verify statistics[0m	
+[0mtraining data, y-channel, mean: 0.0056640856316631[0m	
+[0mtraining data, y-channel, standard deviation: 0.48846147980229[0m	
+[0mtraining data, u-channel, mean: 0.0076240640583131[0m	
+[0mtraining data, u-channel, standard deviation: 0.62027075664532[0m	
+[0mtraining data, v-channel, mean: -0.0012524346347775[0m	
+[0mtraining data, v-channel, standard deviation: 0.37740295298808[0m	
+[0m==> defining test procedure[0m	
+------------epoch 1------------
+current loss tr = 0.031646470322269
+current loss ts = 0.087116956943524
+------------epoch 2------------
+current loss tr = 0.0091236735268796
+current loss ts = 0.19135563722559
+------------epoch 3------------
+current loss tr = 0.0028909767033972
+current loss ts = 0.23936006110088
+------------epoch 4------------
+current loss tr = 0.0015876638070121
+current loss ts = 0.21795839546631
+------------epoch 5------------
+current loss tr = 0.0011357660898536
+current loss ts = 0.22192055928027
+------------epoch 6------------
+current loss tr = 0.00086765133287344
+current loss ts = 0.15735338094573
+------------epoch 7------------
+current loss tr = 0.00071465483328707
+current loss ts = 0.13241911050268
+------------epoch 8------------
+current loss tr = 0.00056438279514322
+current loss ts = 0.1174639779444
+------------epoch 9------------
+current loss tr = 0.00048451778885061
+current loss ts = 0.11838731918968
+------------epoch 10------------
+current loss tr = 0.00042032506577466
+current loss ts = 0.12575508341013
+------------epoch 11------------
+current loss tr = 0.00036094978159882
+current loss ts = 0.12695789345147
+------------epoch 12------------
+current loss tr = 0.00030998756373132
+current loss ts = 0.13340875303572
+------------epoch 13------------
+current loss tr = 0.00026653266706713
+current loss ts = 0.13704533476497
+------------epoch 14------------
+current loss tr = 0.00023050129149524
+current loss ts = 0.14049089969076
+------------epoch 15------------
+current loss tr = 0.00020111488658928
+current loss ts = 0.14784616852234
+------------epoch 16------------
+current loss tr = 0.00017737668508371
+current loss ts = 0.15661123936752
+------------epoch 17------------
+current loss tr = 0.00015812823648707
+current loss ts = 0.16444817537972
+------------epoch 18------------
+current loss tr = 0.00014248226637473
+current loss ts = 0.17070220355588
+------------epoch 19------------
+current loss tr = 0.00012960320623539
+current loss ts = 0.17586720364529
+------------epoch 20------------
+current loss tr = 0.00011882422846489
+current loss ts = 0.18040290572429
+------------epoch 21------------
+current loss tr = 0.00010965788180489
+current loss ts = 0.18458903696007
+------------epoch 22------------
+current loss tr = 0.00010174486124589
+current loss ts = 0.18853850718568
+------------epoch 23------------
+current loss tr = 9.4828894483471e-05
+current loss ts = 0.19221663492516
+------------epoch 24------------
+current loss tr = 8.873042188011e-05
+current loss ts = 0.19550172267425
+------------epoch 25------------
+current loss tr = 8.3319711908102e-05
+current loss ts = 0.19827806914542
+------------epoch 26------------
+current loss tr = 7.8497240983345e-05
+current loss ts = 0.20050271455091
+------------epoch 27------------
+current loss tr = 7.4181968929738e-05
+current loss ts = 0.20220973764613
+------------epoch 28------------
+current loss tr = 7.0305236991264e-05
+current loss ts = 0.20348842405522
+------------epoch 29------------
+current loss tr = 6.6807943544225e-05
+current loss ts = 0.20446017224006
+------------epoch 30------------
+current loss tr = 6.3639285561864e-05
+current loss ts = 0.20525767724386
+------------epoch 31------------
+current loss tr = 6.0755990467321e-05
+current loss ts = 0.20600965695723
+------------epoch 32------------
+current loss tr = 5.8121508353993e-05
+current loss ts = 0.20682240589481
+------------epoch 33------------
+current loss tr = 5.5705056356263e-05
+current loss ts = 0.20775534480634
+------------epoch 34------------
+current loss tr = 5.3480620631328e-05
+current loss ts = 0.20881110859543
+------------epoch 35------------
+current loss tr = 5.1426045431594e-05
+current loss ts = 0.20994849766052
+------------epoch 36------------
+current loss tr = 4.9522280425749e-05
+current loss ts = 0.21110478891522
+------------epoch 37------------
+current loss tr = 4.7752798879825e-05
+current loss ts = 0.21221400664583
+------------epoch 38------------
+current loss tr = 4.6103165540599e-05
+current loss ts = 0.21321739567415
+------------epoch 39------------
+current loss tr = 4.4560720361259e-05
+current loss ts = 0.21406835037843
+------------epoch 40------------
+current loss tr = 4.3114343945388e-05
+current loss ts = 0.21473431095477
+------------epoch 41------------
+current loss tr = 4.1754276317365e-05
+current loss ts = 0.21519623269038
+------------epoch 42------------
+current loss tr = 4.0471968331049e-05
+current loss ts = 0.21544606225926
+------------epoch 43------------
+current loss tr = 3.9259952369493e-05
+current loss ts = 0.21548365305567
+------------epoch 44------------
+current loss tr = 3.8111724806972e-05
+current loss ts = 0.2153143428552
+------------epoch 45------------
+current loss tr = 3.7021636665095e-05
+current loss ts = 0.2149473388261
+------------epoch 46------------
+current loss tr = 3.5984791194687e-05
+current loss ts = 0.21439470635049
+------------epoch 47------------
+current loss tr = 3.4996948221828e-05
+current loss ts = 0.21367096208708
+------------epoch 48------------
+current loss tr = 3.4054435521275e-05
+current loss ts = 0.21279304376461
+------------epoch 49------------
+current loss tr = 3.3154067610803e-05
+current loss ts = 0.21178037310712
+------------epoch 50------------
+current loss tr = 3.2293072371674e-05
+current loss ts = 0.21065509965765
+------------epoch 51------------
+current loss tr = 3.1469025780861e-05
+current loss ts = 0.20944191535661
+------------epoch 52------------
+current loss tr = 3.0679794720072e-05
+current loss ts = 0.20816579229048
+------------epoch 53------------
+current loss tr = 2.9923487338297e-05
+current loss ts = 0.20684768224207
+------------epoch 54------------
+current loss tr = 2.9198409989681e-05
+current loss ts = 0.20550129920887
+------------epoch 55------------
+current loss tr = 2.8503029620863e-05
+current loss ts = 0.20413340005887
+------------epoch 56------------
+current loss tr = 2.7835940793986e-05
+current loss ts = 0.2027464447813
+------------epoch 57------------
+current loss tr = 2.7195837184568e-05
+current loss ts = 0.20134139202298
+------------epoch 58------------
+current loss tr = 2.6581488021185e-05
+current loss ts = 0.19991958202548
+------------epoch 59------------
+current loss tr = 2.5991720137002e-05
+current loss ts = 0.19848367039628
+------------epoch 60------------
+current loss tr = 2.5425405922592e-05
+current loss ts = 0.19703788990771
+------------epoch 61------------
+current loss tr = 2.4881456704995e-05
+current loss ts = 0.19558791309609
+------------epoch 62------------
+current loss tr = 2.4358820343378e-05
+current loss ts = 0.19414051250647
+------------epoch 63------------
+current loss tr = 2.3856481469948e-05
+current loss ts = 0.19270313836695
+------------epoch 64------------
+current loss tr = 2.3373462899864e-05
+current loss ts = 0.19128346201183
+------------epoch 65------------
+current loss tr = 2.2908827136809e-05
+current loss ts = 0.18988889684291
+------------epoch 66------------
+current loss tr = 2.2461677384358e-05
+current loss ts = 0.18852613226144
+------------epoch 67------------
+current loss tr = 2.2031157868713e-05
+current loss ts = 0.18720075960195
+------------epoch 68------------
+current loss tr = 2.1616453521371e-05
+current loss ts = 0.18591706401937
+------------epoch 69------------
+current loss tr = 2.121678917495e-05
+current loss ts = 0.18467799589206
+------------epoch 70------------
+current loss tr = 2.0831428439258e-05
+current loss ts = 0.1834852752803
+------------epoch 71------------
+current loss tr = 2.0459672394262e-05
+current loss ts = 0.18233956395954
+------------epoch 72------------
+current loss tr = 2.0100858194303e-05
+current loss ts = 0.18124065438086
+------------epoch 73------------
+current loss tr = 1.9754357640264e-05
+current loss ts = 0.18018764828122
+------------epoch 74------------
+current loss tr = 1.9419575749393e-05
+current loss ts = 0.17917911462229
+------------epoch 75------------
+current loss tr = 1.9095949335972e-05
+current loss ts = 0.17821322507645
+------------epoch 76------------
+current loss tr = 1.8782945607578e-05
+current loss ts = 0.17728786847794
+------------epoch 77------------
+current loss tr = 1.8480060778455e-05
+current loss ts = 0.17640074645937
+------------epoch 78------------
+current loss tr = 1.8186818701224e-05
+current loss ts = 0.17554945248747
+------------epoch 79------------
+current loss tr = 1.7902769519086e-05
+current loss ts = 0.17473153632537
+------------epoch 80------------
+current loss tr = 1.762748834187e-05
+current loss ts = 0.17394455576541
+------------epoch 81------------
+current loss tr = 1.7360573950178e-05
+current loss ts = 0.1731861173282
+------------epoch 82------------
+current loss tr = 1.7101647532342e-05
+current loss ts = 0.17245390749781
+------------epoch 83------------
+current loss tr = 1.6850351458827e-05
+current loss ts = 0.17174571594429
+------------epoch 84------------
+current loss tr = 1.6606348098242e-05
+current loss ts = 0.17105945206245
+------------epoch 85------------
+current loss tr = 1.6369318678397e-05
+current loss ts = 0.17039315602321
+------------epoch 86------------
+current loss tr = 1.6138962194889e-05
+current loss ts = 0.16974500539111
+------------epoch 87------------
+current loss tr = 1.5914994368801e-05
+current loss ts = 0.16911331821107
+------------epoch 88------------
+current loss tr = 1.5697146654159e-05
+current loss ts = 0.16849655331437
+------------epoch 89------------

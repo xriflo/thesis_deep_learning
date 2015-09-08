@@ -1,0 +1,4 @@
+[0m==> preprocessing data: colorspace RGB -> YUV[0m	
+[0m==> preprocessing data: normalize each feature (channel) globally[0m	
+[0m==> normalize labels in 0..1[0m	
+[0m==> preprocessing data: normalize all three channels locally[0m	

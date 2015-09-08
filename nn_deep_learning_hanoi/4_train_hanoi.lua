@@ -35,13 +35,13 @@ feval = function(x_new)
 end
 
 sgd_params = {
-   learningRate = 0.1,
+   learningRate = 0.05,
    learningRateDecay = 0,
    weightDecay = 0,
    momentum = 0.9
 }
 
-for i = 1,100 do
+function train()
 
    -- this variable is used to estimate the average loss
    current_loss = 0
@@ -69,7 +69,6 @@ for i = 1,100 do
 
    -- report average error on epoch
    current_loss = current_loss / trainData:size()
-   print(i..' - current loss = ' .. current_loss)
+   io.write('current loss tr = ' .. current_loss)
 
 end
-
