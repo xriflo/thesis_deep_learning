@@ -1,21 +1,21 @@
 \chapter{System design and implementation}
 \label{chapter:system-design}
 
-This chapter presents the entire work of the author. The work is splitted in three parts for the attempt to combine deep neural networks with Q-Learning. The game chosen for experimenting was Tower of Hanoi due to its simplicity and also, the static environment. Then, the values obtained by Q-Learning were used to train a deep convolutional network in combination with the generated frames. Finally, we will try to combine Q-learning algorithm with convolutional networks.
+This chapter presents the entire work of the author. The work is split into three parts in the attempt to combine deep neural networks with Q-Learning. The game chosen for the  experiment is the Tower of Hanoi due to its simplicity and also, due to the static environment. Afterwards, the values obtained through Q-Learning have been used to train a deep convolution network combined with the generated frames. Finally, our attempt is to combine the Q-learning algorithm with convolution networks.
 
 
 
 \section{Q-Learning}
 \label{sec:ql}
-In this section we try to find the optimal policy for playing Tower of Hanoi game. The algorithm start with a pool of actions initialized with {UP, DOWN, LEFT, RIGHT} and a table Q which the values for all (state,action) pairs will be stored. 
+In this section we attempt to find the optimal policy for playing the Tower of Hanoi game. The algorithm starts with a pool of actions initialized with {UP, DOWN, LEFT, RIGHT} and a table Q containing the values for every (state,action) pair. 
 
-The discount factor $\gamma$ is set to 0.95, this future rewards are taking into cosideration when updating the action-value function. The learning rate $\alpha$ is chosen to be 0.1, thus the algorithm can converge to an optimal policy. 
+The discount factor $\gamma$ is set to 0.95, the future rewards being taken into account when updating the action-value function. The learning rate $\alpha$ is chosen at 0.1, thus the algorithm can converge to an optimal policy. 
 
-The exploration vs. exploitation problem is solved by using a variable $\epsilon$ which is initialized with 1 (1 is for choosing only random actions and 0 is for choosing the action that can maximize the score). For making the current policy to converge to the optimal policy there was also used a number of iterations setted to 11 and number of episodes per iteration setted to 1000. After each iteration is finished, $\epsilon$ is decreased with 0.1 until it will take the 0-value. This method was used to let the agent explore using random action in the first iteration and after exploit the values learned in the last iterations.
+The exploration vs. exploitation problem is solved by using a variable $\epsilon$ which is initialized with 1 (1 is used when choosing only random actions and 0 when the action that can maximize the score is chosen). In order to make the current policy converge to the optimal policy the number of iterations used is set to 11 and the number of episodes per iteration set to 1000. After each iteration is finished, $\epsilon$ it is decreased with 0.1 until it will take the value 0. This method has been used to let the agent explore using random actions in the first iteration, afterwards exploiting the values learned in the last iterations.
 
 After all the iterations are finished, the algorithm generates a dataset. For each value stored in Q-table, it generates the frame from each coded state.
 
-On the next page, a pseudocode of Q-Learning is presented, which is adapted after the algorithm found in Norvig's book{\cite{norvig}}. The algorithm tries to estimate an optimal action-value function using the $\epsilon$-greedy policy, more exactly, it chooses a random action with probability $\epsilon$ and chooses the optimum action with probability 1-$\epsilon$
+On the next page, a pseudocode of Q-Learning is presented, which is an adaptation after the algorithm found in Norvig's book{\cite{norvig}}. The algorithm tries to estimate an optimal action-value function using the $\epsilon$-greedy policy, more exactly, it chooses a random action with probability $\epsilon$ and chooses the optimum action with probability 1-$\epsilon$
 \newpage
 \begin{algorithm}
 	\floatname{algorithm}{Algorithm}
@@ -39,9 +39,9 @@ On the next page, a pseudocode of Q-Learning is presented, which is adapted afte
 	\end{algorithmic}
 \end{algorithm}
 
-In the next figures the values resulted from Q are presented. As it can be seen the the optimal policy is it followed. The game allows the picker to move LEFT from first stack and to move RIGHT from last stack (\textbf{e.g.} If the picker points to the first stack and chooses to move LEFT, then the picker will point to the last stack). In fig. \ref{fig:fa} the picker points to the second stack so the optimal action will be to move RIGHT. As we can see the value for RIGHT-action is bigger than the other values. In fig. \ref{fig:fb} the agent has only one move to finish the game, in optimal conditions. Again, if we look at which value is greater than the others we can see that DOWN appears to be 100 which is exactly the value of the reward recieved when an episode is finished. Fig. \ref{fig:fc} represents the initial state of the game, thus as it is expected the game should begin with picking for the first time a disk and that is exactly what Q-Learning is doing.
+In the next figures the values resulted from Q are presented. As can be noticed the optimal policy is as follows. The game allows the picker to move LEFT from first stack and move RIGHT from last stack (\textbf{e.g.} If the picker points to the first stack and chooses to move LEFT, then the picker will point to the last stack). In fig. \ref{fig:fa} the picker points to the second stack so the optimal action will be to move RIGHT. As we can see the value for the RIGHT-action is bigger than the other values. In fig. \ref{fig:fb} the agent has only one move to finish the game, in optimal conditions. Again, if we look at which value is greater than the others we can see that DOWN appears to be 100 which is exactly the value of the reward received when an episode is finished. Fig. \ref{fig:fc} presents the initial state of the game, just as expected the game should begin with the picking for the first time of a disk and that is exactly what Q-Learning is doing.
 
-Another importact aspect which should be mentioned is that the values for actions corresponding to a state \textbf{s} are close. Why? This happens because the game has a static environment and there is no negative reward, thus whatever happens, the agent will always loose or it will be forced to play until the game is finished. The agent can never loose.
+Another important aspect is that the values for actions corresponding to a state \textbf{s} are close. Why? This happens because the game has a static environment and there is no negative reward, thus whatever happens, the agent will always lose or it will be forced to play until the game is finished. The agent can never loose.
 
 \begin{figure}[hp]
 \centering
@@ -61,21 +61,21 @@ Another importact aspect which should be mentioned is that the values for action
 \end{figure}
 
 \newpage
-\section{Regression with deep-learning}
-This chapter comes with an attempt to discuss various models of architecture that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can generalize and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empyrical one, several experiments have been made.
+\section{Convolutional Neural Networks}
+This chapter comes with an attempt to discuss various architecture models that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can be generalized and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empyrical one, several experiments have been made.
 
-\subsection{First attempt}
-The model proposed by Yann Lecun et al.\cite{energy-based} was slightly modified in order to map our problem. For the purpose of keeping things clear and well-separated every discussion about a network should be splitted in the next subjects: preprocessing data, chosen model for the network, loss function, training and testing.
+\subsection{Regression with deep-learning}
+The model proposed by Yann Lecun et al.\cite{energy-based} was slightly modified in order to map our problem. For the purpose of keeping things clear and well-separated every discussion about a network should be split into the next subjects: preprocessing data, chosen model for the network, loss function, training and testing.
 
-For the first attempt, a model used in face detection and pose estimation has been chosen because good results in learning features relevant for object recognition were promised. Also, this model is capable to be applied over large images.
+For the first attempt, a model used in face detection and pose estimation has been chosen because good results in learning features relevant for object recognition have been promised. Also, it is possible for this model to be applied over large images.
 
 \subsubsection{Data}
 
-In the section \ref{sec:ql}, we generated a dataset of 160 images with 4 labels for each one (Tower of Hanoi has 160 states and offers 4 possible actions). In this section we try to build a convolutional neural network capable of predicting those values from images. This is made for the sake of bringing a strong argumentation that our network model is capable of learning features from the dataset and it is not conducting to a ``dead'' network which is ``overlearning'' and can not be used on new samples.
+In this section \ref{sec:ql}, we generated a dataset of 160 images with 4 labels for each one (Tower of Hanoi has 160 states and offers 4 possible actions). In this section we try to build a convolutional neural network capable of predicting those values from images. This is made for the sake of bringing strong proof that our network model is capable of learning features from the dataset and not leading, instead, to a ``dead'' network which is ``overlearning'' and cannot be used on new samples.
 
-First step was to resolve the problem of the small number of samples (160) from dataset. This has been solved by generating 64 another datasets (to achive approximately 10,000 samples) from the original one with noise added or color changed. In this way we can ensure that the network is capable of learning features dependent of size in this case.
+First step was to resolve the problem of the small number of samples (160) from the dataset. This has been solved by generating 64 other datasets (to achieve approximately 10,000 samples) from the original one with noise added or color changed. In this way we can ensure that the network is capable of learning features dependent on size in this case.
 
-The next figure(\ref{fig:155}) represent a state of the game and the next ones(\ref{fig:states}) represent alterated images with noise added and color changed.
+The next figure(\ref{fig:155}) represent a state of the game and the next ones(\ref{fig:states}) represent altered images with noise added and color changed.
 
 \begin{figure}[h]
 	\begin{center}
@@ -92,27 +92,27 @@ The next figure(\ref{fig:155}) represent a state of the game and the next ones(\
 \end{figure}
 \newpage
 
-For the preprocessing data various problems have been attemped. First of all, there is a large discussion on the RGB vs. YUV topic. This paper implements the YUV transformation based on the assumption that luminance should be separated from chrominance. If features dependent of color should be learned, then the neurons connected with the chrominance pixels will be activated, otherwise the neurons connected with luminance pixels will be activated. Both type of channels are kept in the attempt to make an algorithm that could generalize very well. Also, the YUV color is more closer to the human vision than RGB. 
+For the preprocessing data various problems have been encountered. First of all, there is a large discussion on the RGB vs. YUV topic. This paper implements the YUV transformation based on the assumption that luminance should be separated from chrominance. If features dependent on color should be learned, then the neurons connected with the chrominance pixels will be activated, otherwise the neurons connected with luminance pixels will be activated. Both types of channels are kept in the attempt to make an algorithm that could make a better generalization.  Also, the YUV color is much closer to the human vision than RGB. 
 
-The decision to not work with 1-channels colors space like grayscale are well-founded. There are games that size should not be a feature which should be learned and in this cases we are interested in learning features dependent of color.
+The decision not to work with the 1-channel colors spaces such as grayscale is well-founded. There are games where size should not be a feature to be learned and in this cases we are interested in learning features dependent on color.
 
-The next step was to normalize the images for aligning the range of pixel intensity values to a normal distribution. With other words, the histogram of the images are stretched and the contrast is improved in order to get sharp edges.
+The next step was to normalize the images for aligning the range of pixel intensity values to a normal distribution. In other words, the histogram of the images are stretched and the contrast is improved in order to get sharp edges.
 
-The normalization of the images implies computing the mean and the standard deviation. These values are computed for the training dataset for each channel. Then, we add the mean and divide it with standard deviation. This operation is applied on each channel on both datasets (train and test).
+The normalization of the images implies computing the mean and the standard deviation. These values are computed for the training dataset of each channel. Then, we add the mean and divide it by standard deviation. This operation is applied on each channel from both datasets (train and test).
 
-Another way to improve the contrast is ussing a gaussian matrix which follows a gaussian distribution, as it is clear from its name. The gaussian distribution state that average things should occur frequently and extreme things should occur rare. The gaussian matrix will slide all over the image and will modify the pixel values such that the pixels from the middle of the neighbourhood will be more important than the pixel values from the edge of the gaussian matrix. If the edge pixel values have a zero importance than the result image will be exactly as the initial image.
+Another way to improve the contrast is using a gaussian matrix which follows a gaussian distribution, as it is clear from its name. The gaussian distribution states that average things should occur frequently and extreme things should occur rarely. The gaussian matrix will slide all over the image and will modify the pixel values such that the pixels from the middle of the neighbourhood will be more important than the pixel values from the edge of the gaussian matrix. If the edge pixel values have a zero importance than the resulting image will be identical to the initial image.
 
-On the another hand, labels were also needed to be processed. Because of the formula for estimating the action-value function (Q) different ranges of values were generated. For example, if we have to do regression on values as 0,..., 100 there would not be a problem because the delta range is $10^2$, but the values generated were following a delta range of $10^5$. This can cause instability to the network. These being said, the paper proposes to bring the values to the same range using logarithm function and of course, to normalize them to follow the normal distribution.
+On the other hand, labels also need to be processed. Because of the formula for estimating the action-value function (Q) different ranges of values were generated. For example, if we have to do regression on values as 0,..., 100 there would not be a problem because the delta range is $10^2$, but the values generated follow a delta range of $10^5$. This can cause instability in the network. These being said, the paper proposes to bring the values to the same range using a logarithmic function and of course, to normalize them to follow the normal distribution.
 
-Data was also shuffled to avoid having consecutive states from the game
+Data was also shuffled to avoid having consecutive states of the game
 \newpage
 \subsubsection{Model}
 
-The model used for training the convolutional neural network is the model presented in the next paper: ``Synergistic Face Detection and Pose Estimation with Energy-Based Models''\cite{energy-based} with some modification such that the model becomes suitable for our network.
+The model used for training the convolutional neural network is the model presented in the next paper: ``Synergistic Face Detection and Pose Estimation with Energy-Based Models''\cite{energy-based} with some modifications such that the model becomes suitable for our network.
 
-The model follows another model called LeNet-5 proposed by Yann LeCun et al. which was used in document recognition\cite{basedlearning} for training a network that could recognize noisy handwritten characters. The results obtained by the network state that the error rate is small, under 1$\%$ which is extremely satisfying. Trained on noisy handwritten characters draws attention to one important aspect, if the model is able to generalize even in heavy conditions, why should not be used in combination with Q-learning for playing games.
+The model follows another model called LeNet-5 proposed by Yann LeCun et al. which was used in document recognition\cite{basedlearning} for training a network that could recognize noisy handwritten characters. The results obtained by the network state that the error rate is small, under 1$\%$ which is extremely satisfying. Trained on noisy handwritten characters draws attention to one important aspect: if the model is capable of generalizing even in heavy conditions, why could it not be used in combination with Q-learning for playing games.
 
-In the next figure(\ref{fig:myarch}) we can see how the network proposed by this article looks. 
+In the next figure(\ref{fig:myarch}) we can see how the network suggested in this article looks. 
 
 \begin{figure}[h]
 	\begin{center}
@@ -121,22 +121,22 @@ In the next figure(\ref{fig:myarch}) we can see how the network proposed by this
     \end{center}
 \end{figure}
 
-The network is composed of three layers. Each layer applies kernel convolutions and samples on the data. After each layer we use hyperbolic tangent as layer activation function. As discussed in the paper ``Efficient Backprop'' by Yann LeCun et al., the motivation for using hyperbolic tanh is simmilar to the one to normalize data. The mean of the output data tends to be close to zero, thus the it is more likely less probable to cause instabilities to the network derrivatives when used in combination with backpropagation.
+The network is composed of three layers. Each layer applies kernel convolutions and samples on the data. After each layer we use the hyperbolic tangent as the layer activation function. As discussed in the paper ``Efficient Backprop'' by Yann LeCun et al., the motivation for using the hyperbolic tanh is similar to the one of normalizing data. The mean of the output data tends to be closer to zero, thus it is less likely to cause instabilities in the network derivatives when used in combination with back-propagation.
 
-After the finally layer, the sigmoid activation function was used because are labels are normalized by scaling between 0 and 1.
+After the final layer, the sigmoid activation function has been used because the labels are normalized by scaling between 0 and 1.
 
 The input layer consists of no_features x no_pixels_width x no_pixels_height neurons and the output layer has 4 neurons because only 4 actions are needed to play Tower of Hanoi.
 
-The last layers are fully connected and for hidden layers Spatial Convolution and Sub Sampling was used. In the appendix \ref{appendix:model} the implementation in Torch7 can be found.
+The last layers are fully connected and for hidden layers the Spatial Convolution and Sub Sampling have been used. In the appendix \ref{appendix:model} the implementation in Torch7 can be found.
 
 \subsubsection{Loss function}
-For computing the error, Mean Squared Error was used. Being a task of regression, and not a task of classification the MSE is most appropriate to be used.
+For computing the error, Mean Squared Error was used. Being a task of regression, and not a task of classification the MSE is most appropriate for use.
 \begin{equation}
 loss(target,output) = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}\cdot((output^{(i)}) - target^{(i)})^2
 \end{equation}
 \newpage
 \subsubsection{Training and testing}
-In the last sections we discussed the composition of the model. We stated that the last layer is formed by 100 neurons. Sometimes, neural networks are not as easy as we imagine to implement. Even if we have a big dataset, or even if we alterated data in a way that we think that could work for the sake of the generalizations, bad things happens. As we can see from the figures, the network is doing very good at learning samples from the training dataset. It is worth mentioning that one epoch is equivalent with learn one time the train dataset and get the error for forwarding over the network the dataset. Also, to make a parallel let's remeber that the output values are normalized to 0-1 range. Now, we can return to the graph and see that the training error behaves as we expect to happen and yes, it is decreasing. However, the test error is not behaving mathematically as showed in figure \ref{fig:traintest}. This brings into question the validity of the model. One must observe the slope of the train-line between first epoch and the second epoch is steeper, which means that after only one epoch the network overlearned the train-dataset and that is one reason to not predict well on the test-dataset. Anyway, we can state that the model with 50 neurons is an improvement as opposed to the one with 100 neurons. From this we conclude that if the model is too complex, the network could run into overfitting phenomenon.
+In the last sections we discussed the composition of the model. We stated that the last layer is formed of 100 neurons. Sometimes, neural networks are not as easy as we imagine to implement. Even if we have a big dataset, or even if we alter data in a way that we think might work for the sake of generalization, bad things happen. As we can see from the figures, the network is doing very well at learning samples from the training dataset. It is worth mentioning that one epoch is equivalent to learning the train dataset once and get the error for forwarding the dataset over the network. Also, to make a parallel, notice that the output values are normalized to the 0-1 range. Now, we can return to the graph and see that the training error behaves as we expect it to and yes, it is decreasing. However, the test error is not behaving mathematically as shown in figure \ref{fig:traintest}. This brings into question the validity of the model. One must observe that the slope of the train-line between the first epoch and the second epoch is steeper, which means that after only one epoch the network overlearned the train-dataset and that is one reason for not being predicted well on the test-dataset. In either case, one can state that the model with 50 neurons is an improvement as opposed to the one with 100 neurons. From this we conclude that if the model is too complex, the network could run into the overfitting phenomenon.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-100}
@@ -151,3 +151,35 @@ In the last sections we discussed the composition of the model. We stated that t
     \end{center}
 \end{figure}
 \newpage
+
+\subsection{Classification with deep-learning}
+
+Because the last results for doing regression with convolutional networks did not match the author's expectations, another option have been provided. What if we try to learn the same results using a clasificator. All in all, we try to predict the action for every state.
+
+Firstly, we change the architecture from LeNet-5 with the one used for training on Google Street View House Numbers proposed by Yuval Netzer et al. in the ``Reading Digits in Natural Images with Unsupervised Feature Learning''\cite{svhn} paper. The dataset used by them is very similar with the MNIST database (Yann Lecun)\footnote{\url{http://yann.lecun.com/exdb/mnist/}} except for the fact, that SVHN\footnote{\url{http://ufldl.stanford.edu/housenumbers/}} provides natural scene images.
+
+\subsubsection{Data}
+Like the previous model architecture, the data is converted from RGB to YUV color space, to separate the luminance from chrominance. After this step they peform contrast normalization to sharpen edges and also, the normalization is performed.
+
+\subsubsection{Model}
+The model proposed for training the network is slightly different the the other one. The input reamins the same, 3 channels and 32x32 size. The output is formed by four neurons corresponding for each action. The hidden layer activation functions used for the model is also tanh. The network is composed by two convolution layer and two pooling layers.
+
+\subsubsection{Loss function}
+For computing the error, Log Soft Max was used. Being a task of classification, and not a task of regression we need out network to map categorical information (discrete values variables) on continous normalized data.
+
+\begin{equation}
+loss(x^{(i)}) = \log {\frac{1}{\displaystyle\sum_{j} e^{x^{(j)}}\cdot e^{x^{(i)}}}}
+\end{equation}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-classif}
+		\caption{Train-Test error - classification} \label{fig:100tt}
+    \end{center}
+\end{figure}
+
+\subsubsection{Train and testing}
+\newpage
+
+
+

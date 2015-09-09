@@ -2,38 +2,38 @@
 \chapter{State of the art}
 \label{chapter:state}
 
-Being a large domain, deep learning imposes a research in multiple subdomains such as neuroscience, reinforcement learning, neural networks or convolutional neural networks. That being said, this chapter is dedicated to gathering information on each of them.
+Being a large domain, deep learning imposes a research into multiple subdomains such as neuroscience, reinforcement learning, neural networks or convolutional neural networks. That being said, this chapter is dedicated to gathering information on each of them.
 
 \section{Reinforcement learning}
 \label{sec:reinforcement}
 
 \subsection{History}
-The history of reinforcement learning starts with the pavlovian experiment\cite{pavlov} in 1903, when Pavlov tried to demonstrate that there is a connection between conditioned and unconditioned stimulus. The unconditioned response of salivation of a dog is fired up by bringing an unconditioned stimulus as food. If we try to make the dog to salivate in the presence of a neutral stimulus(the sound of a bell) we won't succeed, but if we use in the same time the unconditioned and neutral stimulus we can make the dog salivate and transform the bell and salivation in conditioned stimulus and conditioned response.
+The history of reinforcement learning starts with the pavlovian experiment\cite{pavlov} in 1903, when Pavlov tried to demonstrate that there is a connection between conditioned and unconditioned stimulus. The unconditioned response of salivation of a dog is fired up by bringing an unconditioned stimulus such as food. If we try to make the dog salivate in the presence of a neutral stimulus(the sound of a bell) we won't succeed, but if we use at the same time the unconditioned and neutral stimulus we can make the dog salivate and transform the bell and salivation into a conditioned stimulus and a conditioned response.
 
 \subsection{Q-Learning. Sarsa}
 \label{qlearning-sarsa}
 
 \subsubsection{Q-Learning}
 \label{qlearning}
-Q-Learning\cite{norvig} is the algorithm for learning in small steps details about the environment. We know the initial starting state of the game and also a set of possible actions we can take in order to change the current state. At the beginning, we are constrained to choose randomly an action, because we do not know which one could bring us winning the game and this is the exploration phase. We keep randomly picking actions until the game is finished.
+Q-Learning\cite{norvig} is the algorithm for learning details about the environment in small steps. We know the initial starting state of the game and also a set of possible actions we can take in order to change the current state. At the beginning, we are constrained to choose randomly an action, because we do not know which one could lead us to win the game and this is the exploration phase. We keep randomly picking actions until the game is finished.
 
-A game can have \textbf{n} number of states and \textbf{a} number of actions. We keep in memory a table \textbf{Q} of size \textbf{nxa} and we initialize all the corresponding elements with zero. During the game, rewards can be granted. Some of them can be good rewards and some of them can be bad rewards. When we recieve rewards, we update the previous state with the score obtained.
+A game can have \textbf{n} number of states and \textbf{a} number of actions. We keep in memory a table \textbf{Q} of size \textbf{nxa} and we initialize all the corresponding elements with zero. During the game, rewards can be granted. Some of them can be good rewards and some of them can be bad rewards. When we receive rewards, we update the previous state with the obtained score.
 
-Here we have to choose between exploration and exploitation. In the first states of the game, when we know nothing about environment, so we choose to explore new states in order to see if they bring us rewards. After some \textbf{e} episodes we learn which actions can bring us closer to the winning of the game. This is the moment when to start to exploit the things we have already learnt in the previous episodes. Assume we are in state \textbf{s} and have the next possible actions \{$a_{1},a_{2},a_{3},a_{4}$\}. Keep in mind that we recorded the Q-table. At this moment we choose the action which gives us the best utility from states s. If \textbf{Q(s,$a_{3}$)} is the maxim value of \textbf{Q} in state \textbf{s} we will pick action \textbf{$a_{3}$}.
+Here we have to choose between exploration and exploitation. In the first states of the game, when we know nothing about the environment, we choose to explore new states in order to see if they bring us rewards. After a number of \textbf{e} episodes we learn which actions can bring us closer to the winning of the game. This is the moment when we start exploiting the things we have already learnt in the previous episodes. Assume we are in state \textbf{s} and have the next possible actions \{$a_{1},a_{2},a_{3},a_{4}$\}. Keep in mind that we recorded the Q-table. At this moment we choose the action which gives us the best utility from states s. If \textbf{Q(s,$a_{3}$)} is the maxim value of \textbf{Q} in state \textbf{s} we will pick action \textbf{$a_{3}$}.
 
 \subsubsection{Sarsa}
 \label{sarsa}
-Q-Learning and Sarsa look alike except for the fact that Sarsa is updating his policy based on the action it takes and which is not necessary the best action, but it is the action expected to pursue his policy.
+Q-Learning and Sarsa look alike except for the fact that Sarsa is updating its policy based on the action it takes which is not necessary the best action, but it is the action expected to pursue its policy.
 
 
-When dealing with large negative rewards Q-Learning is dealing better than Sarsa\cite{multi-agent} because Q-Learning does not avoid risk situations while Sarsa is avoiding them. Both algorithms have variables that have to be adjusted during the computation.
+When dealing with large negative rewards Q-Learning behaves better than Sarsa\cite{multi-agent} because Q-Learning does not avoid risk situations while Sarsa does. Both algorithms have variables that have to be adjusted during the computation.
 
 \begin{itemize}
   \item \textbf{Learning rate} adjusts learning of new information flow. \textbf{0} is for not acquiring information and \textbf{1} is for considering only the new information.
   \item \textbf{Discount factor} adjust the importance of current rewards(\textbf{1}) vs future rewards(\textbf{0})
 \end{itemize}
 
-$\epsilon$-Greedy is the policy for choosing the next action. As we have already mentioned the problem between choosing explorations vs. exploitation, this strategy comes for helping in the first episodes where we don't have too much details about environment. It says that we can choose randomly an action from the set of actions with probability $\epsilon$ and choose the best action with probability $1-\epsilon$.
+$\epsilon$-Greedy is the policy for choosing the next action. As we have already mentioned in the problem between choosing explorations vs. exploitation, this strategy is helpful when applied in the first few episodes when we don't have too many details about the environment. It says that we can choose randomly an action from the set of actions with probability $\epsilon$ and choose the best action with probability $1-\epsilon$.
 
 Figure \ref{fig:svsq} shows behaviour of Q-Learning and Sarsa 
 
@@ -57,9 +57,9 @@ In this chapter we will discuss how networks works, the principles behind them a
 
 \subsection{Data}
 \label{data}
-The data resulted from pre-processing step is crucial for learning. To differentiate between noisy images and/or bad lighting is a big problem for a network because it may learn the inappropriate features.
+The data resulted from the pre-processing step is crucial for learning. Differentiating between noisy images and/or bad lighting is a big problem for a network because it may learn the inappropriate features.
 
-One of the first concerns is choosing the color space. We can have RGB(Red Green Blue) or we can have YUV(luminance blue–luminance red–luminance). In many cases RGB is the first choice instead of YUV\cite{pipeline}. If we are interested in color both of them are a good choice, but if we are intrested in edges the luminance channel it will be more suitable.
+One of the first concerns is choosing the color space. We can have RGB(Red Green Blue) or we can have YUV(luminance blue–luminance red–luminance). In many cases RGB is the first choice instead of YUV\cite{pipeline}. If we are interested in color both of them are a good choice, but if we are interested in edges the luminance channel will be more suitable.
 
 \begin{figure}[h]
 	\begin{center}
@@ -68,14 +68,14 @@ One of the first concerns is choosing the color space. We can have RGB(Red Green
     \end{center}
 \end{figure}
 
-If values have different ranges of scales, then logarithmic normalization should be used. In distance-based classification, if we have a feature with values between [0, 1] and another feature with values between [0, 2000] we need to normalize the data between [0, 1] or [-1, 1] such that every variation of each feature counts the same as the other feature. We do not want to start with giving more importance to a feature than the others.
+If values have different ranges of scales, then logarithmic normalization should be used. In distance-based classification, if we have a feature with values between [0, 1] and another feature with values between [0, 2000] we need to normalize the data between [0, 1] or [-1, 1] such that every variation of each feature counts the same as the other features. We do not want to start by giving a higher level importance to one feature to the detriment the other ones.
 
-Another aspect that should be considered is the importance of illumination conditions. If we are not interested than we remove the mean-value for each samples. If we have thousand of pictures with different illumination condition we remove the average illumination by extracting the mean-value such that all the pictures have the same contrast.
+Another aspect that should be considered is the importance of illumination conditions. If we are not interested in it then we remove the mean-value for each samples. If we have thousands of pictures with different illumination conditions we remove the average illumination by extracting the mean-value such that all the pictures have the same contrast.
 
-Splitting data is another importan aspect in training networks. We have to have three sets: train sets, test sets and validation sets. 50\% of initial data goes to training and the rest fifteen percent is splitted in 25\% for testing and 25\% for validation. This is used when the dataset is very large. Having a small dataset implies the statretgy to split data into $\frac{2}{3}$ for training and $\frac{1}{3}$ for testing\cite{splitting}.
+Splitting data is another important aspect in training networks. We have to have three sets: train sets, test sets and validation sets. 50\% of initial data goes to training and the rest of fifteen percent is split in 25\% for testing and 25\% for validation. This is used when the dataset is very large. Having a small dataset implies the statetgy of splitting data into $\frac{2}{3}$ for training and $\frac{1}{3}$ for testing\cite{splitting}.
 
 
-Cross validation\cite{cross-validation} should also be also taken into consideration. Cross validation is the algorithm of splittng data into test dataset and train dataset forcing both sets cross-over in succesive epochs such that every part in the initial dataset validates the model of the neural network. Assume that we have splitted data into \{\textbf{A}, \textbf{B}, \textbf{C}\}, each one being $\frac{1}{3}$ of initial dataset. In the first iteration we take the model to train on \textbf{A} and \textbf{B} and test it with \textbf{C}. The second iteration implies the training on \textbf{A} and \textbf{C} and testing on \textbf{B} and the last iteration implies training on \textbf{B} and \textbf{C} and testing on \textbf{A}. In this way we can assure that our model is working well for every case.
+Cross validation\cite{cross-validation} should also be taken into consideration. Cross validation is the algorithm of splitting data into test dataset and train dataset forcing both sets cross-over in successive epochs such that every part in the initial dataset validates the model of the neural network. Assume that we have split data into \{\textbf{A}, \textbf{B}, \textbf{C}\}, each one being $\frac{1}{3}$ part of initial dataset. In the first iteration we take the model to train on \textbf{A} and \textbf{B} and test it with \textbf{C}. The second iteration implies the training on \textbf{A} and \textbf{C} and testing on \textbf{B} and the last iteration implies training on \textbf{B} and \textbf{C} and testing on \textbf{A}. In this way one can be assured that our model is working well for every case.
 
 
 
@@ -94,7 +94,7 @@ Activation functions are used to define a connection between input and output.
 	\item outputs are zero-centred
 	\item if extremely large negative numbers are given as input, the output will be close to -1 and the error will propagate correctly
 	\item generally used in hidden layers
-	\item tanh layers learn fasten than sigmoid layers because of the size of the gradient
+	\item tanh layers learn faster than sigmoid layers because of the size of the gradient
 \end{itemize}
 
 \begin{figure}[h]
@@ -107,12 +107,12 @@ Activation functions are used to define a connection between input and output.
 
 \textbf{Sigmoid function(sigmoid)}
 \begin{itemize}
-  \item learning values far away from threshold is difficult
+  \item learning values farther away from the threshold is difficult
   \item useful for backpropagation algorithms
   \item easy for calculating derivatives and used in gradient descent methods
   \item output values between 0 and 1
-  \item can be used in binary classification problems with setting some threshold
-  \item if extremely large negative numbers are given as input, the output will be close to zero and the error will not propagate correctly
+  \item can be used in binary classification problems with setting some thresholds
+  \item if extremely large negative numbers are given as input, the output will be closer to zero and the error will not propagate correctly
 \end{itemize}
 
 \begin{figure}[h]
@@ -138,14 +138,14 @@ Activation functions are used to define a connection between input and output.
 %------------------------Convolutional layers------------------------
 \newpage
 \subsubsection{Convolutional layers}
-Pooling layers can be used in getting rid of unwanted information and also can be useful in dimensionality reduction.
+Pooling layers can be used when getting rid of unwanted information and also can be useful in dimensionality reduction.
 
 \textbf{Spatial Convolution}
 \begin{itemize}
 	\item{used to modify the frequency of neighbourhood pixels}
 	\item{accentuates edges in combination with Gabor filters}
 	\item{can be used to obtain gaussian blur effect}
-	\item{suppose we have an image of \textbf{width x height} size, if we apply a convolutional kernel of size \textbf{kw x kh} the size of the output will become \textbf{(width - kw + 1) x (height - kh + 1)}}
+	\item{suppose we have an image of \textbf{width x height} size, if we apply a convolution kernel of size \textbf{kw x kh} the size of the output will become \textbf{(width - kw + 1) x (height - kh + 1)}}
 \end{itemize}
 ~\\
 
@@ -243,7 +243,7 @@ The technique called Deconvolutional Networks takes a neural network already tra
 \subsection{Loss functions}
 \label{loss}
 
-Loss functions are used to aproximate how far we are from the solution, the diffrence between observed values and predicted values.
+Loss functions are used to approximate how far we are from the solution, the difference between observed values and predicted values.
 
 \textbf{Mean squared error}
 \begin{itemize}
@@ -265,13 +265,13 @@ J(weights) = \displaystyle\sum_{i=1}^{no_{samples}}max(0, 1 - labels^{(i)}\cdot 
 
 
 \subsection{Optimizations for learning}
-Optimization algorithm are used in updating the weights in a neural network in concordance with a loss function.
+Optimization algorithms are used in updating the weights in a neural network in concordance with a loss function.
 \label{optimization}
 Assuming that our cost function is defined as follows\cite{ng}:
 \begin{equation}
 	J(weights_n) = \frac{1}{2no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})^2
 \end{equation}
-we state that derivative of \textbf{J} w.r.t \textbf{weights} is\cite{ng}:
+we state that the derivative of \textbf{J} w.r.t \textbf{weights} is\cite{ng}:
 \begin{equation}
 	\frac{\partial J}{\partial weights} = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}(nn_{weights}(samples^{(i)}) - labels^{(i)})
 \end{equation}
@@ -340,9 +340,9 @@ where $\alpha$ represents learning rate.
 \subsection{Training and testing}
 \label{train-test}
 
-The question now arises: when do we have to stop with training if a (convolutiona) neural network ?
-We have to take care of how much we train a network. If we train too much, it will learn the samples and will predict exactly the same values, but there will be a large error for samples it has not seen. If we train too little, the network will not learn how to predict the samples it has seen and will also have a large test error.
-Mathematically, the moment when we should stop with training is the moment when the test error will increase its value. In \ref{fig:traintest} we can see the optimum moment when we should stop training.
+The question which arises now is: when do we have to stop with training if a (convolutional) neural network ?
+We have to take care of how much we train a network. If we train it too much, it will learn the samples and will predict exactly the same values, but there will be a large error for samples it has not seen. If we train it too little, the network will not learn how to predict the samples it has seen and will also have a large test error.
+Mathematically, the moment we should stop with training is the moment when the test error will increase its value. In \ref{fig:traintest} we can see the optimum moment when we should stop training.
 
 \begin{figure}[h]
 	\begin{center}
@@ -351,9 +351,9 @@ Mathematically, the moment when we should stop with training is the moment when 
     \end{center}
 \end{figure}
 
-Underfitting means also high bias and represents the incapacity of the algorithm to recognize the pattern feaures in samples.
+Underfitting also means high bias and represents the incapacity of the algorithm to recognize the pattern features in samples.
 
-Overfitting means also high variance and represent the incapacity of the algorith to adapt to new samples.
+Overfitting means also high variance and represents the inability for the algorithm to adapt to new samples.
 
 Both of them are illustrated in the figure \ref{fig:overfitting}.
 
@@ -367,7 +367,7 @@ Both of them are illustrated in the figure \ref{fig:overfitting}.
 \newpage
 
 \section{An in-depth look to ``Human-level control through deep reinforcement learning'' paper}
-This section is dedicated to analyzing the paper in which is proposed the method to solve playing games using deep learning and reinforcement learning. The proposed an agent, called Q-Network capable of playing 43 different games and adapting to each one without being modified.
+This section is dedicated to analyzing the paper which is proposes a method for solving games using deep learning and reinforcement learning. The proposed agent, called Q-Network capable of playing 43 different games and adapting to each one without being modified.
 
 
 \begin{figure}[h]
@@ -382,7 +382,7 @@ This section is dedicated to analyzing the paper in which is proposed the method
 
 
 \subsection{Architecture}
-The article\cite{nature} proposes a new type of network, Q-network which combines convolutional layers, a representation of human receptive fields and pooling layers used for dimensionality reduction. The input layer is represented by \textbf{84x84x4} neurons for the image produced after preprocessing frames from the game and is followed by three convolutional layers(32 filters of 8x8 and stride 4 with ReLU, 64 filters of 4x4 and stride 2 with ReLU, 64 filters of 3x3 and stride 1 with ReLU), two fully connected layers: a hidden layer with 512 units and the output layer which has a number of neurons equal with the number of actions corresponding to each game. Each hidden layer is followed by a rectified linear unit (ReLU).
+The article\cite{nature} proposes a new type of network, Q-network which combines convolutional layers, a representation of the human receptive fields and pooling layers used for dimensionality reduction. The input layer is represented by \textbf{84x84x4} neurons for the image produced after preprocessing frames from the game and is followed by three convolutional layers(32 filters of 8x8 and stride 4 with ReLU, 64 filters of 4x4 and stride 2 with ReLU, 64 filters of 3x3 and stride 1 with ReLU), two fully connected layers: a hidden layer with 512 units and the output layer which has a number of neurons equal to the number of actions corresponding to each game. Each hidden layer is followed by a rectified linear unit (ReLU).
 
 
 
@@ -394,11 +394,11 @@ The article\cite{nature} proposes a new type of network, Q-network which combine
     \end{center}
 \end{figure}
 
-The network is used to aproximate the optimal action-value function $Q^{*}$\cite{nature}:
+The network is used to approximate the optimal action-value function $Q^{*}$\cite{nature}:
 \begin{equation}
 	Q^{*}(s,a) = \max_\pi E[r_t + \gamma\cdot r_{t+1} + \gamma^2\cdot r_{t+2} + \dotsc | s_t = s, a_t = a, \pi]
 \end{equation}
-The function Q is also parameterized with the weights and the agent state $e_t = (s_t,a_t,r_t,s_{t+1})$ is saved at each iteration in a set D_t = ${(e_1, e_2, \dotsc, e_t)}$
+The function Q is also parametrized with the weights and the agent state $e_t = (s_t,a_t,r_t,s_{t+1})$ is saved at each iteration in a set D_t = ${(e_1, e_2, \dotsc, e_t)}$
 With all the necessary information here is the computation of the loss function\cite{nature}:
 
 \begin{equation}
@@ -413,7 +413,7 @@ where $\gamma$ represents the discount factor and ${\theta_i}^-)$ is updated wit
 
 The Q-learning action-value function can be updates using ${\theta_i}^-$ = $\theta_{i-1}$ following the optimal policy with probability 1 - $\epsilon$ and selecting a random move with probability $\epsilon$. 
 
-For minimizing loss function, Stochastic Gradient Descent is used in combination with experience replay technique for preventing `dead' neurons and also, Q is not updated at each iteration. This avoids the instability of Q caused by nonlinearity of network.
+For minimizing the loss function, Stochastic Gradient Descent is used in combination with the experience replay technique for preventing `dead' neurons and also, Q is not updated at each iteration. This avoids the instability of Q caused by the nonlinearity of network.
 
 The $\epsilon$-greedy policy was set to 0.05 and the Q-values were scaled because of big range values from rewards.
 \newpage
@@ -465,7 +465,7 @@ The algorithm\cite{nature} used for training Q-Network is presented as it follow
 
 \subsection{Results}
 
-Q-Network is capable of learning the optimal policy. For example, in Breakout is learning to make a tunnel between block for sending the ball in the back. Receivering only the pixel from the frames, rewards and using the same network structure it is capable of playing different games. The Q-Network can achieve 75\% of a score of a human test at 49 games\cite{nature}.
+Q-Network is capable of learning the optimal policy. For example, in Breakout what is being learned is to make a tunnel between blocks in order to send the ball into the back. Receiving only the pixel from the frames, rewards and using the same network structure it is capable of playing different games. The Q-Network can achieve 75\% of a score of a human test at 49 games\cite{nature}.
 
 
 \begin{figure}[h]
