@@ -15,7 +15,7 @@ The exploration vs. exploitation problem is solved by using a variable $\epsilon
 
 After all the iterations are finished, the algorithm generates a dataset. For each value stored in Q-table, it generates the frame from each coded state.
 
-On the next page, a pseudocode of Q-Learning is presented, which is an adaptation after the algorithm found in Norvig's book{\cite{norvig}}. The algorithm tries to estimate an optimal action-value function using the $\epsilon$-greedy policy, more exactly, it chooses a random action with probability $\epsilon$ and chooses the optimum action with probability 1-$\epsilon$
+On the next page, a pseudocode of Q-Learning is presented, which is an adaptation after the algorithm found in Norvig's book{\cite{norvig}}. The algorithm tries to estimate an optimal action-value function using the $\epsilon$-greedy policy, more exactly, it chooses a random action with probability $\epsilon$ and chooses the optimum action with probability 1-$\epsilon$.
 \newpage
 \begin{algorithm}
 	\floatname{algorithm}{Algorithm}
@@ -75,7 +75,7 @@ In this section \ref{sec:ql}, we generated a dataset of 160 images with 4 labels
 
 First step was to resolve the problem of the small number of samples (160) from the dataset. This has been solved by generating 64 other datasets (to achieve approximately 10,000 samples) from the original one with noise added or color changed. In this way we can ensure that the network is capable of learning features dependent on size in this case.
 
-The next figure(\ref{fig:155}) represent a state of the game and the next ones(\ref{fig:states}) represent altered images with noise added and color changed.
+The next figure(\ref{fig:155}) represents a state of the game and the next ones(\ref{fig:states}) represent altered images with noise added and color changed.
 
 \begin{figure}[h]
 	\begin{center}
@@ -136,7 +136,7 @@ loss(target,output) = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{sa
 \end{equation}
 \newpage
 \subsubsection{Training and testing}
-In the last sections we discussed the composition of the model. We stated that the last layer is formed of 100 neurons. Sometimes, neural networks are not as easy as we imagine to implement. Even if we have a big dataset, or even if we alter data in a way that we think might work for the sake of generalization, bad things happen. As we can see from the figures, the network is doing very well at learning samples from the training dataset. It is worth mentioning that one epoch is equivalent to learning the train dataset once and get the error for forwarding the dataset over the network. Also, to make a parallel, notice that the output values are normalized to the 0-1 range. Now, we can return to the graph and see that the training error behaves as we expect it to and yes, it is decreasing. However, the test error is not behaving mathematically as shown in figure \ref{fig:traintest}. This brings into question the validity of the model. One must observe that the slope of the train-line between the first epoch and the second epoch is steeper, which means that after only one epoch the network overlearned the train-dataset and that is one reason for not being predicted well on the test-dataset. In either case, one can state that the model with 50 neurons is an improvement as opposed to the one with 100 neurons. From this we conclude that if the model is too complex, the network could run into the overfitting phenomenon.
+In the last sections we discussed the composition of the model. We stated that the last layer is formed of 100 neurons. Sometimes, neural networks are not as easy as we imagine to implement. Even if we have a big dataset, or even if we alter data in a way that we think it might work for the sake of generalization, bad things happen. As we can see from the figures, the network is doing very well at learning samples from the training dataset. It is worth mentioning that one epoch is equivalent to learning the train dataset once and get the error for forwarding the test dataset over the network. Also, to make a parallel, notice that the output values are normalized to the 0-1 range. Now, we can return to the graph and see that the training error behaves as we expect it to and yes, it is decreasing. However, the test error is not behaving mathematically as shown in figure \ref{fig:traintest}. This brings into question the validity of the model. One must observe that the slope of the train-line between the first epoch and the second epoch is steeper, which means that after only one epoch the network overlearned the train-dataset and that is one reason for not being predicted well on the test-dataset. In either case, one can state that the model with 50 neurons is an improvement as opposed to the one with 100 neurons. From this we conclude that if the model is too complex, the network could run into the overfitting phenomenon.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-100}
@@ -159,27 +159,84 @@ Because the last results for doing regression with convolutional networks did no
 Firstly, we change the architecture from LeNet-5 with the one used for training on Google Street View House Numbers proposed by Yuval Netzer et al. in the ``Reading Digits in Natural Images with Unsupervised Feature Learning''\cite{svhn} paper. The dataset used by them is very similar with the MNIST database (Yann Lecun)\footnote{\url{http://yann.lecun.com/exdb/mnist/}} except for the fact, that SVHN\footnote{\url{http://ufldl.stanford.edu/housenumbers/}} provides natural scene images.
 
 \subsubsection{Data}
+For predicting classes we need to transform continous values to labels and for each state of the dataset we choose the label (\'up\' = 1, \'down\' = 2, \'left\' = 3, \'right\' = 4) according the maximum value. If the value corresponding to the \`up\`-action is the biggest, then we choose label 1.
 Like the previous model architecture, the data is converted from RGB to YUV color space, to separate the luminance from chrominance. After this step they peform contrast normalization to sharpen edges and also, the normalization is performed.
 
 \subsubsection{Model}
 The model proposed for training the network is slightly different the the other one. The input reamins the same, 3 channels and 32x32 size. The output is formed by four neurons corresponding for each action. The hidden layer activation functions used for the model is also tanh. The network is composed by two convolution layer and two pooling layers.
 
 \subsubsection{Loss function}
-For computing the error, Log Soft Max was used. Being a task of classification, and not a task of regression we need out network to map categorical information (discrete values variables) on continous normalized data.
+For computing the error, Log Soft Max was used. Being a task of classification, and not a task of regression we need our network to map categorical information (discrete values variables) on continous normalized data.
 
 \begin{equation}
 loss(x^{(i)}) = \log {\frac{1}{\displaystyle\sum_{j} e^{x^{(j)}}\cdot e^{x^{(i)}}}}
 \end{equation}
 
+\subsubsection{Train and testing}
+For updating weights in combination with backpropagation, SGD was used with learning rate $\alpha = 10^{-3}$. The train and testing have been done for 10 epochs and the average accuracy computed during the 10 epochs is approximately $33\%$. The dataset used is the same from regression, 10,000 pictures created from 160 pictures with noise added and color changed. Once again, the experiment showed unsatisfactory results. Transforming qlearning learned values to labels resulted in having unequal number of samples per class. This affects the network to learn more how a picture of class \textbf{c} look and of course in not learning the samples for the other classes.
+The graphic on the next page gives the plot of the accuracy on both, train and test datasets and the tables with confusion matrix of epoch 1 and epoch 10.
+\newpage
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-classif}
-		\caption{Train-Test error - classification} \label{fig:100tt}
+		\caption{Train-Test accuracy - classification} \label{fig:100tt}
     \end{center}
 \end{figure}
 
-\subsubsection{Train and testing}
+\begin{table}[H]
+\centering
+\begin{tabular}{l|c|c|c|c|c}
+{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
+{1} & 0	& 5		& 1259	& 121	& 0.00\%	\\ \hline                     
+{2} & 0	& 14	& 1982	& 204	& 0.63\%	\\ \hline                 
+{3} & 0	& 15	& 2501	& 249	& 90.45\%	\\ \hline
+{4} & 0	& 17	& 1655	& 170	& 9.22\%	\\ \hline
+\end{tabular}
+\caption{Epoch 1 - Train - Confusion Matrix}
+\label{table:train-ep1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|c|c|c|c|c}
+{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
+{1} & 0	& 0		& 343	& 0		& 0.00\%	\\ \hline                     
+{2} & 0	& 0		& 552	& 0		& 0.00\%	\\ \hline                 
+{3} & 0	& 0		& 691	& 0		& 100.00\%	\\ \hline
+{4} & 0	& 0		& 462	& 0		& 0.00\%	\\ \hline
+\end{tabular}
+\caption{Epoch 1 - Test - Confusion Matrix}
+\label{table:ts-ep1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|c|c|c|c|c}
+{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
+{1} & 0	& 1		& 1384	& 0		& 0.00\%	\\ \hline                     
+{2} & 0	& 0		& 2200	& 0		& 0.00\%	\\ \hline                 
+{3} & 0	& 0		& 2765	& 0		& 100.00\%	\\ \hline
+{4} & 0	& 0		& 1842	& 0		& 0.00\%	\\ \hline
+\end{tabular}
+\caption{Epoch 10 - Train - Confusion Matrix}
+\label{table:ts-ep1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l|c|c|c|c|c}
+{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
+{1} & 0	& 0		& 343	& 0		& 0.00\%	\\ \hline                     
+{2} & 0	& 0		& 552	& 0		& 0.00\%	\\ \hline                 
+{3} & 0	& 0		& 691	& 0		& 100.00\%	\\ \hline
+{4} & 0	& 0		& 462	& 0		& 0.00\%	\\ \hline
+\end{tabular}
+\caption{Epoch 10 - Test - Confusion Matrix}
+\label{table:ts-ep1}
+\end{table}
 \newpage
+
+
 
 
 
