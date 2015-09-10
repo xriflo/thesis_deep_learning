@@ -40,7 +40,7 @@ On the next page, a pseudocode of Q-Learning is presented, which is an adaptatio
 \end{algorithm}
 
 \section{Convolutional Neural Networks}
-This section comes with an attempt to discuss various architecture models that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can be generalized and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empyrical one, several experiments have been made.
+This section comes with an attempt to discuss various architecture models that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can be generalized and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empirical one, several experiments have been made.
 
 \subsection{Regression with deep-learning and complex model}
 The model proposed by Yann Lecun et al.\cite{energy-based} was slightly modified in order to map our problem. For the purpose of keeping things clear and well-separated every discussion about a network should be split into the next subjects: preprocessing data, chosen model for the network, loss function, training and testing.
@@ -65,7 +65,7 @@ The next figure(\ref{fig:155}) represents a state of the game and the next ones(
 \begin{figure}[h]
 	\begin{center}
 		\frame{\includegraphics[width=253px,height=126px]{src/img/system-design/states}}
-		\caption{Alterated dataset} \label{fig:states}
+		\caption{Altered dataset} \label{fig:states}
     \end{center}
 \end{figure}
 
@@ -121,14 +121,14 @@ Because the last results for doing regression with convolutional networks did no
 Firstly, we change the architecture from LeNet-5 with the one used for training on Google Street View House Numbers proposed by Yuval Netzer et al. in the ``Reading Digits in Natural Images with Unsupervised Feature Learning''\cite{svhn} paper. The dataset used by them is very similar with the MNIST database (Yann Lecun)\footnote{\url{http://yann.lecun.com/exdb/mnist/}} except for the fact, that SVHN\footnote{\url{http://ufldl.stanford.edu/housenumbers/}} provides natural scene images.
 
 \subsubsection{Data}
-For predicting classes we need to transform continous values to labels and for each state of the dataset we choose the label (\'up\' = 1, \'down\' = 2, \'left\' = 3, \'right\' = 4) according the maximum value. If the value corresponding to the \`up\`-action is the biggest, then we choose label 1.
-Like the previous model architecture, the data is converted from RGB to YUV color space, to separate the luminance from chrominance. After this step they peform contrast normalization to sharpen edges and also, the normalization is performed.
+For predicting classes we need to transform continuous values to labels and for each state of the dataset we choose the label (\'up\' = 1, \'down\' = 2, \'left\' = 3, \'right\' = 4) according the maximum value. If the value corresponding to the \`up\`-action is the biggest, then we choose label 1.
+Like the previous model architecture, the data is converted from RGB to YUV color space, to separate the luminance from chrominance. After this step they perform contrast normalization to sharpen edges and also, the normalization is performed.
 
 \subsubsection{Model}
-The model proposed for training the network is slightly different the the other one. The input reamins the same, 3 channels and 32x32 size. The output is formed by four neurons corresponding for each action. The hidden layer activation functions used for the model is also tanh. The network is composed by two convolution layer and two pooling layers.
+The model proposed for training the network is slightly different the the other one. The input remains the same, 3 channels and 32x32 size. The output is formed by four neurons corresponding for each action. The hidden layer activation functions used for the model is also tanh. The network is composed by two convolution layer and two pooling layers.
 
 \subsubsection{Loss function}
-For computing the error, Log Soft Max was used. Being a task of classification, and not a task of regression we need our network to map categorical information (discrete values variables) on continous normalized data.
+For computing the error, Log Soft Max was used. Being a task of classification, and not a task of regression we need our network to map categorical information (discrete values variables) on continuous normalized data.
 
 \begin{equation}
 loss(x^{(i)}) = \log {\frac{1}{\displaystyle\sum_{j} e^{x^{(j)}}\cdot e^{x^{(i)}}}}
@@ -136,6 +136,20 @@ loss(x^{(i)}) = \log {\frac{1}{\displaystyle\sum_{j} e^{x^{(j)}}\cdot e^{x^{(i)}
 
 \subsection{Regression with deep-learning and simple model}
 
+
 Both of the last experiments using convolutional neural networks did not lead to satisfactory results and that is the reason we propose another model. We found that sometimes RGB may lead to better improvements than YUV\cite{pipeline} so we passed the images to CNN into RGB color-space. Another preprocessing step was removing contrast normalization because it does not improve the results, leading to overfitting. The new model comes with two convolutions and two poolings. The output activation functions remain the same, tanh for hidden layers and sigmoid for the output layers in order to predict the values from Q-Learning which are between 0 and 1. We removed one fully connected layer and let 150 neurons on the last hidden layers. An implementation in Torch7 can be found in appendix \ref{appendix:good-model}.
 
+\subsection{Q-Network}
+
+In this section we discuss the implementation for Q-Network adapted to our needs. In the \ref{fig:qmodel} is given a graphical representation of the whole model. The experiment was done on Tower of Hanoi games as the other experiments were done. On the preprocessing step the image were rescaled to 32x32 and the input given to the Q-Network is keeping the RGB color space. For the model we used the simple model discussed in the last section. This time we started with two networks: the action-value network Q and the action-value target network $Q^-$. The loss function is the same, MSE.
+
+Then, we train the network as it follows: we start with a $\epsilon$-probability of 100\% in choosing a random action and 0\% for choosing the best action. After every 9 episodes we update the $\epsilon$-probability by decreasing it with 10\%. After we choose the action we observe the new state and the reward. We give the new sample to the $Q^-$ network and update the output corresponding to the action we have made with the reward if the episode had finished or with the q-learning equations. We compute the loss between Q and $Q^-$ and propagate loss derivative through Q. Every 100 steps we update the weights of $Q^-$ with the ones of Q.
+
+
+\begin{figure}[h]
+	\begin{center}
+		\frame{\includegraphics[width=321px,height=210px]{src/img/system-design/qmodel}}
+		\caption{Altered dataset} \label{fig:qmodel}
+    \end{center}
+\end{figure}
 

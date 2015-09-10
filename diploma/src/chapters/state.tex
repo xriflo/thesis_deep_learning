@@ -72,7 +72,7 @@ If values have different ranges of scales, then logarithmic normalization should
 
 Another aspect that should be considered is the importance of illumination conditions. If we are not interested in it then we remove the mean-value for each samples. If we have thousands of pictures with different illumination conditions we remove the average illumination by extracting the mean-value such that all the pictures have the same contrast.
 
-Splitting data is another important aspect in training networks. We have to have three sets: train sets, test sets and validation sets. 50\% of initial data goes to training and the rest of fifteen percent is split in 25\% for testing and 25\% for validation. This is used when the dataset is very large. Having a small dataset implies the statetgy of splitting data into $\frac{2}{3}$ for training and $\frac{1}{3}$ for testing\cite{splitting}.
+Splitting data is another important aspect in training networks. We have to have three sets: train sets, test sets and validation sets. 50\% of initial data goes to training and the rest of fifteen percent is split in 25\% for testing and 25\% for validation. This is used when the dataset is very large. Having a small dataset implies the strategy of splitting data into $\frac{2}{3}$ for training and $\frac{1}{3}$ for testing\cite{splitting}.
 
 
 Cross validation\cite{cross-validation} should also be taken into consideration. Cross validation is the algorithm of splitting data into test dataset and train dataset forcing both sets cross-over in successive epochs such that every part in the initial dataset validates the model of the neural network. Assume that we have split data into \{\textbf{A}, \textbf{B}, \textbf{C}\}, each one being $\frac{1}{3}$ part of initial dataset. In the first iteration we take the model to train on \textbf{A} and \textbf{B} and test it with \textbf{C}. The second iteration implies the training on \textbf{A} and \textbf{C} and testing on \textbf{B} and the last iteration implies training on \textbf{B} and \textbf{C} and testing on \textbf{A}. In this way one can be assured that our model is working well for every case.
@@ -91,7 +91,7 @@ Activation functions are used to define a connection between input and output.
 \textbf{Hyperbolic tangent function(tanh)}
 \begin{itemize}
 	\item outputs values between 0 and 1
-	\item outputs are zero-centred
+	\item outputs are zero-centered
 	\item if extremely large negative numbers are given as input, the output will be close to -1 and the error will propagate correctly
 	\item generally used in hidden layers
 	\item tanh layers learn faster than sigmoid layers because of the size of the gradient
