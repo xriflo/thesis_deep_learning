@@ -39,32 +39,10 @@ On the next page, a pseudocode of Q-Learning is presented, which is an adaptatio
 	\end{algorithmic}
 \end{algorithm}
 
-In the next figures the values resulted from Q are presented. As can be noticed the optimal policy is as follows. The game allows the picker to move LEFT from first stack and move RIGHT from last stack (\textbf{e.g.} If the picker points to the first stack and chooses to move LEFT, then the picker will point to the last stack). In fig. \ref{fig:fa} the picker points to the second stack so the optimal action will be to move RIGHT. As we can see the value for the RIGHT-action is bigger than the other values. In fig. \ref{fig:fb} the agent has only one move to finish the game, in optimal conditions. Again, if we look at which value is greater than the others we can see that DOWN appears to be 100 which is exactly the value of the reward received when an episode is finished. Fig. \ref{fig:fc} presents the initial state of the game, just as expected the game should begin with the picking for the first time of a disk and that is exactly what Q-Learning is doing.
-
-Another important aspect is that the values for actions corresponding to a state \textbf{s} are close. Why? This happens because the game has a static environment and there is no negative reward, thus whatever happens, the agent will always lose or it will be forced to play until the game is finished. The agent can never loose.
-
-\begin{figure}[hp]
-\centering
-\minipage{0.32\textwidth}
-  \frame{\includegraphics[width=\linewidth]{src/img/results/50}}
-  \caption{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}\label{fig:fa}
-\endminipage\hfill
-\minipage{0.32\textwidth}
-  \frame{\includegraphics[width=\linewidth]{src/img/results/85}}
-  \caption{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}\label{fig:fb}
-\endminipage\hfill
-\minipage{0.32\textwidth}%
-  \frame{\includegraphics[width=\linewidth]{src/img/results/155}}
-   \caption{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}\label{fig:fc}
- 
-\endminipage
-\end{figure}
-
-\newpage
 \section{Convolutional Neural Networks}
-This chapter comes with an attempt to discuss various architecture models that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can be generalized and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empyrical one, several experiments have been made.
+This section comes with an attempt to discuss various architecture models that could be suitable for our problem. To see if the network fits the main theme of this paper, one must provide proof that the network model can be generalized and is not hitting the ``high variance problem''. In order to come with a scientific proof or at least an empyrical one, several experiments have been made.
 
-\subsection{Regression with deep-learning}
+\subsection{Regression with deep-learning and complex model}
 The model proposed by Yann Lecun et al.\cite{energy-based} was slightly modified in order to map our problem. For the purpose of keeping things clear and well-separated every discussion about a network should be split into the next subjects: preprocessing data, chosen model for the network, loss function, training and testing.
 
 For the first attempt, a model used in face detection and pose estimation has been chosen because good results in learning features relevant for object recognition have been promised. Also, it is possible for this model to be applied over large images.
@@ -90,7 +68,7 @@ The next figure(\ref{fig:155}) represents a state of the game and the next ones(
 		\caption{Alterated dataset} \label{fig:states}
     \end{center}
 \end{figure}
-\newpage
+
 
 For the preprocessing data various problems have been encountered. First of all, there is a large discussion on the RGB vs. YUV topic. This paper implements the YUV transformation based on the assumption that luminance should be separated from chrominance. If features dependent on color should be learned, then the neurons connected with the chrominance pixels will be activated, otherwise the neurons connected with luminance pixels will be activated. Both types of channels are kept in the attempt to make an algorithm that could make a better generalization.  Also, the YUV color is much closer to the human vision than RGB. 
 
@@ -104,8 +82,8 @@ Another way to improve the contrast is using a gaussian matrix which follows a g
 
 On the other hand, labels also need to be processed. Because of the formula for estimating the action-value function (Q) different ranges of values were generated. For example, if we have to do regression on values as 0,..., 100 there would not be a problem because the delta range is $10^2$, but the values generated follow a delta range of $10^5$. This can cause instability in the network. These being said, the paper proposes to bring the values to the same range using a logarithmic function and of course, to normalize them to follow the normal distribution.
 
-Data was also shuffled to avoid having consecutive states of the game
-\newpage
+Data was also shuffled to avoid having consecutive states of the game.
+
 \subsubsection{Model}
 
 The model used for training the convolutional neural network is the model presented in the next paper: ``Synergistic Face Detection and Pose Estimation with Energy-Based Models''\cite{energy-based} with some modifications such that the model becomes suitable for our network.
@@ -134,27 +112,11 @@ For computing the error, Mean Squared Error was used. Being a task of regression
 \begin{equation}
 loss(target,output) = \frac{1}{no_{samples}}\cdot\displaystyle\sum_{i=1}^{no_{samples}}\cdot((output^{(i)}) - target^{(i)})^2
 \end{equation}
-\newpage
-\subsubsection{Training and testing}
-In the last sections we discussed the composition of the model. We stated that the last layer is formed of 100 neurons. Sometimes, neural networks are not as easy as we imagine to implement. Even if we have a big dataset, or even if we alter data in a way that we think it might work for the sake of generalization, bad things happen. As we can see from the figures, the network is doing very well at learning samples from the training dataset. It is worth mentioning that one epoch is equivalent to learning the train dataset once and get the error for forwarding the test dataset over the network. Also, to make a parallel, notice that the output values are normalized to the 0-1 range. Now, we can return to the graph and see that the training error behaves as we expect it to and yes, it is decreasing. However, the test error is not behaving mathematically as shown in figure \ref{fig:traintest}. This brings into question the validity of the model. One must observe that the slope of the train-line between the first epoch and the second epoch is steeper, which means that after only one epoch the network overlearned the train-dataset and that is one reason for not being predicted well on the test-dataset. In either case, one can state that the model with 50 neurons is an improvement as opposed to the one with 100 neurons. From this we conclude that if the model is too complex, the network could run into the overfitting phenomenon.
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-100}
-		\caption{Last hidden fully connected layer has 100 neurons} \label{fig:50tt}
-    \end{center}
-\end{figure}
-~\\
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-50}
-		\caption{Last hidden fully connected layer has 50 neurons} \label{fig:100tt}
-    \end{center}
-\end{figure}
-\newpage
 
-\subsection{Classification with deep-learning}
 
-Because the last results for doing regression with convolutional networks did not match the author's expectations, another option have been provided. What if we try to learn the same results using a clasificator. All in all, we try to predict the action for every state.
+\subsection{Classification with deep-learning and complex model}
+
+Because the last results for doing regression with convolutional networks did not match the author's expectations, another option have been provided. What if we try to learn the same results using a clasificator? All in all, we try to predict the action for every state.
 
 Firstly, we change the architecture from LeNet-5 with the one used for training on Google Street View House Numbers proposed by Yuval Netzer et al. in the ``Reading Digits in Natural Images with Unsupervised Feature Learning''\cite{svhn} paper. The dataset used by them is very similar with the MNIST database (Yann Lecun)\footnote{\url{http://yann.lecun.com/exdb/mnist/}} except for the fact, that SVHN\footnote{\url{http://ufldl.stanford.edu/housenumbers/}} provides natural scene images.
 
@@ -172,71 +134,8 @@ For computing the error, Log Soft Max was used. Being a task of classification, 
 loss(x^{(i)}) = \log {\frac{1}{\displaystyle\sum_{j} e^{x^{(j)}}\cdot e^{x^{(i)}}}}
 \end{equation}
 
-\subsubsection{Train and testing}
-For updating weights in combination with backpropagation, SGD was used with learning rate $\alpha = 10^{-3}$. The train and testing have been done for 10 epochs and the average accuracy computed during the 10 epochs is approximately $33\%$. The dataset used is the same from regression, 10,000 pictures created from 160 pictures with noise added and color changed. Once again, the experiment showed unsatisfactory results. Transforming qlearning learned values to labels resulted in having unequal number of samples per class. This affects the network to learn more how a picture of class \textbf{c} look and of course in not learning the samples for the other classes.
-The graphic on the next page gives the plot of the accuracy on both, train and test datasets and the tables with confusion matrix of epoch 1 and epoch 10.
-\newpage
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=209px,height=157px]{src/img/system-design/train-test-classif}
-		\caption{Train-Test accuracy - classification} \label{fig:100tt}
-    \end{center}
-\end{figure}
+\subsection{Regression with deep-learning and simple model}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{l|c|c|c|c|c}
-{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
-{1} & 0	& 5		& 1259	& 121	& 0.00\%	\\ \hline                     
-{2} & 0	& 14	& 1982	& 204	& 0.63\%	\\ \hline                 
-{3} & 0	& 15	& 2501	& 249	& 90.45\%	\\ \hline
-{4} & 0	& 17	& 1655	& 170	& 9.22\%	\\ \hline
-\end{tabular}
-\caption{Epoch 1 - Train - Confusion Matrix}
-\label{table:train-ep1}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{l|c|c|c|c|c}
-{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
-{1} & 0	& 0		& 343	& 0		& 0.00\%	\\ \hline                     
-{2} & 0	& 0		& 552	& 0		& 0.00\%	\\ \hline                 
-{3} & 0	& 0		& 691	& 0		& 100.00\%	\\ \hline
-{4} & 0	& 0		& 462	& 0		& 0.00\%	\\ \hline
-\end{tabular}
-\caption{Epoch 1 - Test - Confusion Matrix}
-\label{table:ts-ep1}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{l|c|c|c|c|c}
-{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
-{1} & 0	& 1		& 1384	& 0		& 0.00\%	\\ \hline                     
-{2} & 0	& 0		& 2200	& 0		& 0.00\%	\\ \hline                 
-{3} & 0	& 0		& 2765	& 0		& 100.00\%	\\ \hline
-{4} & 0	& 0		& 1842	& 0		& 0.00\%	\\ \hline
-\end{tabular}
-\caption{Epoch 10 - Train - Confusion Matrix}
-\label{table:ts-ep1}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{l|c|c|c|c|c}
-{}	& 1	& 2		& 3		& 4		& accuracy 	\\ \hline
-{1} & 0	& 0		& 343	& 0		& 0.00\%	\\ \hline                     
-{2} & 0	& 0		& 552	& 0		& 0.00\%	\\ \hline                 
-{3} & 0	& 0		& 691	& 0		& 100.00\%	\\ \hline
-{4} & 0	& 0		& 462	& 0		& 0.00\%	\\ \hline
-\end{tabular}
-\caption{Epoch 10 - Test - Confusion Matrix}
-\label{table:ts-ep1}
-\end{table}
-\newpage
-
-
-
+Both of the last experiments using convolutional neural networks did not lead to satisfactory results and that is the reason we propose another model. We found that sometimes RGB may lead to better improvements than YUV\cite{pipeline} so we passed the images to CNN into RGB color-space. Another preprocessing step was removing contrast normalization because it does not improve the results, leading to overfitting. The new model comes with two convolutions and two poolings. The output activation functions remain the same, tanh for hidden layers and sigmoid for the output layers in order to predict the values from Q-Learning which are between 0 and 1. We removed one fully connected layer and let 150 neurons on the last hidden layers. An implementation in Torch7 can be found in appendix \ref{appendix:good-model}.
 
 
