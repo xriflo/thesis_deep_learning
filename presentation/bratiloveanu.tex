@@ -5,6 +5,9 @@
 \usepackage[english]{babel}
 \usepackage{color}			% highlight
 \usepackage{alltt}			% highlight
+\usepackage{caption}
+\usepackage{frame}
+
 
 % highlight; comment this out in case you don't input code source files
 %\usepackage{code/highlight}		% highlight
@@ -60,19 +63,28 @@
 \frame{\tableofcontents}
 
 % NB: Secțiunile nu sunt marcate vizual, ci doar apar în cuprins
-\section{Context}
+\section{Motivation}
 
 % Titlul unui frame se specifică fie în acolade, imediat după \begin{frame},
 % fie folosind \frametitle
-\begin{frame}{TODO}
+\begin{frame}{Motivation}
 	\begin{itemize}		% Just like normal LaTeX
 		\item TODO
 	\end{itemize}
 \end{frame}
 
-\section{Architecture and Design}
+\section{State of the art}
+\begin{frame}{Once upon a time...}
+\end{frame}
+\begin{frame}{Model}
+\end{frame}
+\begin{frame}{Loss functions and optimizations techniques}
+\end{frame}
+\begin{frame}{Training and testing}
+\end{frame}
 
-\begin{frame}{TODO}
+\section{Architecture, Design, Results}
+\begin{frame}{Once upon a time...}
 	\begin{itemize}
 		\item Basic formula
 			\begin{beamerboxesrounded}[lower=block body,shadow=true]{}
@@ -82,24 +94,54 @@
 	\end{itemize}
 \end{frame}
 
-\section{Implementation}
 
-\begin{frame}{TODO}
+
+\begin{frame}{Q-Learning}
+	\begin{figure}[hp]
+\centering
+\minipage{0.30\textwidth}
+  \framebox{\includegraphics[width=\linewidth]{img/50}}
+  \caption*{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}\label{fig:fa}
+\endminipage\hfill
+\minipage{0.30\textwidth}
+  \framebox{\includegraphics[width=\linewidth]{img/85}}
+  \caption*{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}\label{fig:fb}
+\endminipage\hfill
+\minipage{0.30\textwidth}%
+  \framebox{\includegraphics[width=\linewidth]{img/155}}
+   \caption*{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}\label{fig:fc}
+ 
+\endminipage
+\end{figure}
+\end{frame}
+
+
+	
+\section{Conclusions}
+
+\begin{frame}{Conclusions}
 	\begin{itemize}
 		\item TODO
 		\item TODO
 	\end{itemize}
 \end{frame}
 
+\section{Future work}
 
+\begin{frame}{Conclusions}
+
+\begin{figure}[h]
+  
+  \begin{minipage}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{img/joke}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.55\textwidth}
 	
-\section{Results}
-
-\begin{frame}{TODO}
-	\begin{itemize}
-		\item TODO
-		\item TODO
-	\end{itemize}
+		\includegraphics[width=\textwidth]{img/training}	   
+    
+  \end{minipage}
+\end{figure}
 \end{frame}
 
 \section{Questions}
