@@ -7,10 +7,15 @@
 \usepackage{alltt}			% highlight
 \usepackage{caption}
 \usepackage{frame}
+\usepackage{listings}
+
+\lstset{language=Java,
+    basicstyle=\ttfamily,
+    showspaces=true,
+    numbers=left,
+}
 
 
-% highlight; comment this out in case you don't input code source files
-%\usepackage{code/highlight}		% highlight
 \usepackage{hyperref}			% folosiți \url{http://...}
 					% sau \href{http://...}{Nume Link}
 \usepackage{verbatim}
@@ -45,7 +50,7 @@
 
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
 
-\title[Deep models used in games]{Deep models used in games}
+\title[Deep Learning Models for Games]{Deep Learning Models for Games}
 \subtitle{Bachelor Thesis Session -- September 2015}
 \institute{Faculty of Automatic Control and Computers,\\
 	University POLITEHNICA of Bucharest}
@@ -68,9 +73,16 @@
 %--------------------MOTIVATION--------------------	
 \section{Motivation}
 \begin{frame}{Motivation}
+	\begin{Huge}
+		Deep Learning
+	\end{Huge}
+	\vspace*{0.8cm}
 	\begin{itemize}
-		\item de
+	
 		\item find models capable of generalization
+		\item extract from low-level(edges,colors) to high-level(combination of rudimentary features) features
+		\item reduce programming burden
+		\item applicability: cancer classification, autonomous cars, object recognition from images
 	\end{itemize}
 \end{frame}
 
@@ -86,7 +98,7 @@
 \end{frame}
 
 %--------------------PREPROCESSING, MODEL, LOSS FUNCTION--------------------	
-\begin{frame}{PREPROCESSING, MODEL, LOSS FUNCTION}
+\begin{frame}{Preprocessing, Model, Loss function}
 	\begin{itemize}
 		\item color space: RGB, YUV, grayscale
 		\item data normalization 0..1, contrast normalization
@@ -97,6 +109,7 @@
 		\end{itemize}
 		\item how many layers/features, what type of layers
 		\item loss function: classification(binary/multi-class) or regression?
+		\item gradient descent \textbf{vs} stochastic gradient descent
 	\end{itemize}
 \end{frame}
 
@@ -107,44 +120,82 @@
 		\item when to stop training?
 	\end{itemize}
 	 \includegraphics[width=180px,height=123px]{img/traintest.jpg}
+	 \begin{flushleft}
+	 
+			\fontsize{5}{1em}{\texttt{Source:}} \\
+			\vspace*{-0.2cm}			
+			\fontsize{4}{1em}{\texttt{
+			\url{http://documentation.statsoft.com/statisticahelp.aspx?path=sann/overview/sannoverviewsnetworkgeneralization}}}
+	\end{flushleft}
 \end{frame}
 
 \section{Architecture, Design, Results}
+
 \begin{frame}{Once upon a time...}
-	\begin{itemize}
-		\item Basic formula
-			\begin{beamerboxesrounded}[lower=block body,shadow=true]{}
-				\texttt{\#define MAX(a, b)   ((a) > (b) ? (a) : (b))}
-			\end{beamerboxesrounded}
-		\item TODO
-	\end{itemize}
+	\begin{minipage}{0.5\textwidth}
+		\begin{figure}[H]
+			\fbox{\includegraphics[width=60px,height=60px]{img/155}}
+			\caption*{Tower of Hanoi (first state)}
+		\end{figure}
+		\vspace*{-1.3cm}
+		\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering}
+			\fbox{\includegraphics[width=154px,height=77px]{img/states}}
+			\caption*{Dataset with noise added and color changed}
+		\end{figure}
+	\end{minipage} \hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{itemize}
+			\item game: Tower of Hanoi
+			\item reinforcement learning: Q-Learning
+			\item deep neural networks: predict values from Q-Learning
+			\item machine learning framework: Torch based on Lua
+		\end{itemize}
+	\end{minipage}
 \end{frame}
 
 
 
 \begin{frame}{Q-Learning}
 	\begin{itemize}
-	\item finds optimal policy for action-value function
-	\item Q(s,a) = Q(s,a) + $\alpha\cdot$(r + $\gamma\cdot \max_a Q(s^\prime,a^\prime)-Q(s,a)$)
+		\item finds optimal policy for action-value function
+		\item 
+		Q(s,a) = Q(s,a) + $\alpha\cdot$(r + $\gamma\cdot \max_a Q(s^\prime,a^\prime)-Q(s,a)$)
 	\end{itemize}	
 	\begin{figure}[hp]
-\centering
-\minipage{0.30\textwidth}
-  \framebox{\includegraphics[width=\linewidth]{img/50}}
-  \caption*{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}\label{fig:fa}
-\endminipage\hfill
-\minipage{0.30\textwidth}
-  \framebox{\includegraphics[width=\linewidth]{img/85}}
-  \caption*{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}\label{fig:fb}
-\endminipage\hfill
-\minipage{0.30\textwidth}%
-  \framebox{\includegraphics[width=\linewidth]{img/155}}
-   \caption*{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}\label{fig:fc}
- 
-\endminipage
-\end{figure}
+		\centering
+		\minipage{0.30\textwidth}
+  			\framebox{\includegraphics[width=\linewidth]{img/50}}
+  			\caption*{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}\label{fig:fa}
+		\endminipage\hfill
+		\minipage{0.30\textwidth}
+  			\framebox{\includegraphics[width=\linewidth]{img/85}}
+  			\caption*{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}\label{fig:fb}
+		\endminipage\hfill
+		\minipage{0.30\textwidth}%
+ 			\framebox{\includegraphics[width=\linewidth]{img/155}}
+   			\caption*{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}\label{fig:fc}
+		\endminipage
+	\end{figure}
 \end{frame}
 
+\begin{frame}{Regression with complex model}
+	
+	\begin{columns}[T]
+% code
+\begin{column}{0.64\textwidth}
+nn
+\end{column}
+% description
+\begin{column}{0.34\textwidth}
+\begin{itemize}
+		\item predict values obtained from Q-Learning with convnet
+		\item failure (the dnn was too complex)
+	\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
 
 %--------------------FUTURE WORK--------------------	
 \section{Future work}
@@ -178,15 +229,15 @@
 \end{frame}
 
 %--------------------QUESTIONS--------------------
-\section{Questions}
-\begin{frame}{Questions}
+\section{QA}
+\begin{frame}{QA}
 	\begin{center}
     \bfseries
-    \Huge
-    Thank you for your attention!
+    \large
+    Questions and Answers
     
-    \vspace*{1.4cm}			
-    ?
+    \vspace*{1.9cm}			
+    Thank you for your attention!
   	\end{center}
 \end{frame}
 
