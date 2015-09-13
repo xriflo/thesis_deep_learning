@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.22)  13 SEP 2015 22:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.22)  14 SEP 2015 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -991,7 +991,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <img/nn2.png, id=96, 591.20876pt x 372.39125pt>
+] <img/nn2.png, id=126, 591.20876pt x 372.39125pt>
 File: img/nn2.png Graphic file (type png)
  <use img/nn2.png>
 Package pdftex.def Info: img/nn2.png used on input line 98.
@@ -1001,7 +1001,7 @@ Package pdftex.def Info: img/nn2.png used on input line 98.
 
  <./img/nn2.png>] [5
 
-] <img/traintest.jpg, id=123, 283.81032pt x 193.47281pt>
+] <img/traintest.jpg, id=162, 283.81032pt x 193.47281pt>
 File: img/traintest.jpg Graphic file (type jpg)
 
 <use img/traintest.jpg>
@@ -1059,13 +1059,13 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <2> not available
 
 [6
 
- <./img/traintest.jpg>] <img/155.png, id=138, 401.5pt x 401.5pt>
+ <./img/traintest.jpg>] <img/155.png, id=181, 401.5pt x 401.5pt>
 File: img/155.png Graphic file (type png)
 
 <use img/155.png>
 Package pdftex.def Info: img/155.png used on input line 156.
 (pdftex.def)             Requested size: 60.2224pt x 60.2224pt.
- <img/states.png, id=139, 256.96pt x 128.48pt>
+ <img/states.png, id=182, 256.96pt x 128.48pt>
 File: img/states.png Graphic file (type png)
 
 <use img/states.png>
@@ -1077,12 +1077,12 @@ Overfull \hbox (7.73608pt too wide) in paragraph at lines 156--156
  []
 
 
-Overfull \vbox (5.72018pt too high) detected at line 156
+Overfull \vbox (10.549pt too high) detected at line 156
  []
 
 [7
 
- <./img/155.png> <./img/states.png>] <img/50.png, id=155, 401.5pt x 401.5pt>
+ <./img/155.png> <./img/states.png>] <img/50.png, id=201, 401.5pt x 401.5pt>
 File: img/50.png Graphic file (type png)
 
 <use img/50.png>
@@ -1093,7 +1093,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 181--181
 [][] 
  []
 
-<img/85.png, id=156, 401.5pt x 401.5pt>
+<img/85.png, id=202, 401.5pt x 401.5pt>
 File: img/85.png Graphic file (type png)
  <use img/85.png>
 Package pdftex.def Info: img/85.png used on input line 181.
@@ -1113,31 +1113,51 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 181--181
  []
 
 
-Overfull \vbox (12.51724pt too high) detected at line 181
+Overfull \vbox (10.86378pt too high) detected at line 181
  []
 
 [8
 
  <./img/50.png> <./img/85.png>] [9
 
-] [10
+]
+<img/train-test-100.png, id=247, 578.16pt x 433.62pt>
+File: img/train-test-100.png Graphic file (type png)
+
+<use img/train-test-100.png>
+Package pdftex.def Info: img/train-test-100.png used on input line 227.
+(pdftex.def)             Requested size: 240.89352pt x 180.67676pt.
+ [10
+
+ <./img/train-test-100.png>] [11
 
 ]
-<img/joke.png, id=202, 241.20113pt x 404.712pt>
+<img/small-network.png, id=281, 578.16pt x 433.62pt>
+File: img/small-network.png Graphic file (type png)
+
+<use img/small-network.png>
+Package pdftex.def Info: img/small-network.png used on input line 266.
+(pdftex.def)             Requested size: 240.89352pt x 180.67676pt.
+ [12
+
+ <./img/small-network.png>] [13
+
+]
+<img/joke.png, id=314, 241.20113pt x 404.712pt>
 File: img/joke.png Graphic file (type png)
  <use img/joke.png>
-Package pdftex.def Info: img/joke.png used on input line 229.
+Package pdftex.def Info: img/joke.png used on input line 297.
 (pdftex.def)             Requested size: 92.1879pt x 154.68141pt.
 
-<img/training.png, id=203, 414.54875pt x 361.35pt>
+<img/training.png, id=315, 414.54875pt x 361.35pt>
 File: img/training.png Graphic file (type png)
  <use img/training.png>
-Package pdftex.def Info: img/training.png used on input line 229.
+Package pdftex.def Info: img/training.png used on input line 297.
 (pdftex.def)             Requested size: 169.01036pt x 147.31636pt.
 
-[11
+[14
 
- <./img/joke.png> <./img/training.png (PNG copy)>] [12
+ <./img/joke.png> <./img/training.png (PNG copy)>] [15
 
 ]
 \tf@nav=\write6
@@ -1149,42 +1169,44 @@ Package pdftex.def Info: img/training.png used on input line 229.
 \tf@snm=\write8
 \openout8 = `bratiloveanu.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (./bratiloveanu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `bratiloveanu.out' has not changed.
-(rerunfilecheck)             Checksum: 3EBFBCAF7F87070D98D010DC34ACA798;289.
+(rerunfilecheck)             Checksum: 5CA7821A901E0EA857A293EE2B1251C2;445.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 19160 strings out of 493304
- 346696 string characters out of 6139871
- 452538 words of memory out of 5000000
- 22126 multiletter control sequences out of 15000+600000
- 13911 words of font info for 53 fonts, out of 8000000 for 9000
+ 19245 strings out of 493304
+ 348524 string characters out of 6139871
+ 453535 words of memory out of 5000000
+ 22196 multiletter control sequences out of 15000+600000
+ 16465 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,15n,53p,401b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,19n,60p,401b,747s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt8.pfb>
-Output written on bratiloveanu.pdf (12 pages, 253157 bytes).
+t/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
+>
+Output written on bratiloveanu.pdf (15 pages, 318748 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 219 compressed objects within 3 object streams
- 34 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

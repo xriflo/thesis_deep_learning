@@ -137,7 +137,7 @@
 			\fbox{\includegraphics[width=60px,height=60px]{img/155}}
 			\caption*{Tower of Hanoi (first state)}
 		\end{figure}
-		\vspace*{-1.3cm}
+		\vspace*{-1.45cm}
 		\begin{figure}[H]
 			\centering
 			\captionsetup{justification=centering}
@@ -167,34 +167,102 @@
 		\centering
 		\minipage{0.30\textwidth}
   			\framebox{\includegraphics[width=\linewidth]{img/50}}
-  			\caption*{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}\label{fig:fa}
+  			\caption*{\scriptsize{\newline UP = 90,6534\newline DOWN = 86,8787\newline LEFT = 89,1867\newline RIGHT = 94,2824}}\label{fig:fa}
 		\endminipage\hfill
 		\minipage{0.30\textwidth}
   			\framebox{\includegraphics[width=\linewidth]{img/85}}
-  			\caption*{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}\label{fig:fb}
+  			\caption*{\scriptsize{\newline UP = 97,6530\newline DOWN = 100,0000\newline LEFT = 93,8538\newline RIGHT = 92,5261}}\label{fig:fb}
 		\endminipage\hfill
 		\minipage{0.30\textwidth}%
  			\framebox{\includegraphics[width=\linewidth]{img/155}}
-   			\caption*{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}\label{fig:fc}
+   			\caption*{\scriptsize{\newline UP = 26,3520\newline DOWN = 23,8452\newline LEFT = 23,8897\newline RIGHT = 22,8827}}\label{fig:fc}
 		\endminipage
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Regression with complex model}
-	
+
+
+\subsection{Regression with complex model}
+\begin{frame}{Model}
 	\begin{columns}[T]
-% code
-\begin{column}{0.64\textwidth}
-nn
-\end{column}
-% description
-\begin{column}{0.34\textwidth}
-\begin{itemize}
-		\item predict values obtained from Q-Learning with convnet
-		\item failure (the dnn was too complex)
-	\end{itemize}
-\end{column}
-\end{columns}
+		\begin{column}{0.70\textwidth}
+			\footnotesize
+				\color[rgb]{0,0,0.545098}
+			  (1): \hspace{0.16cm}nn.SpatialConvolutionMM(3 -$\rightarrow$ 8, 5x5)
+			  
+			  (2):\hspace{0.16cm} nn.Tanh
+			  
+			  (3): \hspace{0.16cm}nn.SpatialSubSampling
+			  
+				\color[rgb]{0.333333,0.419608,0.184314}			  
+			  (4): \hspace{0.16cm}nn.SpatialConvolutionMM(8 $\rightarrow$ 20, 5x5)
+			  
+			  (5): \hspace{0.16cm}nn.Tanh
+			  
+			  (6): \hspace{0.16cm}nn.SpatialSubSampling
+			  
+			  \color[rgb]{0.180392,0.545098,0.341176}
+			  (7): \hspace{0.16cm}nn.SpatialConvolutionMM(20 $\rightarrow$ 120, 5x5)
+			  
+			  (8): \hspace{0.16cm}nn.Reshape(120)
+			  
+			  (9): \hspace{0.16cm}nn.Linear(120 $\rightarrow$ 100)
+			  
+			  (10): nn.Tanh
+			  
+			  (11): nn.Linear(100 $\rightarrow$ 4)
+			  
+			  (12): nn.Sigmoid
+			  
+		\end{column}
+		\begin{column}{0.30\textwidth}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Results}
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{img/train-test-100}
+    \end{center}
+\end{frame}
+
+
+\subsection{Regression with simple model}
+\begin{frame}{Model}
+	\begin{columns}[T]
+		\begin{column}{0.60\textwidth}
+			\footnotesize
+			\color[rgb]{0,0,0.545098}
+			(1): nn.SpatialConvolutionMM(3 $\rightarrow$ 4, 5x5)
+			
+  			(2): nn.Tanh
+  			
+  			(3): nn.SpatialSubSampling
+  			
+  			\color[rgb]{0.333333,0.419608,0.184314}
+  			(4): nn.SpatialConvolutionMM(4 $\rightarrow$ 6, 5x5)
+  			
+  			(5): nn.Tanh
+  			
+  			(6): nn.SpatialSubSampling
+  			
+  			\color[rgb]{0.180392,0.545098,0.341176}
+  			(7): nn.Reshape(150)
+  			
+  			(8): nn.Linear(150 $\rightarrow$ 4)
+		\end{column}
+		\begin{column}{0.40\textwidth}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Results}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=240px,height=180px]{img/small-network}
+    \end{center}
+\end{figure}
+
 \end{frame}
 
 %--------------------FUTURE WORK--------------------	

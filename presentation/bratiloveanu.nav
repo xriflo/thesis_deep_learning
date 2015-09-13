@@ -24,25 +24,33 @@
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\slideentry {3}{0}{8}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {3}{0}{9}{9/9}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{Regression with complex model}}\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{Regression with complex model}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {4}{Future work}{10}{Future work}{0}}
-\headcommand {\beamer@sectionpages {7}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\slideentry {4}{0}{10}{10/10}{}{0}}
+\headcommand {\slideentry {3}{1}{2}{10/10}{Regression with complex model}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\sectionentry {5}{Conclusions}{11}{Conclusions}{0}}
-\headcommand {\beamer@sectionpages {10}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {5}{0}{11}{11/11}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Regression with simple model}}\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\slideentry {3}{2}{1}{11/11}{Regression with simple model}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\sectionentry {6}{QA}{12}{QA}{0}}
-\headcommand {\beamer@sectionpages {11}{11}}
-\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\slideentry {6}{0}{12}{12/12}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{12/12}{Regression with simple model}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@partpages {1}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@sectionpages {12}{12}}
-\headcommand {\beamer@documentpages {12}}
-\headcommand {\def \inserttotalframenumber {12}}
+\headcommand {\sectionentry {4}{Future work}{13}{Future work}{0}}
+\headcommand {\beamer@sectionpages {7}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\slideentry {4}{0}{3}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\sectionentry {5}{Conclusions}{14}{Conclusions}{0}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\slideentry {5}{0}{4}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\sectionentry {6}{QA}{15}{QA}{0}}
+\headcommand {\beamer@sectionpages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {6}{0}{5}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@partpages {1}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@sectionpages {15}{15}}
+\headcommand {\beamer@documentpages {15}}
+\headcommand {\def \inserttotalframenumber {15}}
