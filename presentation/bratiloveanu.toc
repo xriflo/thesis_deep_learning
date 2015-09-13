@@ -2,7 +2,7 @@
 \select@language {english}
 \beamer@sectionintoc {1}{Motivation}{3}{0}{1}
 \beamer@sectionintoc {2}{State of the art}{4}{0}{2}
-\beamer@sectionintoc {3}{Architecture, Design, Results}{8}{0}{3}
-\beamer@sectionintoc {4}{Conclusions}{10}{0}{4}
-\beamer@sectionintoc {5}{Future work}{11}{0}{5}
-\beamer@sectionintoc {6}{Questions}{12}{0}{6}
+\beamer@sectionintoc {3}{Architecture, Design, Results}{7}{0}{3}
+\beamer@sectionintoc {4}{Future work}{9}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{10}{0}{5}
+\beamer@sectionintoc {6}{Questions}{11}{0}{6}

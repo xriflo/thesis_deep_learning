@@ -45,7 +45,7 @@
 
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
 
-\title[Playing games with Deep Learning]{Playing games with Deep Learning}
+\title[Deep models used in games]{Deep models used in games}
 \subtitle{Bachelor Thesis Session -- September 2015}
 \institute{Faculty of Automatic Control and Computers,\\
 	University POLITEHNICA of Bucharest}
@@ -63,24 +63,50 @@
 \frame{\tableofcontents}
 
 % NB: Secțiunile nu sunt marcate vizual, ci doar apar în cuprins
-\section{Motivation}
 
-% Titlul unui frame se specifică fie în acolade, imediat după \begin{frame},
-% fie folosind \frametitle
+
+%--------------------MOTIVATION--------------------	
+\section{Motivation}
 \begin{frame}{Motivation}
-	\begin{itemize}		% Just like normal LaTeX
-		\item TODO
+	\begin{itemize}
+		\item de
+		\item find models capable of generalization
 	\end{itemize}
 \end{frame}
 
 \section{State of the art}
+%--------------------INTRODUCTION--------------------	
 \begin{frame}{Once upon a time...}
+	\begin{itemize}
+		\item reinforcement learning: Q-Learning
+		\item neural networks \textbf{vs} deep neural networks
+	\end{itemize}
+	\centering
+	\includegraphics[width=205px,height=130px]{img/nn2}
 \end{frame}
-\begin{frame}{Model}
+
+%--------------------PREPROCESSING, MODEL, LOSS FUNCTION--------------------	
+\begin{frame}{PREPROCESSING, MODEL, LOSS FUNCTION}
+	\begin{itemize}
+		\item color space: RGB, YUV, grayscale
+		\item data normalization 0..1, contrast normalization
+		\item activation functions
+		\begin{itemize}
+			\item hidden layer vs output layer
+			\item tanh, sigmoid, ReLU
+		\end{itemize}
+		\item how many layers/features, what type of layers
+		\item loss function: classification(binary/multi-class) or regression?
+	\end{itemize}
 \end{frame}
-\begin{frame}{Loss functions and optimizations techniques}
-\end{frame}
-\begin{frame}{Training and testing}
+
+%--------------------TRAINING AND TESTING--------------------	
+\begin{frame}{Train and test}
+	\begin{itemize}
+		\item split dataset for training and testing
+		\item when to stop training?
+	\end{itemize}
+	 \includegraphics[width=180px,height=123px]{img/traintest.jpg}
 \end{frame}
 
 \section{Architecture, Design, Results}
@@ -97,6 +123,10 @@
 
 
 \begin{frame}{Q-Learning}
+	\begin{itemize}
+	\item finds optimal policy for action-value function
+	\item Q(s,a) = Q(s,a) + $\alpha\cdot$(r + $\gamma\cdot \max_a Q(s^\prime,a^\prime)-Q(s,a)$)
+	\end{itemize}	
 	\begin{figure}[hp]
 \centering
 \minipage{0.30\textwidth}
@@ -116,53 +146,49 @@
 \end{frame}
 
 
-	
-\section{Conclusions}
-
-\begin{frame}{Conclusions}
+%--------------------FUTURE WORK--------------------	
+\section{Future work}
+\begin{frame}{Future work}
 	\begin{itemize}
-		\item TODO
-		\item TODO
+		\item implement Q-Network
+		\item test algorithm on dynamic environments or games where the state of the universe is not fully observed
+		\item make Nao capable of playing Tic-Tac-Toe
+		\item after all tasks mentioned above are done, use all the information gathered for cancer classification, etc.
 	\end{itemize}
 \end{frame}
 
-\section{Future work}
-
+%--------------------CONCLUSIONS--------------------
+\section{Conclusions}
 \begin{frame}{Conclusions}
-
-\begin{figure}[h]
-  
-  \begin{minipage}[b]{0.3\textwidth}
-    \includegraphics[width=\textwidth]{img/joke}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[t]{0.55\textwidth}
-	
+\begin{figure}[h]  
+	\begin{minipage}[b]{0.3\textwidth}    
+		\includegraphics[width=\textwidth]{img/joke}
+  	\end{minipage}
+  	\hfill
+  	\begin{minipage}[t]{0.55\textwidth}
 		\includegraphics[width=\textwidth]{img/training}	   
-    
-  \end{minipage}
+	\end{minipage}
 \end{figure}
+\begin{flushright}
+			\fontsize{5}{1em}{\texttt{Source:}} \\
+			\vspace*{-0.2cm}			
+			\fontsize{4}{1em}{\texttt{
+			\url{http://xkcd.com/}}}
+\end{flushright}	
 \end{frame}
 
+%--------------------QUESTIONS--------------------
 \section{Questions}
-
 \begin{frame}{Questions}
-  \begin{columns}
-    \begin{column}[l]{0.5\textwidth}
-      \begin{itemize}
-        \item keyword1
-        \item keyword2
-        \item keyword3
-        \item keyword4
-        \item keyword5
-      \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.5\textwidth}
-      \begin{figure}
-        \includegraphics[scale=0.3]{img/question-mark}
-      \end{figure}
-    \end{column}
-  \end{columns}
+	\begin{center}
+    \bfseries
+    \Huge
+    Thank you for your attention!
+    
+    \vspace*{1.4cm}			
+    ?
+  	\end{center}
 \end{frame}
+
 
 \end{document}
