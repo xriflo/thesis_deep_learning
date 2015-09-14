@@ -1,0 +1,26 @@
+[first slide]
+Buna ziua! Numele meu este Florentina Bratiloveanu si astazi va voi prezenta proiectul meu de licenta. Tema a constat in analiza unor modele de deep-learning ce ar putea fi aplicate in jocuri.
+
+[outline]
+Cum partea de research a ocupat cel mai mult din pregatirea proiectului astazi ca voi prezenta si motivatia din spatele retelelelor de convolutie si precum, arhitectura acestora in sectiunea State of the art. La arhitectura vom vorbi de modele folosite in teoria jocurilor strans legate de invatarea prin recompensa si retele pentru deep learning. La final voi prezenta cum doresc sa dezvolt proiectul pe viitor si cateva concluzii empirice.
+
+[motivation]
+Spre deosebire de retele neurale simple, retele de convolutie aduc o prima extindere a acestora prin adaugarea de straturi ascunse si reprezinta un model neliniar puternic pentru generalizare. Practic fiecare strat este responsabil sa invete cate un tip de feature, ca de exemplu: primul strat poate invata muchii vertical sau muchii orizontale, al doilea strat invata feature-uri mai complexe precum colturi si al treila strat ar putea invata din combinatia straturilor precedente precum ochi in cazul unei fete. De asemenea, un alt lucru care trebuie subliniat este ca faptul ca aceste retele pot invata direct din valorile pixelilor unei imagini si intareste ideea de generalizare de care acestea dispun. Aplicabilitatea este foarte mare, de la clasificarea tumorilor pana la detectarea pietonilor
+
+[state of the art - once upon a time]
+Pentru proiect am studiat doua modalitati de a face agenti capabili sa joace jocuri. Prima data am incercat sa fac un agent care foloseste invatarea prin recompensa prin intermediul algoritmului de Q-Learning. A doua etapa a constat in analiza unor modele de retele de convolutie care ar putea sa invete din imagini. Pentru Q-Learning starile unui joc (totalitatea pixelilor) sunt codificate si trebuie memorata o intreaga tabela de dimensiunea numar_stari x nr_actiuni in care se pastreaza valorile q. Acestea sunt actualizate pe tot parcursul jocului in functie de recompensa primita.
+Pentru retele de convolutie algoritmul este altfel. Starea unui joc reprezinta chiar imaginea si nu este nevoie de codificare, iar arhitectura consta intr-o compunere de functii, unde fiecare neuron se activeaza pt fiecare feature
+
+[Preprocessing, Model, Loss Function]
+Pentru partea de preprocesare avem mai multe aspecte de urmarit, iar tratarea acestora se face empiric neexistand retete teoretice. Spatiul de culoare ales este ales in functie de aplicatie. Putem folosi RGB, sau YUV care este un spatiul de culoare ce separa luminanta de crominanta sau pur si simplu grayscale care detine un singur canal de culoare. 
+De asemenea avem nevoie si de normalizarea datelor care presupune calcul mediei si a deviatei standard fata de medie. Normalizarea forteaza datele sa aiba aceeasi magnitudine.
+Pentru alegerea retelei trebuie sa ne gandim daca avem nevoie sa clasificam date sau sa facem regresie. tangenta hiperbolica functioneaza destul de bine pt layere ascunse din motivul ca outputul aceste functii este centrat in 0 si este mai usor pt retea sa invete, iar functia de activare pt ultimul layer trebuie aleasa in functie de problema. Pentru regresia logistica, putem folosi functia sigmoid care centreaza outputul intre 0 si 1.
+La intrebarea cate layer si cati neuroni pe layer nu am gasit un raspuns, dar pot spune ca lucrurile astea se stabilesc empiric. Se incepe cu o retea simpla care nu este capabila sa invete si se continua pana cand se ajunge la partea overfitting.
+Pentru recalcularea ponderilor se poate folosi gradient descent care face update doar dupa ce a trecut prin toate sample-urile din dataset sau se poate folosi SGD care face update la fiecare samples in parte
+Functia de pierdere calculeaza diferenta outputului retelei si ceea ce ar trebuie sa avem la iesire. Daca vrem sa facem o regresie care practic face output la valori reale atunci aveam nevoie de MSE, altfel daca vrem clasificare putem folosi Hinge loss
+
+[train and test]
+Pentru partea asta dupa ce stabilim setul de date va trebui sa il impartim pentru partea de training si partea de testare. In principiu 80% din sample-uri se duc pentru training, iar restul la testare. O epoca consta in updatarea ponderilor pe baza setului de training si apoi testarea pe setul de test, sample-uri pe care reteaua nu le-a vazut niciodata. Cu un model bun, eroarea de training, matematic, intotdeauna va scadea, dar daca lasam sa isi faca antrenarea pe acest test va incepe sa il invete pe din';afara si sa aiba erori pe partea de testare din ce in ce mai mari. Asa ca cel mai bine ar fi sa oprim invatarea atunci cand eroarea de testare incepe sa creasca
+
+[architecture - once upon]
+

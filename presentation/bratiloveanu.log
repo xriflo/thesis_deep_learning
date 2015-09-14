@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.22)  14 SEP 2015 18:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.22)  14 SEP 2015 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1063,21 +1063,21 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <2> not available
 File: img/155.png Graphic file (type png)
 
 <use img/155.png>
-Package pdftex.def Info: img/155.png used on input line 158.
+Package pdftex.def Info: img/155.png used on input line 157.
 (pdftex.def)             Requested size: 60.2224pt x 60.2224pt.
  <img/states.png, id=182, 256.96pt x 128.48pt>
 File: img/states.png Graphic file (type png)
 
 <use img/states.png>
-Package pdftex.def Info: img/states.png used on input line 158.
+Package pdftex.def Info: img/states.png used on input line 157.
 (pdftex.def)             Requested size: 154.58102pt x 77.29051pt.
 
-Overfull \hbox (7.73608pt too wide) in paragraph at lines 158--158
+Overfull \hbox (7.73608pt too wide) in paragraph at lines 157--157
  [] 
  []
 
 
-Overfull \vbox (10.549pt too high) detected at line 158
+Overfull \vbox (10.549pt too high) detected at line 157
  []
 
 [7
@@ -1086,34 +1086,34 @@ Overfull \vbox (10.549pt too high) detected at line 158
 File: img/50.png Graphic file (type png)
 
 <use img/50.png>
-Package pdftex.def Info: img/50.png used on input line 183.
+Package pdftex.def Info: img/50.png used on input line 181.
 (pdftex.def)             Requested size: 92.1879pt x 92.18376pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 183--183
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 181--181
 [][] 
  []
 
 <img/85.png, id=202, 401.5pt x 401.5pt>
 File: img/85.png Graphic file (type png)
  <use img/85.png>
-Package pdftex.def Info: img/85.png used on input line 183.
+Package pdftex.def Info: img/85.png used on input line 181.
 (pdftex.def)             Requested size: 92.1879pt x 92.18376pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 183--183
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 181--181
 [][] 
  []
 
 File: img/155.png Graphic file (type png)
 <use img/155.png>
-Package pdftex.def Info: img/155.png used on input line 183.
+Package pdftex.def Info: img/155.png used on input line 181.
 (pdftex.def)             Requested size: 92.1879pt x 92.18376pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 183--183
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 181--181
 [][] 
  []
 
 
-Overfull \vbox (10.86378pt too high) detected at line 183
+Overfull \vbox (10.86378pt too high) detected at line 181
  []
 
 [8
@@ -1122,10 +1122,10 @@ Overfull \vbox (10.86378pt too high) detected at line 183
 <img/complex.png, id=229, 895.345pt x 239.89626pt>
 File: img/complex.png Graphic file (type png)
  <use img/complex.png>
-Package pdftex.def Info: img/complex.png used on input line 194.
+Package pdftex.def Info: img/complex.png used on input line 191.
 (pdftex.def)             Requested size: 346.30049pt x 93.35051pt.
 
-Overfull \hbox (21.52711pt too wide) in paragraph at lines 194--194
+Overfull \hbox (21.52711pt too wide) in paragraph at lines 191--191
  |  [] 
  []
 
@@ -1135,7 +1135,7 @@ Overfull \hbox (21.52711pt too wide) in paragraph at lines 194--194
 File: img/train-test-100.png Graphic file (type png)
 
 <use img/train-test-100.png>
-Package pdftex.def Info: img/train-test-100.png used on input line 200.
+Package pdftex.def Info: img/train-test-100.png used on input line 197.
 (pdftex.def)             Requested size: 240.89352pt x 180.67676pt.
  [10
 
@@ -1143,10 +1143,10 @@ Package pdftex.def Info: img/train-test-100.png used on input line 200.
 <img/simple.png, id=264, 646.415pt x 239.89626pt>
 File: img/simple.png Graphic file (type png)
  <use img/simple.png>
-Package pdftex.def Info: img/simple.png used on input line 209.
+Package pdftex.def Info: img/simple.png used on input line 206.
 (pdftex.def)             Requested size: 339.26447pt x 126.47452pt.
 
-Overfull \hbox (17.3361pt too wide) in paragraph at lines 209--209
+Overfull \hbox (17.3361pt too wide) in paragraph at lines 206--206
  |  [] 
  []
 
@@ -1156,7 +1156,7 @@ Overfull \hbox (17.3361pt too wide) in paragraph at lines 209--209
 File: img/small-network.png Graphic file (type png)
 
 <use img/small-network.png>
-Package pdftex.def Info: img/small-network.png used on input line 218.
+Package pdftex.def Info: img/small-network.png used on input line 215.
 (pdftex.def)             Requested size: 240.89352pt x 180.67676pt.
  [12
 
@@ -1166,13 +1166,13 @@ Package pdftex.def Info: img/small-network.png used on input line 218.
 <img/joke.png, id=316, 241.20113pt x 404.712pt>
 File: img/joke.png Graphic file (type png)
  <use img/joke.png>
-Package pdftex.def Info: img/joke.png used on input line 249.
+Package pdftex.def Info: img/joke.png used on input line 246.
 (pdftex.def)             Requested size: 92.1879pt x 154.68141pt.
 
 <img/training.png, id=317, 414.54875pt x 361.35pt>
 File: img/training.png Graphic file (type png)
  <use img/training.png>
-Package pdftex.def Info: img/training.png used on input line 249.
+Package pdftex.def Info: img/training.png used on input line 246.
 (pdftex.def)             Requested size: 169.01036pt x 147.31636pt.
 
 [14
@@ -1189,21 +1189,18 @@ Package pdftex.def Info: img/training.png used on input line 249.
 \tf@snm=\write8
 \openout8 = `bratiloveanu.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
  (./bratiloveanu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
 Package rerunfilecheck Info: File `bratiloveanu.out' has not changed.
 (rerunfilecheck)             Checksum: 5CA7821A901E0EA857A293EE2B1251C2;445.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.0pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
  ) 
 Here is how much of TeX's memory you used:
  19239 strings out of 493304
@@ -1224,7 +1221,7 @@ ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt8.pfb>
-Output written on bratiloveanu.pdf (15 pages, 321287 bytes).
+Output written on bratiloveanu.pdf (15 pages, 321267 bytes).
 PDF statistics:
  398 PDF objects out of 1000 (max. 8388607)
  330 compressed objects within 4 object streams
