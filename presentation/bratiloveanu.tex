@@ -93,8 +93,10 @@
 		\item reinforcement learning: Q-Learning
 		\item neural networks \textbf{vs} deep neural networks
 	\end{itemize}
-	\centering
-	\includegraphics[width=205px,height=130px]{img/nn2}
+	\begin{center}
+		\includegraphics[width=205px,height=130px]{img/nn2}
+	\end{center}
+	
 \end{frame}
 
 %--------------------PREPROCESSING, MODEL, LOSS FUNCTION--------------------	
@@ -184,40 +186,11 @@
 
 \subsection{Regression with complex model}
 \begin{frame}{Model}
-	\begin{columns}[T]
-		\begin{column}{0.70\textwidth}
-			\footnotesize
-				\color[rgb]{0,0,0.545098}
-			  (1): \hspace{0.16cm}nn.SpatialConvolutionMM(3 -$\rightarrow$ 8, 5x5)
-			  
-			  (2):\hspace{0.16cm} nn.Tanh
-			  
-			  (3): \hspace{0.16cm}nn.SpatialSubSampling
-			  
-				\color[rgb]{0.333333,0.419608,0.184314}			  
-			  (4): \hspace{0.16cm}nn.SpatialConvolutionMM(8 $\rightarrow$ 20, 5x5)
-			  
-			  (5): \hspace{0.16cm}nn.Tanh
-			  
-			  (6): \hspace{0.16cm}nn.SpatialSubSampling
-			  
-			  \color[rgb]{0.180392,0.545098,0.341176}
-			  (7): \hspace{0.16cm}nn.SpatialConvolutionMM(20 $\rightarrow$ 120, 5x5)
-			  
-			  (8): \hspace{0.16cm}nn.Reshape(120)
-			  
-			  (9): \hspace{0.16cm}nn.Linear(120 $\rightarrow$ 100)
-			  
-			  (10): nn.Tanh
-			  
-			  (11): nn.Linear(100 $\rightarrow$ 4)
-			  
-			  (12): nn.Sigmoid
-			  
-		\end{column}
-		\begin{column}{0.30\textwidth}
-		\end{column}
-	\end{columns}
+	
+	\begin{center}
+		\hspace*{-0.7cm}
+		\includegraphics[width=345px,height=93px]{img/complex}
+    \end{center}
 \end{frame}
 
 \begin{frame}{Results}
@@ -229,31 +202,10 @@
 
 \subsection{Regression with simple model}
 \begin{frame}{Model}
-	\begin{columns}[T]
-		\begin{column}{0.60\textwidth}
-			\footnotesize
-			\color[rgb]{0,0,0.545098}
-			(1): nn.SpatialConvolutionMM(3 $\rightarrow$ 4, 5x5)
-			
-  			(2): nn.Tanh
-  			
-  			(3): nn.SpatialSubSampling
-  			
-  			\color[rgb]{0.333333,0.419608,0.184314}
-  			(4): nn.SpatialConvolutionMM(4 $\rightarrow$ 6, 5x5)
-  			
-  			(5): nn.Tanh
-  			
-  			(6): nn.SpatialSubSampling
-  			
-  			\color[rgb]{0.180392,0.545098,0.341176}
-  			(7): nn.Reshape(150)
-  			
-  			(8): nn.Linear(150 $\rightarrow$ 4)
-		\end{column}
-		\begin{column}{0.40\textwidth}
-		\end{column}
-	\end{columns}
+	\begin{center}
+		\hspace*{-0.6cm}
+		\includegraphics[width=338px,height=126px]{img/simple}
+    \end{center}
 \end{frame}
 
 \begin{frame}{Results}
