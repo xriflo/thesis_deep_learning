@@ -23,4 +23,32 @@ Functia de pierdere calculeaza diferenta outputului retelei si ceea ce ar trebui
 Pentru partea asta dupa ce stabilim setul de date va trebui sa il impartim pentru partea de training si partea de testare. In principiu 80% din sample-uri se duc pentru training, iar restul la testare. O epoca consta in updatarea ponderilor pe baza setului de training si apoi testarea pe setul de test, sample-uri pe care reteaua nu le-a vazut niciodata. Cu un model bun, eroarea de training, matematic, intotdeauna va scadea, dar daca lasam sa isi faca antrenarea pe acest test va incepe sa il invete pe din';afara si sa aiba erori pe partea de testare din ce in ce mai mari. Asa ca cel mai bine ar fi sa oprim invatarea atunci cand eroarea de testare incepe sa creasca
 
 [architecture - once upon]
+Ceea ce am incercat sa fac a fost sa prezic functia actiune-valoare Q folosind Q-Learning. Apoi am incercat sa gasesc modele de retele de convolutie capabile sa invete aceste valori folosit set-ul de date rezultat din pasul anterior. Pentru a gasi un model capabil sa invete a trebuit sa rulez foarte multe experimente, dar nu voi mentiona decat 2 modele pentru a putea face o paralela intre ele. Pentru rularea experimentelor ca suport am folosit jocul Turnurile din Hanoi si fiindca acesta se rezuma la 160 de stari pt 3 discuri si 3 stack-uri, pentru a largi dataset-ul si pentru a demonstra ca modelul meu este capabil sa generalizeze am adaugat zgomot si am schimbat culorile. Ca si framework am folosit Torch special creat pentru deep learning. Este baza pe Lua care este de fapt scris in C. Pentru interfata grafica am folosit un alt framwork, Love2D. este scris tot in lua
 
+[q-learning]
+Pt a obtine valorile din imagine, am rulat 11 iteratie, fiecare iteratie constand in 1000 de episoade si o probabilitate diferita de a alege o actiune random sau sa calculeze functia q pe baza formulei expuse. Rezultatele pot fi vizualizate in imagini. De exemplu, in starea initiala valoarea pt Up este mult mai mare decat pt celalate actiuni
+
+[complex - model]
+Dupa ce am obtinut un set de date cu tot cu label-uri din q-learning am incercat sa gasesc un model de retele de convolutie care ar putea sa invete acest set de date. Pe parcurs am intampinat foarte multe probleme. In prima etapa, am antrenat direct pe label-urile date de q-learning. M-am lovit bias f mare la primele modele. Apoi mi-am dat seama ca valorile date de qlearning sunt de magnitudine f mare si altfel ducea la o stabilizare a retelei. Am rezolvat problema prin aplicarea functiei logaritmice si apoi normalizarea valorilor in 0..1. Legat de preprocesare feature-urilor am considerat ca formatul yuv ar fi mai potrivit fiind bun si pentru jocurile in care exista umbre si lumini. Feature-urile au fost normalizare folsind media si deviata standard. Pentru model am ales un model format din 3 layere de conv si 2 de subsampl urmate de 3 layere fully connected. Pentru layere intermediare am folosit tangenta hiperbolica. Functia de cost pe care am ales-o a fost MSE, fiindca trebuia sa faca regresie, iar ca si optimizare am folosit sgd. In final, reteaua nu a fost capabila sa invete indiferent de cat de mare era setul de date. Am incercat si cu 10,000 si cu 20,000 si cu 60,000. A rezultat un overfitting de toata frumusetea.
+
+[complex - graph]
+
+Rezultatele pot fi observate in aceasta figura unde eroarea de testare este mult mai mare in comparatie cu eroarea de antrenare.
+
+[simple - model]
+Pe parcurs am incercat mult mai multe modele pana am ajuns la urmatorul. Am redus numarul de straturi excluzand un strat de convolutie si un fully connected layer. Apoi am lasat spatiul de culoare RGB si bingo avem un model capabil sa invete.
+
+[simple - graph]
+Adaugarea de zgomot peste imagini a facut reteaua capabila sa se poartea chiar f bine pentru partea de testare. Acum avem un model care invata.
+
+[future-work]
+pasii anteriori vor fi folositi in implementarea unei retele de tip q-network care imbunatateste algoritmul de q-learning folosind retele de convolutie. practic de data aceasta vom folosi q-learning pt update-ul ponderilor. Desi am implementat aceasta retea, am ales sa nu o includ in reteaua de fata din cauza rezultatelor instabile pe care le ofera
+
+dupa ce voi implementa q-network voi incerca sa o testez si cu jocuri unde mediul este dinamic sau starea universului nu poate fi surprinsa
+
+mai departe doresc sa folosesc acest q-network si pe imagini din realitate. O buna alegere ar fi adugarea unei functionalitati pt nao care sa invete sa zoace x si 0 dupa recompense sonorice.
+
+Dupa ce voi realiza tot ce este mai sus, as vrea sa merg mai departe si sa folosesc toate observatiile si rezultatele pt un domeniu care este necesar sa evolueze, clasificarea tumorilor.
+
+[conclusion]
+Ca si concluzie, desi nu mi-am atins scopul initial voi continua cercetarea in acest domeniu pe mai departe. M-am lovit foarte tare de problema overfitting-ului, de problema ce, cum, unde in alegerea modelului. Am observat urmatoarele: un model simplu poate duce la neinvatare, iar un model complex duce la incapabilitatea predictiei pe baza unor sample-uri nevazute. De asemenea, spatiul de culoare RGB este cel mai eficient in aceasta aplicatie
